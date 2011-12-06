@@ -16,7 +16,7 @@
   date = "1908"
   source = "John Church, 1908"
   style = "March"
-  copyright = "Mine, all mine"
+  copyright = "Public domain"
   maintainer = "Garrett Fitzgerald"
   maintainerEmail = "gfitzger@nyx.net"
   maintainerWeb = "http://blog.donnael.com/"
