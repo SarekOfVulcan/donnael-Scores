@@ -1,4 +1,4 @@
-\version "2.11.45"
+\version "2.14.0"
 \header {
   mutopiatitle = "Thirty Caprices: No. 3"
   mutopiacomposer = "CavalliniE"
@@ -7,14 +7,12 @@
   style = "Classical"
   copyright = "Public domain"
   maintainer = "Garrett Fitzgerald"
-  maintainerweb = "http://blog.donnael.com/"
   title = "Thirty Caprices: No. 3"
   composer = "Ernesto Cavallini"
 }
 
 ECCapriceThree = \relative c' {
   \key c \minor
-  #(override-auto-beam-setting '(end 1 8 4 4) 4 8)
   
   c8-.\<\mark \markup{Agitato} ees( g) b c-.\> d( ees) g,-.\! |
   c,8-. ees( g) b-. c-. d( ees) g,-. | b,8-. g'( b) c-. d-. ees( f) g,-. | \break
@@ -81,7 +79,8 @@ ECCapriceThree = \relative c' {
     \new Staff {
       \clef treble
       \time 4/4
-      \set beatLength = #(ly:make-moment 4 8)
+      \set Timing.baseMoment = #(ly:make-moment 4 8)
+      \set Staff.beatStructure = #'(4)
       \set Staff.midiInstrument = "clarinet"
       \ECCapriceThree
     }

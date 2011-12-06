@@ -1,4 +1,4 @@
-\version "2.11.45"
+\version "2.14.0"
 \header {
   mutopiatitle = "Thirty Caprices: No. 1"
   mutopiacomposer = "CavalliniE"
@@ -7,7 +7,6 @@
   style = "Classical"
   copyright = "Public domain"
   maintainer = "Garrett Fitzgerald"
-  maintainerweb = "http://blog.donnael.com/"
   title = "Thirty Caprices: No. 1"
   composer = "Ernesto Cavallini"
 }
@@ -15,7 +14,6 @@
 #(set-global-staff-size 17)
 
 ECCapriceOne = \relative c'' {
-  #(override-auto-beam-setting '(end 1 8 2 4) 4 8)
   
   a4.-.\mark \markup{Allegro mosso} b8-. | c8-. d-. e-. f-. | e4-. a-. | b4( e,) |
   e'4.-. c8-. | a8( b) e,4-. | a4.-. b8( | c8 a e) c-. |
@@ -70,7 +68,8 @@ ECCapriceOne = \relative c'' {
       \clef treble
       \time 2/4
       \key c \major
-      \set beatLength = #(ly:make-moment 4 8)
+      \set Timing.baseMoment = #(ly:make-moment 4 8)
+      \set Staff.beatStructure = #'(4)
       \set Staff.midiInstrument = "clarinet"
       \override Staff.VerticalAxisGroup #'minimum-Y-extent = #'(-2 . 2)
       \ECCapriceOne
@@ -88,8 +87,8 @@ ECCapriceOne = \relative c'' {
     }
   }
   \paper { 
-    between-system-space = 1.5\cm
-    between-system-padding = #1
+    obsolete-between-system-space = 1.5\cm  system-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)  score-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)
+    obsolete-between-system-padding = #1  system-system-spacing #'padding = #(/ obsolete-between-system-padding staff-space)  score-system-spacing #'padding = #(/ obsolete-between-system-padding staff-space)
     ragged-bottom = ##f
     ragged-last-bottom = ##f
   }

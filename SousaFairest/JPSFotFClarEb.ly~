@@ -1,0 +1,99 @@
+\version "2.11.63"
+\include "JPSFotF.ly"
+
+#(set-global-staff-size 15)
+\paper {
+  between-system-padding = #1
+}
+
+\header {
+  title = "The Fairest of the Fair"
+  subtitle = "March"
+  composer = "John Philip Sousa"
+  mutopiacomposer = "SousaJP"
+  instrument = "Eb Clarinet"
+  date = "1908"
+  source = "John Church, 1908"
+  style = "March"
+  copyright = "Public Domain"
+  maintainer = "Garrett Fitzgerald"
+  maintainerEmail = "gfitzger@nyx.net"
+  maintainerWeb = "http://blog.donnael.com/"
+}
+
+
+clarinetInEb = \relative c''' {
+  \clef treble
+  \key c \major
+  \time 2/4
+
+  \grace { z16[( y xis] } w8.)\f-> z16 y8 t | z8.-> uis16 y8 t8 | 
+  uis16 v w v uis8 v | w8 r r \times 2/3 {z16( y xis)} | \bar "||"
+  w8\f v uis z | w8.-> xis16 w8 y | z8. tis16 z8 uis | z4. w,16-. uis-. |
+  y8 y16 y y8 w,16 uis | y8 y16 y y8 w,16 uis | 
+  y8 y y xis | z4.\< \times 2/3 {z,16(\! y xis} |
+  w8->) v uis z | w8.-> xis16 w8 y | z8. tis16 z8 uis | z4. uis16-. z16-. |
+  xis8 xis16 xis xis8 uis,16 z | xis8 xis16 xis xis8 vis,16 tis |
+  \repeat tremolo 4 xis8 | xis8 r xis4(\< | w8.->)\! z16 y8 t | z8.-> uis16 y8 t |
+  uis16 v w v uis8 v | w8 v uis z | w8. z16 y8 t | z8. uis16 y8 t |
+  uis16 v w v uis8 v | w8 r w4-^( |
+  \repeat volta 2 { xis8) v xis4~ | xis8 xis16( w v8) w16( v | 
+		    uis8) z uis4~ | uis8 uis16( t z8) tis16( z |
+		    y8) z y4~ | y8\< z16( y xis8) y16( xis\! |
+		    w8) w16( v uis8) uis16( v | w8\>) z uis w\! |
+		    xis8 v xis4~ | xis8 xis16( w v8) w16( v |
+		    uis8) z uis4~ | uis8 uis16( t z8) tis16( z | 
+		    \repeat percent 2 { \acciaccatura xis8 y8) zis y4 | }
+		    \acciaccatura xis8 y8 zis y y | xis8 r xis4\ff( |
+		    w8.->)_\markup {\italic "giocoso"} z16 y8 t | z8.-^ uis16 y8 t |
+		    uis16 v w v uis8 v | w8 v uis z |
+		    w8. z16 y8 t | z8. uis16 y8 t | uis16 v w v uis8 v | 
+		  }
+  \alternative { { w8 r w4\laissezVibrer } { w8 r w4\p( } } | \bar "||"
+  \key g \major
+  w'2\p) | t,4( y | v2 | y2)
+  \acciaccatura y8 z8.( tis16 z8. x16 | y4 z) | t2 | w2 |
+  v4-.( v-. | v4-. uis-.) | \acciaccatura z8 t8. uis16 t8. z16 | y2 |
+  \acciaccatura y8 z8.( tis16 z8. y16 | xis4) z | w2~ | w4 w, |
+  w'2 | t,4( y | v2 | y2) | 
+  v4( y8. z16 | t4 uis | v2 | y2) |
+  uis'4 t8.( uis16) | t4 uis8.( t16) | uis'2( | v2) |
+  w8( y) r4 | w8( z) r4 | t2~ | t8 r t4\ff
+  \repeat volta 2 { uis8-> y-> r4 | uis8 y uis y | uis8-> y-> r4 | x!2( |
+		    y8) v v wis | v8 v16 wis v wis v uis |
+		    t16 uis v8 uis wis | v8 r r4 | v,8-> z-> r4 | v8 z v z |
+		    v8-> z-> r4 | y2 | z8 w w xis | w8 w16 xis w xis w v |
+		    uis16 v w8 v xis | w8 r r \times 2/3 { z16( y xis) } |
+		    w8.-> z16 y8 t | z8. uis16 y8 t | 
+		    uis16 v w v uis8 v-> | w8 r w4\ff( |
+		    w'2) | t,4( y | v2) | y2 |
+		    \acciaccatura y8 z8.( tis16 z8. x16 | y4 z) |
+		    t2 | w2 | v4-.( v-. | v4-. uis-.) |
+		    \acciaccatura z8 t8.( uis16 t8. z16 | y2) |
+		    \acciaccatura y8 z8.( tis16 z8. y16 | xis4 z) |
+		    w2~ | w4 w, | w'2 | t,4( y | v2 | y2) |
+		    v4( y8. z16 | t4 uis | v2 | y2) |
+		    uis'4 t8.( uis16) | t4 uis8.( t16 | uis'2 | v2) |
+		    w8( y) r4 | w8( z) r4 |
+		  }
+  \alternative { {t2~ | t8 r t4 | } { t2~ | t8 r t-> r | } } \bar "|."
+}
+
+\score {
+  \new Staff { 
+    \set Staff.midiInstrument = "clarinet" 
+    \override Score.RehearsalMark #'break-align-symbol = #'time-signature
+    \time 2/4
+    \mark "Marziale"
+    \clarinetInEb
+  }
+  
+  \layout {}
+  \midi {
+    \context {
+      \Score
+      tempoWholesPerMinute = #(ly:make-moment 120 4)
+    }
+  }
+}
+

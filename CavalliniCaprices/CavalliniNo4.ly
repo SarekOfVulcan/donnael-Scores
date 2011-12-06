@@ -1,4 +1,4 @@
-\version "2.11.45"
+\version "2.14.0"
 \header {
   mutopiatitle = "Thirty Caprices: No. 4"
   mutopiacomposer = "CavalliniE"
@@ -7,7 +7,6 @@
   style = "Classical"
   copyright = "Public domain"
   maintainer = "Garrett Fitzgerald"
-  maintainerweb = "http://blog.donnael.com/"
   title = "Thirty Caprices: No. 4"
   composer = "Ernesto Cavallini"
 }
@@ -78,7 +77,7 @@ ECCapriceFour = \relative c'' {
     \new Staff {
       \clef treble
       \time 2/4
-      \set beatLength = #(ly:make-moment 4 16)
+      \set Timing.baseMoment = #(ly:make-moment 4 16)
       \set Staff.midiInstrument = "clarinet"
       \ECCapriceFour
     }
@@ -95,8 +94,8 @@ ECCapriceFour = \relative c'' {
     }
   }
   \paper { 
-    between-system-space = 1.5\cm
-    between-system-padding = #1
+    obsolete-between-system-space = 1.5\cm  system-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)  score-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)
+    obsolete-between-system-padding = #1  system-system-spacing #'padding = #(/ obsolete-between-system-padding staff-space)  score-system-spacing #'padding = #(/ obsolete-between-system-padding staff-space)
     ragged-bottom = ##f
     ragged-last-bottom = ##f
   }
