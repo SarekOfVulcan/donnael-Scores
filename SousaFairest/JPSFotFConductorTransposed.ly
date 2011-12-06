@@ -1,5 +1,5 @@
 #(ly:set-option 'point-and-click #f)
-\version "2.12.2"
+\version "2.14.0"
 #(set-global-staff-size 13)
 
 \include "JPSFotF.ly"
@@ -16,7 +16,6 @@
   copyright = "Public Domain"
   maintainer = "Garrett Fitzgerald"
   maintainerEmail = "gfitzger@nyx.net"
-  maintainerWeb = "http://blog.donnael.com/"
 }
 
 \score { 

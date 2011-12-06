@@ -1,10 +1,10 @@
 #(ly:set-option 'point-and-click #f)
-\version "2.12.2"
+\version "2.14.0"
 \include "JPSFotF.ly"
 
 #(set-global-staff-size 15)
 \paper {
-  between-system-padding = #1
+  obsolete-between-system-padding = #1  system-system-spacing #'padding = #(/ obsolete-between-system-padding staff-space)  score-system-spacing #'padding = #(/ obsolete-between-system-padding staff-space)
 }
 
 \header {
@@ -19,7 +19,6 @@
   copyright = "Public Domain"
   maintainer = "Garrett Fitzgerald"
   maintainerEmail = "gfitzger@nyx.net"
-  maintainerWeb = "http://blog.donnael.com/"
 }
 
 \score {
