@@ -386,7 +386,7 @@ clarinetInBbSOne = \relative c''' {
   \key f \major
   \time 2/4
 
-  #(set-octavation 1)
+  \ottava #1
   \grace { c16[( d e] } f8.)\ff-> c16 d8 bes | c8. a16 d8 bes8 | 
   a16 g f g a8 g | f8 r r \times 2/3 {c16\f( d e)} | \bar "||"
   f8-> g a c | f8.-> e16 f8 d | c8. b16 c8 a | c4. f,16 a |
@@ -397,7 +397,7 @@ clarinetInBbSOne = \relative c''' {
   \repeat tremolo 4 e8 | e8 r e4->( | f8.->) c16 d8 bes | c8.-> a16 d8 bes |
   a16 g f g a8 g | f8 g a c | f8. c16 d8 bes | c8. a16 d8 bes |
   a16 g f g a8 g | f8 r 
-  #(set-octavation 0)
+  \ottava #0
   f4->\f( |
   \repeat volta 2 { e8) g e4~ | e8 e16( f g8) f16( g | 
 		    a8) c a4~ | a8 a16( bes c8) b16( c |
@@ -478,9 +478,9 @@ clarinetInBbTwo = \relative c'' {
   a'4( bes8. a16) | bes4( a8. bes16) | ees2 | c2 |
   f8( d) r4 | f8( c) r4 | \repeat tremolo 4 d8 | d8 r bes'4->
   \repeat volta 2 { fis8->\ff fis-> r4 | a8 d a d | fis,8-> fis-> r4 | a2 |
-		    #(set-octavation 1)
+		    \ottava #1
 		    d8 d d d | d8 d c4 | d8 d d d | d8 
-		    #(set-octavation 0)
+		    \ottava #0
 		    r8 r4 | 
 		    e,8-> e-> r4 | g8 c g c |
 		    e,8-> e-> r4 | g2 | 
@@ -539,9 +539,9 @@ clarinetInBbThree = \relative c'' {
   a'4( bes8. a16) | bes4( a8. bes16) | c2 | bes2 |
   f'8( d) r4 | f8( c) r4 | \repeat tremolo 4 f,8 | f8 r bes'4->
   \repeat volta 2 { d,8->\ff d-> r4 | a'8 d a d | d,8-> d-> r4 | g2 |
-		    #(set-octavation 1)
+		    \ottava #1
 		    g8 g c c | bes8 bes bes4 | bes8 bes c c | bes8 
-		    #(set-octavation 0)
+		    \ottava #0
 		    r8 r4 | 
 		    c,8-> c-> r4 | g'8 c g c |
 		    c,8-> c-> r4 | f2 | 
@@ -679,19 +679,19 @@ sopranoSax = \relative c'' {
   f8.->\ff) c16_\markup {\italic "giocoso"} d8 bes | c8.-> a16 d8 bes |
   a16 g f g a8 g | f8 g a c | f8.-> c16 d8 bes | c8. a16 d8 bes |
   a16 g f g a8 g | f8 r 
-  #(set-octavation 1)
+  \ottava #1
   f'4->\f( |
   \repeat volta 2 { e8) g e4~ | e8 e16( f g8) f16( g | 
 		    a8) c a4~ | a8 a16( bes c8) b16( c |
 		    d8) c d4~ | d8\< 
-		    #(set-octavation 0)
+		    \ottava #0
 		    c,16( d e8) d16( e\! |
 		    f8) f16( g a8) a16\>( g | f8) 
-		    #(set-octavation 1)
+		    \ottava #1
 		    c' a\! f |
 		    e8 g e4~ | e8 e16( f g8) f16( g |
 		    a8) c a4~ | a8\ff a16( bes c8) b16( c) | 
-		    #(set-octavation 0)
+		    \ottava #0
 		    \repeat unfold 2 { \acciaccatura e,8 d8 cis d4 | }
 		    \acciaccatura e8 d8 cis d d | e8 r e4->( |
 		    f8.) c16 d8 bes | c8. a16 d8 bes |
