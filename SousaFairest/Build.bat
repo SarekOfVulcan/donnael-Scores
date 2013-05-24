@@ -1,0 +1,1 @@
+for /r %%v in (*.ly) do lilypond "%%v"
