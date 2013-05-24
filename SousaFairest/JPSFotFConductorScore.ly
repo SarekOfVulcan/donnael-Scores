@@ -1,21 +1,11 @@
-#(ly:set-option 'point-and-click #f)
-\version "2.16.0"
-#(set-global-staff-size 13)
-
+\version "2.16.2"
+\paper {
+  #(set-paper-size "letter")
+}
 \include "JPSFotF.ly"
 
 \header {
-  title = "The Fairest of the Fair"
-  subtitle = "March"
-  composer = "John Philip Sousa"
-  mutopiacomposer = "SousaJP"
   instrument = "Conductor's score"
-  date = "1908"
-  source = "John Church, 1908"
-  style = "March"
-  copyright = "Public Domain"
-  maintainer = "Garrett Fitzgerald"
-  maintainerEmail = "gfitzger@nyx.net"
 }
 
 \score { 

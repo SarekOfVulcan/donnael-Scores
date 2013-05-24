@@ -1,4 +1,18 @@
-\version "2.16.0"
+\version "2.16.2"
+\pointAndClickOff
+
+\header {
+  title = "The Fairest of the Fair"
+  subtitle = "March"
+  composer = "John Philip Sousa"
+  mutopiacomposer = "SousaJP"
+  date = "1908"
+  source = "John Church, 1908"
+  style = "March"
+  copyright = "Public Domain"
+  maintainer = "Garrett Fitzgerald"
+  maintainerEmail = "gfitzger@nyx.net"
+}
 
 piccoloInDb = \relative c''' {
   \clef treble
@@ -629,7 +643,7 @@ bassClarinet = \relative c'' {
   f8 c' d bes | f8 c' d bes | a8 c4->( bes8 | a8) r f'4(
   \repeat volta 2 { e4.) e16( f | g2) | a4. a16( bes | c2) |
 		    d,8( c) d4~ | d8 c16\<( d e8) d16( e | 
-		    f8\!( f16( g a8) a16\>( g | f8) c\! a f |
+		    f8\!) f16( g a8) a16\>( g | f8) c\! a f |
 		    e'4. e16( f | g2) | a4. a16( bes | c2) |
 		    r8 bes,( d f) | r8 a,( d fis) | r8 g,( d' g) | c,8 r r16 c16( bes g) |
 		    \repeat percent 2 { f8 c' d bes | } a8 c4-> bes8 | a8 g f c | 
@@ -752,7 +766,6 @@ altoSaxophoneInEb = \relative c'' {
   
   \key f \major
   
-  #(override-auto-beam-setting '(end 1 8 2 4) 2 4)
   r8 a\p( f a) | r8 f( c f) | r8 a( f a) | r8 f( c f) |
   r8 e( c e) | r8 c( bes c) | r8 a'( f a) | r8 f( c f) |
   r8 d( c d) | r8 d( c g') | r8 a( f a) | r8 f( c f) |
@@ -803,14 +816,13 @@ tenorSaxophoneInBb = \relative c'' {
   
   \key bes \major
   
-  #(override-auto-beam-setting '(end 1 8 2 4) 2 4)
   r8 f\p( d f) | r8 d( bes d) | r8 g( d g) | r8 d( bes d) |
   r8 c( a c) | r8 ees( c ees) | r8 f( d f) | r8 d( bes d) |
   r8 ees( d f) | r8 ees( c f) | r8 f( d f) | r8 d( bes d) |
   r8 e( c e) | r8 e( c e) | r8 f( c f) | r8 a( f a) |
   r8 f( d f) | r8 d( bes d) | r8 g( d g) | r8 d( bes d) |
   r8 g( fis a) | r8 g( a fis) | r8 d( bes d) | r8 bes( g bes) |
-  a'4( bes8. a16 | bes4 a8. bes16 | a2( | g2)) |
+  a'4( bes8. a16 | bes4 a8. bes16) | a2( | g2)) |
   f8( d) r4 | f8( c) r4 | d2~ | d8 r r4 |
   \repeat volta 2 { d,8->\ff d'-> r4 | a8-. d-. a-. d-. | d,8-> d'-> r4 | c8 c-> d-> c-> |
 		    bes4 a | g4 ees | d8 d' d, d' | g,8 d' bes g |
