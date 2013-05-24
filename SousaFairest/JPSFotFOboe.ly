@@ -1,5 +1,5 @@
 #(ly:set-option 'point-and-click #f)
-\version "2.14.0"
+\version "2.16.0"
 \include "JPSFotF.ly"
 
 #(set-global-staff-size 15)
@@ -35,9 +35,6 @@
   
   \layout {}
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 120 4)
-    }
+    \tempo 4 = 120
   }
 }
