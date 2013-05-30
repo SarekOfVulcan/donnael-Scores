@@ -15,6 +15,7 @@
 }
 
 rehearsalMarks = {
+  \grace {s16 s s} % bug fix
   s2*4 | \bar "||"
   \mark \markup { \box "A" }
   s2*24 |
@@ -1197,6 +1198,7 @@ hornOneInEb = \relative c'' {
   \transposition ees
   \time 2/4
 
+  \grace {s16 s s} % bug fix
   c8.->\ff g16 a8 f | g8.-> e16 a8 f8 | 
   e'4. d8 | c8 c r c\f | \bar "||"
   \repeat percent 3 { r8 c[ r c] | }
@@ -1251,6 +1253,7 @@ hornTwoInEb = \relative c'' {
   \transposition ees
   \time 2/4
 
+  \grace {s16 s s} % bug fix
   c8.->\ff g16 a8 f | g8.-> e16 a8 f8 | 
   g4. g8 | e8 e r e\f | \bar "||"
   \repeat percent 3 { r8 e[ r e] | }
@@ -1305,6 +1308,7 @@ hornThreeInEb = \relative c'' {
   \transposition ees
   \time 2/4
 
+  \grace {s16 s s} % bug fix
   c8.->\ff g16 a8 f | g8.-> e16 a8 f8 | 
   c'4. b8 | g8 g r g\f | \bar "||"
   \repeat percent 3 { r8 g[ r g] | } r8 g16 g g8 g |
@@ -1359,6 +1363,7 @@ hornFourInEb = \relative c'' {
   \transposition ees
   \time 2/4
 
+  \grace {s16 s s} % bug fix
   c8.->\ff g16 a8 f | g8.-> e16 a8 f8 | 
   e4. f8 | g8 g r g\f | \bar "||"
   \repeat percent 3 { r8 c,[ r c] | } r8 c16 c c8 c |

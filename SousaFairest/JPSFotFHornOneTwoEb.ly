@@ -10,7 +10,7 @@
 }
 
 \score {
-  \new Staff { 
+  \new Staff \with { printPartCombineTexts = ##f } { 
     \set Staff.midiInstrument = "french horn"
     \override Score.RehearsalMark #'break-align-symbol = #'time-signature
     \mark "Marziale"
