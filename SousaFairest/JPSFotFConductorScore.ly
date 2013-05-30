@@ -8,6 +8,8 @@
   instrument = "Score"
 }
 
+#(set-global-staff-size 14)
+
 \score { 
   {
     <<
@@ -177,5 +179,5 @@
 
     >>
   }
-  \layout{}
+  \layout{ }
 }

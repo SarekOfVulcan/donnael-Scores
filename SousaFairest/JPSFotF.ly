@@ -1169,7 +1169,8 @@ cornetInBbTwo = \relative c'' {
     r8 fis[ r fis] | r8 g[ r g] | r8 c16 c c8 c | r8 bes16 bes bes8 bes |
     r8 bes16 bes bes8 bes | r8 a16 a a8 a |
   }
-  \alternative { { bes8 bes16 bes bes8 bes | bes8 r bes4 \laissezVibrer } { } } \bar "|."
+  \alternative { { bes8 bes16 bes bes8 bes | bes8 r bes4 \laissezVibrer } 
+		 { bes8 bes16 bes bes8 bes | bes8 r d-> r} } \bar "|."
 }
 
 cornetInBbThree = \relative c'' {
