@@ -14,7 +14,10 @@
     \set Staff.midiInstrument = "trumpet"
     \override Score.RehearsalMark #'break-align-symbol = #'time-signature
     \mark "Marziale"
-    \cornetInBbOne
+    <<
+      \rehearsalMarks
+      \cornetInBbOne
+    >>
   }
   
   \layout {}

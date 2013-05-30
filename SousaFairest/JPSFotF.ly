@@ -63,7 +63,9 @@ piccoloInDb = \relative c''' {
 		    d8. a16 b8 g | a8. fis16 b8 g | fis16 e d e fis8 e | 
 		  }
   \alternative { { d8 r d4\laissezVibrer } { d8 r d4\p( } } | \bar "||"
+  
   \key g \major
+  
   d'2\p) | g,4( b | e2 | b2)
   \acciaccatura b8 a8.( gis16 a8. c16 | b4 a) | g2 | d2 |
   e4-.( e-. | e4-. fis-.) | \acciaccatura a8 g8. fis16 g8. a16 | b2 |
@@ -89,7 +91,7 @@ piccoloInDb = \relative c''' {
 		    fis'4 g8.( fis16) | g4 fis8.( g16 | fis'2 | e2) |
 		    d8( b) r4 | d8( a) r4 |
 		  }
-  \alternative { {g2~ | g8 r g4 | } { g2~ | g8 r g-> r | } } \bar "|."
+  \alternative { { g2~ | g8 r g4 | } { g2~ | g8 r g-> r | } } \bar "|."
 }
 
 fluteInC = \relative c''' {
@@ -185,7 +187,9 @@ oboeOne = \relative c'' {
 		    g4.) f8 |
 		  }
   \alternative { { ees8 r ees,4 } { ees'8 r ees,4 } } | \bar "||"
+  
   \key aes \major
+  
   c'2_\markup {\italic "dolce"} | aes4( c | c2) | c2 | 
   des4 des | ees4 des | c2 | c2 |
   des4-.( ees-. | des4-. des-.) | c2 | ees4 ees | d2 | d4 d4 | ees2~ | ees4 ees |
@@ -198,13 +202,13 @@ oboeOne = \relative c'' {
 		    bes,8) ees ees d | ees8 ees16 d ees d ees f | 
 		    g16( f ees8) f d | ees8 r r \times 2/3 { bes16( c d) } |
 		    ees8. bes'16 c8 aes | bes8. g16 c8 aes | g16 f ees f g8 f | ees8 r ees4->\ff | 
-		    r8 ees16 ees ees8 ees | r8 ees r ees | r8 ees16 ees ees8 ees8 | r8 ees r ees |
-		    r8 ees16 ees ees8 ees | r8 ees r ees | r8 ees16 ees ees8 ees8 | r8 ees r ees |
-		    r8 f r f | r8 f r ees | r8 ees16 ees ees8 ees | r8 ees r ees |
-		    r8 d16 d d8 d | r8 d r d | r8 ees16 ees ees8 ees | r8 ees r ees |
-		    r8 ees16 ees ees8 ees | r8 ees r ees | r8 ees16 ees ees8 ees8 | r8 ees r ees |
-		    r8 ees r e | r8 f r e | \repeat percent 2 { r8 f16 f f8 f | }
-		    r8 e r e | r8 f r f | r8 f16 f f8 f | r8 f16 f f8 f |
+		    r8 ees16 ees ees8 ees | r8 ees[ r ees] | r8 ees16 ees ees8 ees8 | r8 ees[ r ees] |
+		    r8 ees16 ees ees8 ees | r8 ees[ r ees] | r8 ees16 ees ees8 ees8 | r8 ees[ r ees] |
+		    r8 f[ r f] | r8 f[ r ees] | r8 ees16 ees ees8 ees | r8 ees[ r ees] |
+		    r8 d16 d d8 d | r8 d[ r d] | r8 ees16 ees ees8 ees | r8 ees[ r ees] |
+		    r8 ees16 ees ees8 ees | r8 ees[ r ees] | r8 ees16 ees ees8 ees8 | r8 ees[ r ees] |
+		    r8 ees[ r e] | r8 f[ r e] | \repeat percent 2 { r8 f16 f f8 f | }
+		    r8 e[ r e] | r8 f[ r f] | r8 f16 f f8 f | r8 f16 f f8 f |
 		    r8 ees16 ees ees8 ees | r8 ees16 ees ees8 ees | }
   \alternative { { r8 ees16 ees ees8 ees | ees8 r aes,4\laissezVibrer } 
 		 { ees'8 ees16 ees ees8 ees | ees8 r ees-> r } } \bar "|."
@@ -239,7 +243,9 @@ oboeTwo = \relative c'' {
 		    bes4.) aes8 |
 		  }
   \alternative { { g8 r ees4 } { g8 r ees4\p } }
+  
   \key aes \major
+  
   aes2 | aes4( c | aes2) aes2 | g4 g | g4 g | aes2 | aes2 |
   aes4-.( a-. | bes4-. g-.) | aes2 | c4 c | bes2 | bes4 bes | g2~ | g4 g |
   aes2 | aes4 aes | aes2 | aes4 aes | aes4 c | aes4 bes | aes2 | aes2 |
@@ -251,13 +257,13 @@ oboeTwo = \relative c'' {
 		    bes8) ees ees d | ees8 ees16 d ees d ees f | 
 		    g16( f ees8) f d | ees8 r r \times 2/3 { bes16( c d) } |
 		    ees8. bes'16 c8 aes | bes8. g16 c8 aes | g16 f ees f g8 f | ees8 r des4->\ff | 
-		    r8 c16 c c8 c | r8 c r c | r8 c16 c c8 c8 | r8 c r c |
-		    r8 des16 des des8 des | r8 des r des | r8 c16 c c8 c8 | r8 c r c |
-		    r8 des r ees | r8 des r des | r8 c16 c c8 c | r8 c r c |
-		    r8 bes16 bes bes8 bes | r8 bes r bes | r8 bes16 bes bes8 bes | r8 bes r bes |
-		    r8 c16 c c8 c | r8 c r c | r8 c16 c c8 c8 | r8 c r c |
-		    r8 c r c | r8 c r c | \repeat percent 2 { r8 c16 c c8 c | }
-		    r8 c r c | r8 c r c | r8 des16 des des8 des | r8 bes16 bes bes8 bes |
+		    r8 c16 c c8 c | r8 c[ r c] | r8 c16 c c8 c8 | r8 c[ r c] |
+		    r8 des16 des des8 des | r8 des[ r des] | r8 c16 c c8 c8 | r8 c[ r c] |
+		    r8 des[ r ees] | r8 des[ r des] | r8 c16 c c8 c | r8 c[ r c] |
+		    r8 bes16 bes bes8 bes | r8 bes[ r bes] | r8 bes16 bes bes8 bes | r8 bes[ r bes] |
+		    r8 c16 c c8 c | r8 c[ r c] | r8 c16 c c8 c8 | r8 c[ r c] |
+		    r8 c[ r c] | r8 c[ r c] | \repeat percent 2 { r8 c16 c c8 c | }
+		    r8 c[ r c] | r8 c[ r c] | r8 des16 des des8 des | r8 bes16 bes bes8 bes |
 		    r8 c16 c c8 c | r8 des16 des des8 des | }
   \alternative { { r8 c16 c c8 c | c8 r aes4\laissezVibrer } 
 		 { c8 c16 c c8 c | c8 r c-> r } } \bar "|."
@@ -270,19 +276,21 @@ bassoonOne = \relative c' {
   
   \grace { bes16[( c d] } ees8.->)\f bes16 c8 aes | bes8. g16 c8 aes8 | 
   bes4. bes8 | bes8 ees r ees | \bar "||"
-  \repeat percent 4 { r8\ff ees r ees | } ees2 | ees2 | r8 ees r ees | d2 |
-  \repeat percent 4 { r8 ees r ees | } d2 | d2 | \repeat tremolo 4 d8 | d8 r bes4( |
+  \repeat percent 4 { r8\ff ees r ees | } ees2 | ees2 | r8 ees[ r ees] | d2 |
+  \repeat percent 4 { r8 ees[ r ees] | } d2 | d2 | \repeat tremolo 4 d8 | d8 r bes4( |
   bes4)( c | bes4 c | bes4 bes | bes2) | bes4( c | bes4 c) | bes4( bes | bes8) r ees4\mf( |
   \repeat volta 2 { d4.)( d16 ees | f2) | g4.( g16 aes | bes2) |
 		    c,8 bes c4~ | c8 bes16( c d8) c16( d | 
 		    ees8)\> ees16( f g8) g16( f | ees8) bes\! g ees | 
 		    d'4. d16( ees | f2) | g4.( g16 aes | bes2) |
-		    r8 ees, ees ees | r8 e e e | r8 f f f | d8 r d4->(\< |
+		    r8 ees,[ ees ees] | r8 e[ e e] | r8 f[ f f] | d8 r d4->(\< |
 		    bes4)(\!_\markup { \italic "giocoso" } c | bes4 c | bes4 bes | bes2) |
 		    bes4( c | bes4 c | bes4 bes 
 		  }
   \alternative { { bes8) r ees4\laissezVibrer } { bes8 r ees,4 } } \bar "||"
+  
   \key aes \major
+  
   ees'2\p_\markup { \italic "dolce" } | aes,4 c | f2 | c2 |
   \acciaccatura c8 bes8.( a16 bes8. des16 | c4 bes) | aes2( | ees2) |
   f4-.( f-. | f4-. g-. | aes8.)( g16 aes8. bes16 | c2) |
@@ -296,15 +304,15 @@ bassoonOne = \relative c' {
 		    d'8-> d-> r4 | f,8 bes f bes | d8-> d-> r4 | aes8 aes-> bes-> aes-> |
 		    g4 f | ees4 ces | bes8 bes' bes, bes' | ees,8 ees' bes g |
 		    ees8 r r4 | r2 | r4 r8 bes'-> | bes8 r ees4-> |
-		    r8 c16 c c8 c | r8 c r c | r8 c16 c c8 c | r8 c r c |
-		    r8 des16 des des8 des | r8 des r des | r8 c16 c c8 c | r8 c r c |
-		    r8 des r c | r8 des r bes | r8 c16 c c8 c | r8 c r c |
-		    r8 bes16 bes bes8 bes | r8 bes r bes | 
-		    r8 bes16 bes bes8 bes | r8 bes r bes |
-		    r8 c16 c c8 c | r8 c r c | r8 c16 c c8 c | r8 c r c |
-		    \repeat percent 2 { r8 c r c | }
+		    r8 c16 c c8 c | r8 c[ r c] | r8 c16 c c8 c | r8 c[ r c] |
+		    r8 des16 des des8 des | r8 des[ r des] | r8 c16 c c8 c | r8 c[ r c] |
+		    r8 des[ r c] | r8 des[ r bes] | r8 c16 c c8 c | r8 c[ r c] |
+		    r8 bes16 bes bes8 bes | r8 bes[ r bes] | 
+		    r8 bes16 bes bes8 bes | r8 bes[ r bes] |
+		    r8 c16 c c8 c | r8 c[ r c] | r8 c16 c c8 c | r8 c[ r c] |
+		    \repeat percent 2 { r8 c[ r c] | }
 		    \repeat percent 2 { r8 c16 c c8 c | }
-		    r8 c r c | r8 c r c | r8 des16 des des8 des | r8 bes16 bes bes8 bes |
+		    r8 c[ r c] | r8 c[ r c] | r8 des16 des des8 des | r8 bes16 bes bes8 bes |
 		    r8 c16 c c8 c | r8 bes16 bes bes8 bes
 		  }
   \alternative { { r8 c16 c c8 c | c8 r r4 } { c8 c16 c c8 c | c8 r ees-> r } } \bar "|."
@@ -317,19 +325,21 @@ bassoonTwo = \relative c' {
   
   \grace { bes16[( c d] } ees8.->)\f bes16 c8 aes | bes8. g16 c8 aes8 | 
   g4. aes8 | g8 g r g | \bar "||"
-  \repeat percent 4 { r8\ff g r g | } g2 | g2 | r8 g r a | bes2 |
-  \repeat percent 4 { r8 g r g | } g2 | fis2 | \repeat tremolo 4 g8 | aes8 r aes4( |
+  \repeat percent 4 { r8\ff g r g | } g2 | g2 | r8 g[ r a] | bes2 |
+  \repeat percent 4 { r8 g[ r g] | } g2 | fis2 | \repeat tremolo 4 g8 | aes8 r aes4( |
   g4)( aes | g4 aes | g4 aes | g2) | g4( aes | g4 aes) | g4( aes | g8) r ees'4\mf(
   \repeat volta 2 { d4.)( d16 ees | f2) | g4.( g16 aes | bes2) |
 		    c,8 bes c4~ | c8 bes16( c d8) c16( d | 
 		    ees8)\> ees16( f g8) g16( f | ees8) bes\! g ees | 
 		    d'4. d16( ees | f2) | g4.( g16 aes | bes2) |
-		    r8 c, c c | r8 bes bes bes | r8 aes aes aes | bes8 r bes4(\< |
+		    r8 c,[ c c] | r8 bes[ bes bes] | r8 aes[ aes aes] | bes8 r bes4(\< |
 		    g4)(\! aes | g4 aes | g4 aes | g2) |
 		    g4( aes | g4 aes | g4 aes |
 		  }
   \alternative { { g8) r ees'4\laissezVibrer } { g,8 r ees4 } } | \bar "||"
+  
   \key aes \major
+  
   ees'2\p_\markup { \italic "dolce" } | aes,4 c | f2 | c2 |
   \acciaccatura c8 bes8.( a16 bes8. des16 | c4 bes) | aes2( | ees2) |
   des4-.( c-. | des4-. bes-. | aes4) r | aes'2 |
@@ -344,15 +354,15 @@ bassoonTwo = \relative c' {
 		    bes8-> bes-> r4 | aes8 aes-> bes-> aes-> |
 		    g4 f | ees4 ces | bes8 bes' bes, bes' | ees,8 ees' bes g |
 		    ees8 r r4 | r2 | r4 r8 aes-> | g8 r g4-> |
-		    r8 aes16 aes aes8 aes | r8 aes r aes | r8 aes16 aes aes8 aes | r8 aes r aes |
-		    r8 g16 g g8 g | r8 g r g | r8 aes16 aes aes8 aes | r8 aes r aes |
-		    r8 aes r a | r8 bes r g | r8 aes16 aes aes8 aes | r8 aes r aes
-		    r8 aes16 aes aes8 aes | r8 aes r aes | 
-		    r8 g16 g g8 g | r8 g r g |
-		    r8 aes16 aes aes8 aes | r8 aes r aes | r8 aes16 aes aes8 aes | r8 aes r aes |
-		    \repeat percent 2 { r8 aes r bes | }
+		    r8 aes16 aes aes8 aes | r8 aes[ r aes] | r8 aes16 aes aes8 aes | r8 aes[ r aes] |
+		    r8 g16 g g8 g | r8 g[ r g] | r8 aes16 aes aes8 aes | r8 aes[ r aes] |
+		    r8 aes[ r a] | r8 bes[ r g] | r8 aes16 aes aes8 aes | r8 aes[ r aes]
+		    r8 aes16 aes aes8 aes | r8 aes[ r aes] | 
+		    r8 g16 g g8 g | r8 g[ r g] |
+		    r8 aes16 aes aes8 aes | r8 aes[ r aes] | r8 aes16 aes aes8 aes | r8 aes[ r aes] |
+		    \repeat percent 2 { r8 aes[ r bes] | }
 		    \repeat percent 2 { r8 aes16 aes aes8 aes | }
-		    r8 bes r bes | r8 aes r aes | r8 bes16 bes bes8 bes | r8 aes16 aes aes8 aes |
+		    r8 bes[ r bes] | r8 aes[ r aes] | r8 bes16 bes bes8 bes | r8 aes16 aes aes8 aes |
 		    r8 aes16 aes aes8 aes | r8 g16 g g8 g
 		  }
   \alternative { { r8 aes16 aes aes8 aes | aes8 r r4 } 
@@ -388,7 +398,9 @@ clarinetInEb = \relative c''' {
 		    c8. g16 a8 f | g8. e16 a8 f | e16 d c d e8 d | 
 		  }
   \alternative { { c8 r c4->\laissezVibrer } { c8 r c4 } } | \bar "||"
+  
   \key f \major
+  
   c'2\p_\markup {\italic "dolce"} | f,4( a) | d2 | a2
   \acciaccatura a8 g8.( fis16 g8. bes16 | a4 g) | f2( | c2) |
   d4-.( d-. | d4-. e-.) | \acciaccatura g8 f8.( e16 f8. g16 | a2) |
@@ -449,7 +461,9 @@ clarinetInBbSOne = \relative c''' {
 		    f8. c16 d8 bes | c8. a16 d8 bes | a16 g f g a8 g | 
 		  }
   \alternative { { f8 r f4->\laissezVibrer } { f8 r f,4(\p } } | \bar "||"
+  
   \key bes \major
+  
   f'2)_\markup {\italic "dolce"} | bes,4 d | g2 | d2
   \acciaccatura d8 c8.( b16 c8. ees16 | d4 c) | bes2 | f2 |
   g4-.( g-. | g4-. a-.) | \acciaccatura c8 bes8. a16 bes8. c16 | d2 |
@@ -500,17 +514,19 @@ clarinetInBbTwo = \relative c'' {
 		    f8) f16( g a8) a16( g\> | f8) c a f\! |
 		    e8 g e4~ | e8 e16( f g8) f16( g |
 		    a8) c a4~ | a8 a16( bes c8) b16( c) | 
-		    r8 f f f | r8\< fis fis fis\! |
-		    r8 g g g | g8 r g4-> |
+		    r8 f[ f f] | r8\< fis[ fis fis]\! |
+		    r8 g[ g g] | g8 r g4-> |
 		    f8.-^_\markup {\italic "giocoso"} c16 d8 bes | c8.-> a16 d8 bes |
 		    a16 g f g a8 g | f8 g a c |
 		    f8. c16 d8 bes | c8. a16 d8 bes | a16 g f g a8 g | 
 		  }
   \alternative { { f8 r f4->\laissezVibrer } { f8 r f4( } } | \bar "||"
+  
   \key bes \major
-  f'2\p) | bes,4( d) | d2 | r8 bes bes bes |
-  r8 a16 a a8 a | r8 a r a | \repeat percent 2 {r8 bes16 bes bes8 bes | }
-  r8 g r g | r8 g r a | r8 f16 f f8 f8 | d'2 | e2 | e2 | f2~ | f4 f,4 |
+  
+  f'2\p) | bes,4( d) | d2 | r8 bes[ bes bes] |
+  r8 a16 a a8 a | r8 a[ r a] | \repeat percent 2 {r8 bes16 bes bes8 bes | }
+  r8 g[ r g] | r8 g[ r a] | r8 f16 f f8 f8 | d'2 | e2 | e2 | f2~ | f4 f,4 |
   f'2( | bes,4 d | d2) | bes2( | 
   bes4 fis | g4 fis | g2) | d2
   a'4( bes8. a16) | bes4( a8. bes16) | ees2 | c2 |
@@ -562,17 +578,19 @@ clarinetInBbThree = \relative c'' {
 		    f8) f16( g a8) a16( g\> | f8) c a f\! |
 		    e8 g e4~ | e8 e16( f g8) f16( g |
 		    a8) c a4~ | a8 a16( bes c8) b16( c) | 
-		    r8 d d d | r8\< d d d\! |
-		    r8 d d d | e8 r e4-> |
+		    r8 d[ d d] | r8\< d[ d d]\! |
+		    r8 d[ d d] | e8 r e4-> |
 		    f8.-^_\markup {\italic "giocoso"} c16 d8 bes | c8.-> a16 d8 bes |
 		    a16 g f g a8 g | f8 g a c |
 		    f8. c16 d8 bes | c8. a16 d8 bes | a16 g f g a8 g | 
 		  }
   \alternative { { f8 r f4->\laissezVibrer } { f8 r f4( } } | \bar "||"
+  
   \key bes \major
-  f'2\p) | bes,4( d) | bes2 | r8 d, d d |
-  r8 ees16 ees ees8 ees | r8 ees r ees | \repeat percent 2 {r8 d16 d d8 d | }
-  r8 ees r f | r8 ees r ees | r8 d16 d d8 d8 | d'2 | bes2 | bes2 | a2~ | a4 f4 |
+  
+  f'2\p) | bes,4( d) | bes2 | r8 d,[ d d] |
+  r8 ees16 ees ees8 ees | r8 ees[ r ees] | \repeat percent 2 {r8 d16 d d8 d | }
+  r8 ees[ r f] | r8 ees[ r ees] | r8 d16 d d8 d8 | d'2 | bes2 | bes2 | a2~ | a4 f4 |
   f'2( | bes,4 d | bes2) | bes2( | 
   bes4 fis | g4 fis | g2) | d2
   a'4( bes8. a16) | bes4( a8. bes16) | c2 | bes2 |
@@ -611,13 +629,13 @@ altoClarinetInEb = \relative c''' {
 
   \grace { g16[( a b] } c8.->) g16 a8 f | g8.-> e16 a8 f8 | 
   e16 d c d e8 d | c8 e, r e\f | \bar "||"
-  \repeat percent 3 { r8 g r g | } r8 c,16( e g8 c) |
-  \repeat percent 2 { r8 c,16( e a8 c) | } r8 e, r fis | g8( b16 d g8) r |
-  \repeat percent 3 { r8 g, r g | } r8 c,16( e g8 c) |
+  \repeat percent 3 { r8 g[ r g] | } r8 c,16( e g8 c) |
+  \repeat percent 2 { r8 c,16( e a8 c) | } r8 e,[ r fis] | g8( b16 d g8) r |
+  \repeat percent 3 { r8 g,[ r g] | } r8 c,16( e g8 c) |
   r8 e,16( g b8 e) | r8 fis,16( a b8 dis) | e2( | f8) r b,4( |
   c4) r8 a( | c4) r8 a( | g4 f) | e8( d c g') |
-  \repeat percent 2 { r8 c r c | }
-  r8 c r b | c8 r c4(\mf |
+  \repeat percent 2 { r8 c[ r c] | }
+  r8 c[ r b] | c8 r c4(\mf |
   \repeat volta 2 { b4.) b16( c | d2) | e4. e16( f | g2) |
 		    a,8( g a4)~ | a8 g16\<( a b8) a16( b\! | 
 		    c8) c16( d e8) e16( d\> | c8 g e\! c) |
@@ -627,7 +645,9 @@ altoClarinetInEb = \relative c''' {
 		    c8.( g16 a8 f) | g8.->( e16 a8 f) | e16( d c d) e8-. d-. |
 		  }
   \alternative { { c8-. r c4->} { c8-. r c4\p( } } | \bar "||"
+  
   \key f \major
+  
   c2\p | f,4 a | d2 | a2)
   \acciaccatura a8 g8.( fis16 g8. bes16 | a4 g | f2 | c2) |
   d4-.( d-. | d4-. e-.) | \acciaccatura g8 f8.( e16 f8. g16 | a2) |
@@ -677,7 +697,9 @@ bassClarinet = \relative c'' {
 		    f8 c' d bes | f8 c' d bes | a8 c4->( bes8 |
 		  }
   \alternative { { a8) r f'4->\laissezVibrer } { a,8 r f4(\p } } | \bar "||"
+  
   \key bes \major
+  
   f'2)( | bes,4 d | g2 | d2)
   \acciaccatura d8 c8.( b16 c8. ees16 | d4 c | bes2 | f2) |
   bes4\<( b | c4\! ees | d2 | bes2) |
@@ -741,7 +763,9 @@ sopranoSax = \relative c'' {
 		    f8. c16 d8 bes | c8. a16 d8 bes | a16 g f g a8 g | 
 		  }
   \alternative { { f8 r f4\laissezVibrer } { f8 r f4( } } | \bar "||"
+  
   \key bes \major
+  
   f'2\p)(_\markup {\italic "dolce"} | bes,4 d | g2)( | d2)
   \acciaccatura d8 c8.( b16 c8. ees16 | d4 c) | bes2( | f2) |
   g4-.( g-. | g4-. a-.) | \acciaccatura c8 bes8.( a16 bes8. c16 | d2) |
@@ -923,7 +947,7 @@ cornetInEb = \relative c'' {
   e16 d c d e8 d | c8 r r4 | \bar "||"
   c8\f d e g | c8.->( b16 c8) a | g8.( fis16 g8) e | g8 g16-> g-> g8-> r |
   r8 a16-> a-> a8-> r | r8 a16-> a16-> a8-> r |
-  r8 c c c | b4. r8 |
+  r8 c[ c c] | b4. r8 |
   c,8 d e g | c8.->( b16 c8) a | g8.->( fis16 g8) e | g8 g16-> g-> g8-> r |
   r8 b16-> b-> b8-> r | r8 b16-> b-> b8-> r |
   r8 e\< e e | f8\! r b,4->( | c8.->)( g16 a8-. f-.) | g8.->( e16 a8-. f-.) |
@@ -944,6 +968,7 @@ cornetInEb = \relative c'' {
   \alternative { { c,8 r c'4 } { c,8 r c4\p } } | \bar "||"
 
   \key f \major
+  
   c'2(_\markup {\italic "dolce"} | f,4 a | d2 | a2)
   \acciaccatura a8 g8.( fis16 g8. bes16 | a4 g | f2 | c2) |
   d4-.( d-. | d4-. e-.) | \acciaccatura g8 f8.( e16 f8. g16 | a2) |
@@ -1002,6 +1027,7 @@ cornetInBbSolo = \relative c'' {
   \alternative { { f8 r f4->\laissezVibrer } { f8 r f4(\p } } | \bar "||"
 
   \key bes \major
+  
   f'2)_\markup {\italic "dolce"} | bes,4( d | g2)( | d2) |
   \acciaccatura d8 c8.( b16 c8. ees16 | d4 c) | bes2( | f2) |
   g4-.( g-. | g4-. a-.) | \acciaccatura c8 bes8.( a16 bes8. c16 | d2) |
@@ -1061,6 +1087,7 @@ cornetInBbOne = \relative c'' {
   \alternative { { f8 r f4\laissezVibrer } { f8 r f4(\p } } | \bar "||"
 
   \key bes \major
+  
   f'2)_\markup {\italic "dolce"} | f,4 f | g2( | f2) |
   f4 f | f4 f | d2~ | d2 |
   ees4 f | ees4 ees | d4 f | f2 | 
@@ -1099,45 +1126,46 @@ cornetInBbTwo = \relative c'' {
   \grace { c16[\ff( d e] } f8.)-> c16 d8 bes | c8.-> a16 d8 bes8 | 
   a16 g f g a8 bes | a8 a r a | \bar "||"
   \repeat percent 3 { a8->\f a r a | } 
-  \repeat percent 3 { r8 a16 a a8 a | } r8 a r b | r8 c16 c c8\< c
+  \repeat percent 3 { r8 a16 a a8 a | } r8 a[ r b] | r8 c16 c c8\< c
   \repeat percent 3 { a8->\f a r a | }  r8 a16 a a8 a | 
   r8 c16 c c8 c | r8 b16 b b8 b | c8->\< c-> c-> c-> | c8\! r c4~ | 
-  \repeat percent 2 { c8. c16 d8 d | } r8 c r c | c2 |
+  \repeat percent 2 { c8. c16 d8 d | } r8 c[ r c] | c2 |
   \repeat percent 2 { c8. c16 d8 d | } r8\< c r c | c8\> r r4\!
   \repeat volta 2 {
-    \repeat percent 2 { r8 bes\mf r bes | } \repeat percent 2 { r8 a r a | }
-    \repeat percent 2 { r8 bes r bes | }  r8 a r a a2:8 |
-    \repeat percent 2 { r8 bes\mf r bes | } \repeat percent 2 { r8 a r a | }
+    \repeat percent 2 { r8 bes\mf r bes | } \repeat percent 2 { r8 a[ r a] | }
+    \repeat percent 2 { r8 bes[ r bes] | }  r8 a[ r a] a2:8 |
+    \repeat percent 2 { r8 bes\mf r bes | } \repeat percent 2 { r8 a[ r a] | }
     bes2:8\< | c2:8 | bes2:8 | bes8\! r c4~\< |
     \repeat percent 2 { c8.\!_\markup { \italic "giocoso" } c16 d8 d | }
-    r8 c r c | c2 |
-    \repeat percent 2 { c8. c16 d8 d | } r8 c r c | 
+    r8 c[ r c] | c2 |
+    \repeat percent 2 { c8. c16 d8 d | } r8 c[ r c] | 
   }
   \alternative { { c8 r r4 | } { c8 r r4 | } } 
 
   \key bes \major
-  r8 f,16\p f f8 f | r8 f r f | r8 bes16 bes bes8 bes | r8 bes r bes |
-  r8 a16 a a8 a | r8 a r a | r8 bes16 bes bes8 bes | r8 f r f |
-  r8 g r g | r8 g r a | r8 f16 f f8 f | r8 f r f |
-  r8 bes16 bes bes8 bes | r8 bes r bes | \repeat percent 2 { r8 a r a | } 
-  r8 f16 f f8 f | r8 f r f | r8 bes16 bes bes8 bes | r8 bes r bes |
-  r8 bes r c | r8 bes r a | r8 bes16 bes bes8 bes | r8 bes r bes |
-  r8 fis r fis | r8\< g r g\! | r8 c16 c c8 c | r8 bes16 bes bes8 bes |
+  
+  r8 f,16\p f f8 f | r8 f[ r f] | r8 bes16 bes bes8 bes | r8 bes[ r bes] |
+  r8 a16 a a8 a | r8 a[ r a] | r8 bes16 bes bes8 bes | r8 f[ r f] |
+  r8 g[ r g] | r8 g[ r a] | r8 f16 f f8 f | r8 f[ r f] |
+  r8 bes16 bes bes8 bes | r8 bes[ r bes] | \repeat percent 2 { r8 a[ r a] | } 
+  r8 f16 f f8 f | r8 f[ r f] | r8 bes16 bes bes8 bes | r8 bes[ r bes] |
+  r8 bes[ r c] | r8 bes[ r a] | r8 bes16 bes bes8 bes | r8 bes[ r bes] |
+  r8 fis[ r fis] | r8\< g r g\! | r8 c16 c c8 c | r8 bes16 bes bes8 bes |
   r8 bes16 bes bes8 bes | r8 a16 a a8 a | bes8 bes16 bes bes8 bes | bes8 r bes4\f(
   \repeat volta 2 { 
     a8->) a-> r4 | a8-> d-> a-> d-> | a8-> a-> r4 | a2 |
-    r8 d r d | r8 d cis4-> | d8 d d4 | d8 r r4 |
+    r8 d[ r d] | r8 d cis4-> | d8 d d4 | d8 r r4 |
     g,8 g r4 | g8 c g c | g8 g r4 | g2 |
-    r8 c r c | r8 c b4-> | c8 c c4 | c8 r r4 | 
+    r8 c[ r c] | r8 c b4-> | c8 c c4 | c8 r r4 | 
     c8 r r4 | R2 | r4 r8 g\f | a8 r a4\ff |
-    r8 f16 f f8 f | r8 f r f | r8 bes16 bes bes8 bes | r8 bes r bes |
-    r8 a16 a a8 a | r8 a r a | r8 bes16 bes bes8 bes | r8 f r f |
-    r8 g r g | r8 g r a | r8 f16 f f8 f | r8 f r f |
-    r8 bes16 bes bes8 bes | r8 bes r8 bes |
-    \repeat percent 2 { r8 a r a | }
-    r8 f16 f f8 f | r8 f r f | r8 bes16 bes bes8 bes | r8 bes r bes |
-    r8 bes r c | r8 bes r a | r8 bes16 bes bes8 bes | r8 bes r bes |
-    r8 fis r fis | r8 g r g | r8 c16 c c8 c | r8 bes16 bes bes8 bes |
+    r8 f16 f f8 f | r8 f[ r f] | r8 bes16 bes bes8 bes | r8 bes[ r bes] |
+    r8 a16 a a8 a | r8 a[ r a] | r8 bes16 bes bes8 bes | r8 f[ r f] |
+    r8 g[ r g] | r8 g[ r a] | r8 f16 f f8 f | r8 f[ r f] |
+    r8 bes16 bes bes8 bes | r8 bes[ r bes] |
+    \repeat percent 2 { r8 a[ r a] | }
+    r8 f16 f f8 f | r8 f[ r f] | r8 bes16 bes bes8 bes | r8 bes[ r bes] |
+    r8 bes[ r c] | r8 bes[ r a] | r8 bes16 bes bes8 bes | r8 bes[ r bes] |
+    r8 fis[ r fis] | r8 g[ r g] | r8 c16 c c8 c | r8 bes16 bes bes8 bes |
     r8 bes16 bes bes8 bes | r8 a16 a a8 a |
   }
   \alternative { { bes8 bes16 bes bes8 bes | bes8 r bes4 \laissezVibrer } { } } \bar "|."
@@ -1163,134 +1191,220 @@ cornetInBbThree = \relative c'' {
   \alternative { { } { } } \bar "|."
 }
 
-hornOneTwoInEb = \relative c'' {
+hornOneInEb = \relative c'' {
   \clef treble
   \key c \major
   \transposition ees
   \time 2/4
 
   c8.->\ff g16 a8 f | g8.-> e16 a8 f8 | 
-  <g e'>4. <g d'>8 | <e c'>8 q r q\f | \bar "||"
-  \repeat percent 3 { r8 <e c'> r q | }
-  \repeat percent 3 { r8 <e c'>16 q q8 q | }
-  r8 <e c'>8 r <fis d'> | r8 <g d'>16 q q8 <f b> |
-  \repeat percent 3 { r8 <e c'> r q | }
-  r8 <e c'>16 q q8 q | r8 <g e'>16 q q8 q | 
-  r8 <a dis>16 q q8 q | r8 <g e'> r q | <g f'>8 r <f b>4 |
-  \repeat percent 2 { r8 <e c'> r <f c'> | } 
-  r8 <e c'> r <f b> | r8 <e c'> r q |
-  \repeat percent 2 { r8 <e c'> r <f c'> | }
-  r8 <e c'> r <f b> | <e c'>8 r r4 |
+  e'4. d8 | c8 c r c\f | \bar "||"
+  \repeat percent 3 { r8 c[ r c] | }
+  \repeat percent 3 { r8 c16 c c8 c | }
+  r8 c8 r d | r8 d16 d d8 b |
+  \repeat percent 3 { r8 c[ r c] | } r8 c16 c c8 c | 
+  r8 e16 e e8 e | r8 dis16 dis dis8 dis | r8 e[ r e] | f8 r b,4 |
+  \repeat percent 2 { r8 c[ r c] | } r8 c[ r b] | r8 c[ r c] |
+  \repeat percent 2 { r8 c[ r c] | } r8 c[ r b] | c8 r r4 |
   \repeat volta 2 { 
-    \repeat percent 2 { r8\mf <g d'> r q | }
-    \repeat percent 2 { r8 <g c> r q | }
-    \repeat percent 2 { r8\< <g d'> r q | }
-    \repeat percent 2 { r8\> <g c> r q | }
-    \repeat percent 2 { r8\! <g d'> r q | }
-    \repeat percent 2 { r8 <g c> r q | }
-    r8\< <a c>4.:8 | r8 <a cis>4.:8\! |
-    r8 <a d>4.:8 | <g d'>8 r q4-> |
-    \repeat percent 2 { r8 <e c'> r <f c'> | }
-    r8 <e c'> r <f b> | r8 <e c'> r q |
-    \repeat percent 2 { r8 <e c'> r <f c'> | }
-    r8 <e c'> r <f b> | 
+    \repeat percent 2 { r8\mf d r d | } \repeat percent 2 { r8 c[ r c] | }
+    \repeat percent 2 { r8\< d r d | } \repeat percent 2 { r8\> c r c | }
+    \repeat percent 2 { r8\! d r d | } \repeat percent 2 { r8 c[ r c] | }
+    r8\< c4.:8 | r8 cis4.:8\! | r8 d4.:8 | d8 r d4-> |
+    \repeat percent 2 { r8 c[ r c] | } r8 c[ r b] | r8 c[ r c] |
+    \repeat percent 2 { r8 c[ r c] | } r8 c[ r b] | 
   }
-  \alternative { { <e c'>8 r r4 } { <e c'>8 r r4 } } | \bar "||"
+  \alternative { { c8 r r4 } { c8 r r4 } } | \bar "||"
   
   \key f \major
 
-  r8\p <f c'>16 q q8 q | r8 q r q | r8 q16 q q8 q | r8 q r q |
-  r8 <e c'>16 q q8 q | r8 q r q | r8 <f c'>16 q q8 q | r8 q r q |
-  r8 <f d'>8 r <fis d'> | r8 <g d'> r <e c'> | r8 <f c'>16 q q8 q | r8 q r q | 
-  r8 <f b>16 q q8 q | r8 <g d'> r q | r8 <e c'> r q | r8 <g c> r q |
-  r8 <f c'>16 q q8 q | r8 q r q | r8 q16 q q8 q | r8 q r q |
-  r8 <f c'> r <g cis> | r8 <a d> r <g cis> | r8 <f d'>16 q q8 q | r8 q r q |
-  r8 <g cis> r q | r8 <f d'> r q | 
-  \repeat percent 2 { r8 <g d'>16 q q8 q | }
-  r8 <f c'>16 q q8 q | r8 <e c'>16 q q8 q | <f c'>8 q16 q q8 q | q8 r r4 |
+  r8\p c16 c c8 c | r8 c[ r c] | r8 c16 c c8 c | r8 c[ r c] |
+  r8 c16 c c8 c | r8 c[ r c] | r8 c16 c c8 c | r8 c[ r c] |
+  r8 d8 r d | r8 d[ r c] | r8 c16 c c8 c | r8 c[ r c] | 
+  r8 b16 b b8 b | r8 d[ r d] | r8 c[ r c] | r8 c[ r c] |
+  r8 c16 c c8 c | r8 c[ r c] | r8 c16 c c8 c | r8 c[ r c] |
+  r8 c[ r cis] | r8 d[ r cis] | r8 d16 d d8 d | r8 d[ r d] |
+  r8 cis[ r cis] | r8 d[ r d] | \repeat percent 2 { r8 d16 d d8 d | }
+  r8 c16 c c8 c | r8 c16 c c8 c | c8 c16 c c8 c | c8 r r4 |
   \repeat volta 2 { 
-    <a e'>8->\f q-> r4 | R2 | q8-> q-> r4 | <d e>2\ff |
-    r8 <d f> r <a cis> | r8 d d4->~ | d8 d cis4( | d8) r r4 |
-    <g, d'>8-> q-> r4 | R2 | q8-> q r4 | <c d>2 |
-    r8 <c e> r <g b> | r8 c c4->~ | c8 c <g b>4( | <g c>8) r r4 |
-    <g c>8 r r4 | R2 | r4 r8 <g d'>\f | <g c>4 <bes c>->\ff |
-    r8 <f c'>16 q q8 q | r8 q r q | r8 q16 q q8 q | r8 q r q |
-    r8 <e c'>16 q q8 q | r8 q r q | r8 <f c'>16 q q8 q | r8 q r q |
-    r8 <f d'>8 r <fis d'> | r8 <g d'> r <e c'> | r8 <f c'>16 q q8 q | r8 q r q | 
-    r8 <f b>16 q q8 q | r8 <g d'> r q | r8 <g c> r q | r8 <bes c> r q |
-    r8 <f c'>16 q q8 q | r8 q r q | r8 q16 q q8 q | r8 q r q |
-    r8 <f c'> r8 <g c> | r8 <a d> r8 <g cis> | r8 <f d'>16 q q8 q | r8 q r q |
-    r8 <g cis> r q | r8 <f d'> r q | r8 <g d'>16 q q8 q | r8 q16 q q8 q |
-    r8 <f c'>16 q q8 q | r8 <e c'>16 q q8 q |
+    e8->\f e-> r4 | R2 | e8-> e-> r4 | e2\ff |
+    r8 f[ r cis] | r8 d d4->~ | d8 d cis4( | d8) r r4 |
+    d8-> d-> r4 | R2 | d8-> d r4 | d2 |
+    r8 e[ r b] | r8 c c4->~ | c8 c b4( | c8) r r4 |
+    c8 r r4 | R2 | r4 r8 d\f | c4 c->\ff |
+    r8 c16 c c8 c | r8 c[ r c] | r8 c16 c c8 c | r8 c[ r c] |
+    r8 c16 c c8 c | r8 c[ r c] | r8 c16 c c8 c | r8 c[ r c] |
+    r8 d8 r d | r8 d[ r c] | r8 c16 c c8 c | r8 c[ r c] | 
+    r8 b16 b b8 b | r8 d[ r d] | r8 c[ r c] | r8 c[ r c] |
+    r8 c16 c c8 c | r8 c[ r c] | r8 c16 c c8 c | r8 c[ r c] |
+    r8 c[ r c] | r8 d[ r cis] | r8 d16 d d8 d | r8 c[ r c] |
+    r8 cis[ r cis] | r8 d[ r d] | r8 d16 d d8 d | r8 d16 d d8 d |
+    r8 c16 c c8 c | r8 c16 c c8 c |
   }
-  \alternative { { <f c'>8 q16 q q8 q | q8 r r4 | } 
-		 { <f c'>8 q16 q q8 q | q8 r q8-> r | } } \bar "|."
+  \alternative { { c8 c16 c c8 c | c8 r r4 | } 
+		 { c8 c16 c c8 c | c8 r c8-> r | } } \bar "|."
 }
 
-hornThreeFourInEb = \relative c'' {
+hornTwoInEb = \relative c'' {
   \clef treble
   \key c \major
   \transposition ees
   \time 2/4
 
   c8.->\ff g16 a8 f | g8.-> e16 a8 f8 | 
-  <e c'>4. <f b>8 | g8 g r g\f | \bar "||"
-  \repeat percent 3 { r8 <c, g'> r q | } r8 <c g'>16 q q8 q |
-  \repeat percent 2 { r8 <e a>16 q q8 q | }
-  r8 <e a>8 r <d c'> | r8 <d b'>16 q q8 <d g> |
-  \repeat percent 3 { r8 <c g'> r q | }
-  r8 <c g'>16 q q8 q | r8 <e b'>16 q q8 q | 
-  r8 <fis b>16 q q8 q | r8 <e b'> r q | <d b'>8 r <d g>4( |
-  \repeat percent 2 { r8 <c g'>) r <c a'> | } 
-  r8 <c g'> r <d g> | r8 <c g'> r q |
-  \repeat percent 2 { r8 <c g'> r <c a'> | }
-  r8 <c g'> r <d g> | <c g'>8 r r4 |
+  g4. g8 | e8 e r e\f | \bar "||"
+  \repeat percent 3 { r8 e[ r e] | }
+  \repeat percent 3 { r8 e16 e e8 e | }
+  r8 e8 r fis | r8 g16 g g8 f |
+  \repeat percent 3 { r8 e[ r e] | } r8 e16 e e8 e | 
+  r8 g16 g g8 g | r8 a16 a a8 a | r8 g[ r g] | g8 r f4 |
+  \repeat percent 2 { r8 e[ r f] | } r8 e[ r f] | r8 e[ r e] |
+  \repeat percent 2 { r8 e[ r f] | } r8 e[ r f] | e8 r r4 |
   \repeat volta 2 { 
-    \repeat percent 2 { r8\mf <g d'> r q | }
-    \repeat percent 2 { r8 <g c> r q | }
-    \repeat percent 2 { r8\< <g d'> r q | }
-    \repeat percent 2 { r8\> <g c> r q | }
-    \repeat percent 2 { r8\! <g d'> r q | }
-    \repeat percent 2 { r8 <g c> r q | }
-    r8\< <a c>4.:8 | r8 <a cis>4.:8\! |
-    r8 <a d>4.:8 | <g d'>8 r q4-> |
-    \repeat percent 2 { r8 <e c'> r <f c'> | }
-    r8 <e c'> r <f b> | r8 <e c'> r q |
-    \repeat percent 2 { r8 <e c'> r <f c'> | }
-    r8 <e c'> r <f b> | 
+    \repeat percent 2 { r8\mf g r g | } \repeat percent 2 { r8 g[ r g] | }
+    \repeat percent 2 { r8\< g r g | } \repeat percent 2 { r8\> g r g | }
+    \repeat percent 2 { r8\! g r g | } \repeat percent 2 { r8 g[ r g] | }
+    r8\< a4.:8 | r8 a4.:8\! | r8 a4.:8 | g8 r g4-> |
+    \repeat percent 2 { r8 e[ r f] | } r8 e[ r f] | r8 e[ r e] |
+    \repeat percent 2 { r8 e[ r f] | } r8 e[ r f] | 
   }
-  \alternative { { <e c'>8 r r4 } { <e c'>8 r r4 } } | \bar "||"
+  \alternative { { e8 r r4 } { e8 r r4 } } | \bar "||"
   
   \key f \major
 
-  r8\p <f c'>16 q q8 q | r8 q r q | r8 q16 q q8 q | r8 q r q |
-  r8 <e c'>16 q q8 q | r8 q r q | r8 <f c'>16 q q8 q | r8 q r q |
-  r8 <f d'>8 r <fis d'> | r8 <g d'> r <e c'> | r8 <f c'>16 q q8 q | r8 q r q | 
-  r8 <f b>16 q q8 q | r8 <g d'> r q | r8 <e c'> r q | r8 <g c> r q |
-  r8 <f c'>16 q q8 q | r8 q r q | r8 q16 q q8 q | r8 q r q |
-  r8 <f c'> r <g cis> | r8 <a d> r <g cis> | r8 <f d'>16 q q8 q | r8 q r q |
-  r8 <g cis> r q | r8 <f d'> r q | 
-  \repeat percent 2 { r8 <g d'>16 q q8 q | }
-  r8 <f c'>16 q q8 q | r8 <e c'>16 q q8 q | <f c'>8 q16 q q8 q | q8 r r4 |
+  r8\p f16 f f8 f | r8 f[ r f] | r8 f16 f f8 f | r8 f[ r f] |
+  r8 e16 e e8 e | r8 e[ r e] | r8 f16 f f8 f | r8 f[ r f] |
+  r8 f8 r fis | r8 g[ r e] | r8 f16 f f8 f | r8 f[ r f] | 
+  r8 f16 f f8 f | r8 g[ r g] | r8 e[ r e] | r8 g[ r g] |
+  r8 f16 f f8 f | r8 f[ r f] | r8 f16 f f8 f | r8 f[ r f] |
+  r8 f[ r g] | r8 a[ r g] | r8 f16 f f8 f | r8 f[ r f] |
+  r8 g[ r g] | r8 f[ r f] | \repeat percent 2 { r8 g16 g g8 g | }
+  r8 f16 f f8 f | r8 e16 e e8 e | f8 f16 f f8 f | f8 r r4 |
   \repeat volta 2 { 
-    <a e'>8->\f q-> r4 | R2 | q8-> q-> r4 | <d e>2\ff |
-    r8 <d f> r <a cis> | r8 d d4->~ | d8 d cis4( | d8) r r4 |
-    <g, d'>8-> q-> r4 | R2 | q8-> q r4 | <c d>2 |
-    r8 <c e> r <g b> | r8 c c4->~ | c8 c <g b>4( | <g c>8) r r4 |
-    <g c>8 r r4 | R2 | r4 r8 <g d'>\f | <g c>4 <bes c>->\ff |
-    r8 <f c'>16 q q8 q | r8 q r q | r8 q16 q q8 q | r8 q r q |
-    r8 <e c'>16 q q8 q | r8 q r q | r8 <f c'>16 q q8 q | r8 q r q |
-    r8 <f d'>8 r <fis d'> | r8 <g d'> r <e c'> | r8 <f c'>16 q q8 q | r8 q r q | 
-    r8 <f b>16 q q8 q | r8 <g d'> r q | r8 <g c> r q | r8 <bes c> r q |
-    r8 <f c'>16 q q8 q | r8 q r q | r8 q16 q q8 q | r8 q r q |
-    r8 <f c'> r8 <g c> | r8 <a d> r8 <g cis> | r8 <f d'>16 q q8 q | r8 q r q |
-    r8 <g cis> r q | r8 <f d'> r q | r8 <g d'>16 q q8 q | r8 q16 q q8 q |
-    r8 <f c'>16 q q8 q | r8 <e c'>16 q q8 q |
+    a8->\f a-> r4 | R2 | a8-> a-> r4 | d2\ff |
+    r8 d[ r a] | r8 d d4->~ | d8 d cis4( | d8) r r4 |
+    g,8-> g-> r4 | R2 | g8-> g r4 | c2 |
+    r8 c[ r g] | r8 c c4->~ | c8 c g4( | g8) r r4 |
+    g8 r r4 | R2 | r4 r8 g\f | g4 bes->\ff |
+    r8 f16 f f8 f | r8 f[ r f] | r8 f16 f f8 f | r8 f[ r f] |
+    r8 e16 e e8 e | r8 e[ r e] | r8 f16 f f8 f | r8 f[ r f] |
+    r8 f8 r fis | r8 g[ r e] | r8 f16 f f8 f | r8 f[ r f] | 
+    r8 f16 f f8 f | r8 g[ r g] | r8 g[ r g] | r8 bes[ r bes] |
+    r8 f16 f f8 f | r8 f[ r f] | r8 f16 f f8 f | r8 f[ r f] |
+    r8 f[ r g] | r8 a[ r g] | r8 f16 f f8 f | r8 f[ r f] |
+    r8 g[ r g] | r8 f[ r f] | r8 g16 g g8 g | r8 g16 g g8 g |
+    r8 f16 f f8 f | r8 e16 e e8 e |
   }
-  \alternative { { <f c'>8 q16 q q8 q | q8 r r4 | } 
-		 { <f c'>8 q16 q q8 q | q8 r q8-> r | } } \bar "|."
+  \alternative { { f8 f16 f f8 f | f8 r r4 | } 
+		 { f8 f16 f f8 f | f8 r f8-> r | } } \bar "|."
 }
 
+hornThreeInEb = \relative c'' {
+  \clef treble
+  \key c \major
+  \transposition ees
+  \time 2/4
+
+  c8.->\ff g16 a8 f | g8.-> e16 a8 f8 | 
+  c'4. b8 | g8 g r g\f | \bar "||"
+  \repeat percent 3 { r8 g[ r g] | } r8 g16 g g8 g |
+  \repeat percent 2 { r8 a16 a a8 a | }
+  r8 a8 r c | r8 b16 b b8 g |
+  \repeat percent 3 { r8 g[ r g] | } r8 g16 g g8 g | 
+  r8 b16 b b8 b | r8 b16 b b8 b | r8 b[ r b] | b8 r g4 |
+  \repeat percent 2 { r8 g[ r a] | } r8 g[ r g] | r8 g[ r g] |
+  \repeat percent 2 { r8 g[ r a] | } r8 g[ r g] | g8 r r4 |
+  \repeat volta 2 { 
+    \repeat percent 2 { r8 b[ r b] | } \repeat percent 2 { r8 c[ r c] | }
+    \repeat percent 2 { r8\< b[ r b] | } \repeat percent 2 { r8\> c[ r c] | }
+    \repeat percent 2 { r8\! b[ r b] | } \repeat percent 2 { r8 c[ r c] | }
+    r8\< f,[ f f] | r8\! g[ g g] | r8 f[ f f] | b8 r b4 |
+    \repeat percent 2 { r8 g[ r a] | } r8 g[ r g] | r8 g[ r g] |
+    \repeat percent 2 { r8 g[ r a] | } r8 g[ r g] | 
+  }
+  \alternative { { g8 r r4 } { g8 r r4 } } | \bar "||"
+  
+  \key f \major
+
+  r8\p a16 a a8 a | r8 a[ r a] | r8 a16 a a8 a | r8 a[ r a] |
+  r8 bes16 bes bes8 bes | r8 bes[ r bes] | r8 a16 a a8 a | r8 a[ r a] |
+  r8 bes[ r c] | r8 bes[ r bes] | r8 a16 a a8 a | r8 a[ r a] | 
+  r8 g16 g g8 g | r8 b[ r b] | r8 c[ r c] | r8 bes[ r bes] |
+  r8 a16 a a8 a | r8 a[ r a] | r8 a16 a a8 a | r8 a[ r a] |
+  r8 a[ r a] | r8 f[ r a] | r8 a16 a a8 a | r8 a[ r a] |
+  r8 a[ r a] | r8 a[ r a] | r8 bes16 bes bes8 bes | r8 f16 f f8 f |
+  r8 a16 a a8 a | r8 bes16 bes bes8 bes | a8 a16 a a8 a | a8 r r4 |
+  \repeat volta 2 { 
+    cis8->\ff cis-> r4 | R2 | cis8-> cis-> r4 | bes2\ff |
+    r8 a[ r a] | r8 a gis4->( | a8) a a4( | a8) r r4 |
+    b8-> b-> r4 | R2 | b8-> b r4 | aes2 |
+    r8 g[ r g] | r8 g fis4->( | g8) g f4( | e8) r r4 |
+    e8 r r4 | R2 | r4 r8 b'\f | c8 r bes4->\ff |
+    r8 a16 a a8 a | r8 a[ r a] | r8 a16 a a8 a | r8 a[ r a] |
+    r8 bes16 bes bes8 bes | r8 bes[ r bes] | r8 a16 a a8 a | r8 a[ r a] |
+    r8 bes8 r c | r8 bes[ r bes] | r8 a16 a a8 a | r8 a[ r a] | 
+    r8 g16 g g8 g | r8 b[ r b] | r8 c[ r c] | r8 g[ r g] |
+    r8 a16 a a8 a | r8 a[ r a] | r8 a16 a a8 a | r8 a[ r a] |
+    r8 a[ r a] | r8 f[ r a] | r8 a16 a a8 a | r8 a[ r a] |
+    r8 a[ r a] | r8 a[ r a] | r8 bes16 bes bes8 bes | r8 f16 f f8 f |
+    r8 a16 a a8 a | r8 bes16 bes bes8 bes |
+  }
+  \alternative { { a8 a16 a a8 a | a8 r r4 | } 
+		 { a8 a16 a a8 a | a8 r a8-> r | } } \bar "|."
+}
+
+hornFourInEb = \relative c'' {
+  \clef treble
+  \key c \major
+  \transposition ees
+  \time 2/4
+
+  c8.->\ff g16 a8 f | g8.-> e16 a8 f8 | 
+  e4. f8 | g8 g r g\f | \bar "||"
+  \repeat percent 3 { r8 c,[ r c] | } r8 c16 c c8 c |
+  \repeat percent 2 { r8 e16 e e8 e | } r8 e8 r d | r8 d16 d d8 d |
+  \repeat percent 3 { r8 c[ r c] | } r8 c16 c c8 c | 
+  r8 e16 e e8 e | r8 fis16 fis fis8 fis | r8 e[ r e] | d8 r d4 |
+  \repeat percent 2 { r8 c[ r c] | } r8 c[ r d] | r8 c[ r c] |
+  \repeat percent 2 { r8 c[ r c] | } r8 c[ r d] | c8 r r4 |
+  \repeat volta 2 { 
+    \repeat percent 2 { r8 f[ r f] | } \repeat percent 2 { r8 e[ r e] | }
+    \repeat percent 2 { r8\< f[ r f] | } \repeat percent 2 { r8\> e[ r e] | }
+    \repeat percent 2 { r8\! f[ r f] | } \repeat percent 2 { r8 e[ r e] | }
+    r8\< f[ f f] | r8\! g[ g g] | r8 f[ f f] | f8 r f4 |
+    \repeat percent 2 { r8 c[ r c] | } r8 c[ r d] | r8 c[ r c] |
+    \repeat percent 2 { r8 c[ r c] | } r8 c[ r d] | 
+  }
+  \alternative { { c8 r r4 } { c8 r r4 } } | \bar "||"
+  
+  \key f \major
+
+  r8\p a'16 a a8 a | r8 a[ r a] | r8 a16 a a8 a | r8 a[ r a] |
+  r8 bes16 bes bes8 bes | r8 bes[ r bes] | r8 a16 a a8 a | r8 a[ r a] |
+  r8 d,[ r d] | r8 d[ r e] | r8 f16 f f8 f | r8 f[ r f] | 
+  r8 g16 g g8 g | r8 f[ r f] | r8 e[ r e] | r8 e[ r e] |
+  r8 a16 a a8 a | r8 a[ r a] | r8 a16 a a8 a | r8 a[ r a] |
+  r8 a[ r a] | r8 d,[ r e] | r8 d16 d d8 d | r8 d[ r d] |
+  r8 e[ r e] | r8 d[ r d] | r8 d16 d d8 d | r8 d16 d d8 d |
+  r8 c16 c c8 c | r8 c16 c c8 c | c8 c16 c c8 c | c8 r r4 |
+  \repeat volta 2 { 
+    a'8->\ff a-> r4 | R2 | a8-> a-> r4 | g2\ff |
+    r8 f[ r g] | r8 f f4->( | f8) f g4( | f8) r r4 |
+    g8-> g-> r4 | R2 | g8-> g r4 | f2 |
+    r8 e[ r f] | r8 e dis4->( | e8) e d4( | c8) r r4 |
+    c8 r r4 | R2 | r4 r8 f\f | e8 r e4->\ff |
+    r8 f16 f f8 f | r8 f[ r f] | r8 f16 f f8 f | r8 f[ r f] |
+    r8 e16 e e8 e | r8 e[ r e] | r8 f16 f f8 f | r8 f[ r f] |
+    r8 d8 r d | r8 d[ r e] | r8 f16 f f8 f | r8 f[ r f] | 
+    r8 f16 f f8 f | r8 f[ r f] | r8 e[ r e] | r8 e[ r e] |
+    r8 f16 f f8 f | r8 f[ r f] | r8 f16 f f8 f | r8 f[ r f] |
+    r8 f[ r g] | r8 d[ r e] | r8 d16 d d8 d | r8 d[ r d] |
+    r8 e[ r e] | r8 d[ r d] | r8 d16 d d8 d | r8 d16 d d8 d |
+    r8 c16 c c8 c | r8 c16 c c8 c |
+  }
+  \alternative { { c8 c16 c c8 c | c8 r r4 | } 
+		 { c8 c16 c c8 c | c8 r c8-> r | } } \bar "|."
+}
 
 Template = \relative c'' {
   \clef treble

@@ -1,28 +1,31 @@
 \version "2.16.2"
 \paper {
-  #(set-paper-size "letter")
+  #(set-paper-size "legal")
 }
 \include "JPSFotF.ly"
 
 \header {
-  instrument = "Conductor's score"
+  instrument = "Score"
 }
 
 \score { 
   {
     <<
-      \new Staff { 
+      \new Staff \with { printPartCombineTexts = ##f } { 
 	\set Staff.midiInstrument = "piccolo" 
 	\set Staff.instrumentName = "Piccolo in Db"
 	\set Staff.shortInstrumentName = "Db Picc."
-	\piccoloInDb
+	<<
+	  \rehearsalMarks
+	  \piccoloInDb
+	>>
       }
       
-      \new Staff {
+      \new Staff \with { printPartCombineTexts = ##f } { 
 	\set Staff.midiInstrument = "flute"
 	\set Staff.instrumentName = "Flute in C"
 	\set Staff.shortInstrumentName = "Flute"
-
+	
 	\fluteInC
       }
       
@@ -35,7 +38,7 @@
 	  \partcombine \oboeOne \oboeTwo
 	>>
       }
-
+      
       \new Staff \with { printPartCombineTexts = ##f } { 
 	<<
 	  \set Staff.midiInstrument = "bassoon"
@@ -45,7 +48,7 @@
 	  \partcombine \bassoonOne \bassoonTwo
 	>>
       }
-
+      
       \new Staff \with { printPartCombineTexts = ##f } { 
 	\set Staff.midiInstrument = "clarinet"
 	\set Staff.instrumentName = "Eb Clarinet"
@@ -53,7 +56,7 @@
 	
 	\clarinetInEb
       }
-
+      
       \new Staff \with { printPartCombineTexts = ##f } { 
 	\set Staff.midiInstrument = "clarinet"
 	\set Staff.instrumentName = "Solo & 1st Bb Clarinet"
@@ -71,7 +74,7 @@
 	  \partcombine \clarinetInBbTwo \clarinetInBbThree
 	>>
       }
-
+      
       \new Staff \with { printPartCombineTexts = ##f } { 
 	\set Staff.midiInstrument = "clarinet"
 	\set Staff.instrumentName = "Alto Clarinet in Eb"
@@ -79,7 +82,7 @@
 	
 	\altoClarinetInEb
       }
-
+      
       \new Staff \with { printPartCombineTexts = ##f } { 
 	\set Staff.midiInstrument = "clarinet"
 	\set Staff.instrumentName = "Bass Clarinet"
@@ -87,7 +90,7 @@
 	
 	\bassClarinet
       }
-
+      
       \new Staff \with { printPartCombineTexts = ##f } { 
 	\set Staff.midiInstrument = "soprano sax"
 	\set Staff.instrumentName = "Soprano Saxophone"
@@ -95,7 +98,7 @@
 	
 	\sopranoSax
       }
-
+      
       \new Staff \with { printPartCombineTexts = ##f } { 
 	\set Staff.midiInstrument = "alto sax"
 	\set Staff.instrumentName = "Eb Alto Saxophone"
@@ -103,7 +106,7 @@
 	
 	\altoSaxophoneInEb
       }
-
+      
       \new Staff \with { printPartCombineTexts = ##f } { 
 	\set Staff.midiInstrument = "tenor sax"
 	\set Staff.instrumentName = "Bb Tenor Saxophone"
@@ -111,7 +114,7 @@
 	
 	\tenorSaxophoneInBb
       }
-
+      
       \new Staff \with { printPartCombineTexts = ##f } { 
 	\set Staff.midiInstrument = "baritone sax"
 	\set Staff.instrumentName = "Eb Baritone Saxophone"
@@ -119,7 +122,7 @@
 	
 	\baritoneSaxophoneInEb
       }
-
+      
       \new Staff \with { printPartCombineTexts = ##f } { 
 	\set Staff.midiInstrument = "trumpet"
 	\set Staff.instrumentName = "Eb Cornet"
@@ -127,22 +130,51 @@
 	
 	\cornetInEb
       }
-
+      
       \new Staff \with { printPartCombineTexts = ##f } { 
 	\set Staff.midiInstrument = "trumpet"
 	\set Staff.instrumentName = "Solo Bb Cornet"
-	\set Staff.shortInstrumentName = "Solo Cornet"
+	\set Staff.shortInstrumentName = "Cornet Solo"
 	
 	\cornetInBbSolo
+      }
+      
+      \new Staff \with { printPartCombineTexts = ##f } { 
+	\set Staff.midiInstrument = "trumpet"
+	\set Staff.instrumentName = "1st Bb Cornet"
+	\set Staff.shortInstrumentName = "Cornet 1"
+	
+	\cornetInBbOne
       }
 
       \new Staff \with { printPartCombineTexts = ##f } { 
 	\set Staff.midiInstrument = "trumpet"
-	\set Staff.instrumentName = "1st Bb Cornet"
-	\set Staff.shortInstrumentName = "1st Bb Cornet"
+	\set Staff.instrumentName = "2nd Bb Cornet"
+	\set Staff.shortInstrumentName = "Cornet 2"
 	
-	\cornetInBbOne
+	\cornetInBbTwo
       }
+
+      \new Staff \with { printPartCombineTexts = ##f } { 
+	<<
+	  \set Staff.midiInstrument = "french horn"
+	  \set Staff.instrumentName = "1st & 2nd Horn in Eb"
+	  \set Staff.shortInstrumentName = "Eb Horn 1/2"
+	  
+	  \partcombine \hornOneInEb \hornTwoInEb
+	>>
+      }
+
+      \new Staff \with { printPartCombineTexts = ##f } { 
+	<<
+	  \set Staff.midiInstrument = "french horn"
+	  \set Staff.instrumentName = "3rd & 4th Horn in Eb"
+	  \set Staff.shortInstrumentName = "Eb Horn 3/4"
+	  
+	  \partcombine \hornThreeInEb \hornFourInEb
+	>>
+      }
+
     >>
   }
   \layout{}

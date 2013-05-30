@@ -17,7 +17,10 @@
       \clef treble
       \time 2/4 
       \mark "Marziale"
-      \partcombine \oboeOne \oboeTwo
+      <<
+	\rehearsalMarks
+        \partcombine \oboeOne \oboeTwo
+      >>
     >>
   }
   

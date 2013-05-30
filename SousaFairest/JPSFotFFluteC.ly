@@ -15,7 +15,10 @@
     \override Score.RehearsalMark #'break-align-symbol = #'time-signature
     \time 2/4
     \mark "Marziale"
-    \fluteInC
+    <<
+      \rehearsalMarks
+      \fluteInC
+    >>
   }
   
   \layout {}

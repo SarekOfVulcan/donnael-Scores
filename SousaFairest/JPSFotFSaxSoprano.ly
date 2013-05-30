@@ -14,7 +14,10 @@
     \set Staff.midiInstrument = "soprano sax" 
     \override Score.RehearsalMark #'break-align-symbol = #'time-signature
     \mark "Marziale"
-    \sopranoSax
+    <<
+      \rehearsalMarks
+      \sopranoSax
+    >>
   }
   
   \layout {}

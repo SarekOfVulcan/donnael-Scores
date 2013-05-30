@@ -14,7 +14,10 @@
     \set Staff.midiInstrument = "piccolo" 
     \override Score.RehearsalMark #'break-align-symbol = #'time-signature
     \mark "Marziale"
-    \piccoloInDb
+    <<
+      \rehearsalMarks
+      \piccoloInDb
+    >>
   }
   
   \layout {}

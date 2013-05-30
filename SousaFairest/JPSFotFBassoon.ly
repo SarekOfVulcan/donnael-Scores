@@ -15,7 +15,10 @@
       \set Staff.midiInstrument = "bassoon" 
       \once \override Score.RehearsalMark #'self-alignment-X = #-1
       \mark "Marziale"
-      \partcombine \bassoonOne \bassoonTwo
+	  <<
+	    \rehearsalMarks
+        \partcombine \bassoonOne \bassoonTwo
+      >>
     >>
   }
   

@@ -16,7 +16,7 @@
     \mark "Marziale"
     <<
       \rehearsalMarks
-      \hornOneTwoInEb
+      \partcombine \hornOneInEb \hornTwoInEb
     >>
   }
   
