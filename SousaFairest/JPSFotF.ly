@@ -1355,7 +1355,7 @@ hornThreeInEb = \relative c'' {
     r8 a16 a a8 a | r8 bes16 bes bes8 bes |
   }
   \alternative { { a8 a16 a a8 a | a8 r r4 | } 
-		 { a8 a16 a a8 a | a8 r a8-> r | } } \bar "|."
+		 { a8 a16 a a8 a | a8 r a8-> r | } } 
 }
 
 hornFourInEb = \relative c'' {
@@ -1409,7 +1409,62 @@ hornFourInEb = \relative c'' {
     r8 c16 c c8 c | r8 c16 c c8 c |
   }
   \alternative { { c8 c16 c c8 c | c8 r r4 | } 
-		 { c8 c16 c c8 c | c8 r c8-> r | } } \bar "|."
+		 { c8 c16 c c8 c | c8 r c8-> r | } } 
+}
+
+baritoneTC = \relative c'' {
+  \key f \major
+  \transposition bes
+  \time 2/4
+
+  \grace { c16[\ff( d e] } f8.)-> c16 d8 bes | c8. a16 d8 bes8 | 
+  a16 g f g a8 g | f8 r r \times 2/3 {c16( d e)} | \bar "||"
+  f8\f g a c | f8. e16 f8 d | c8.-> b16 c8 a | c4. f,16 a |
+  d4. f,16 a | d4. f,16 a | 
+  d8 d d e | c4. \times 2/3 {c,16(\! d e) } |
+  f8 g a c | f8.-> e16 f8 d | c8. b16 c8 a | c4. a16-. c16-. |
+  e4. a,16-. c-. | e4. gis,16 b |
+  e8 e e e | e8 r e4->(\< | f8.->)\! c16 d8 bes | c8.-> a16 d8 bes |
+  a16 g f g a8 g | f8 g a c | f8.-> c16 d8 bes | c8. a16 d8 bes |
+  a16 g f g a8 g | f8 r f'4( |
+  \repeat volta 2 { e4.)\mf e16( f | g2) | a,4. a16( bes | c2) |
+		    d8 c d bes16(\< c | d8) c16(\! d e8) d16( e |
+		    f8) f16( g a8\>) a16( g | f8) c\! a f |
+		    e'4. e16( f | g2) | a,4. a16( bes | c2) |
+		    bes2 | a2 | g2 | c8 r e4( |
+		    f8.)_\markup {\italic "giocoso"}  c16 d8 bes | c8. a16 d8 bes |
+		    a16 g f g a8 g | f8 g a c |
+		    f8. c16 d8 bes | c8. a16 d8 bes | a16 g f g a8 g | 
+		  }
+  \alternative { { f8 r f'4->\laissezVibrer } { f,8 r f4(\p } } | \bar "||"
+
+  \key bes \major
+  
+  f'2)_\markup {\italic "dolce"} | bes,4( d) | g2( | d2) |
+  \acciaccatura d8 c8.( b16 c8. ees16) | d4 c | bes2( | f2) |
+  g4-.( g-. | g4-. a-.) | \acciaccatura c8 bes8.( a16 bes8. c16) | d2 |
+  \acciaccatura d8 c8.( b16 c8. d16) | e4 c | f2~ | f4 f,( |
+  f'2) | bes,4 d | g2( | d2) | 
+  g4 d8.( c16 | bes4 a) | g2( | d2) |
+  a'4( bes8. a16) | bes4 a8.( bes16) | a'2( | g2) |
+  f8( d) r4 | f8( c) r4 | bes2~ | bes8 r r4 |
+  \repeat volta 2 { d,8->\f d-> r4 | R2 | d8-> d-> r4 | c'8 c d c |
+		    bes4 a | g4 ees | d8 d' d, d' | g,8 d' bes g |
+		    c,8 c r4 | R2 | c8 c r4 | bes'8 bes c bes |
+		    a4 g | f4 des | c8 c' c, c' | f,8 f' c a |
+		    f8 r r4 | R2 | r4 r8 c' | f,8 ees' d c |
+		    f2\f | bes,4( d) | g2( | d2) |
+		    \acciaccatura d8 c8.( b16 c8. ees16) | d4 c |
+		    bes2( | f2) | g4-.( g-. | g4-. a-.) |
+		    \acciaccatura c8 bes8.( a16 bes8. c16) | d2 |
+		    \acciaccatura d8 c8. b16 c8. d16 | e4 c |
+		    f2~ | f4 f, | 
+		    f'2 | bes,4( d) | g2( | d2) |
+		    g4 d8.( c16 | bes4 a) | g2 | d2 |
+		    a'4 bes8.( a16) | bes4 a8.( bes16)\! | a'2( | g2) |
+		    f8( d) r4 | f8( c) r4 |
+		  }
+  \alternative { { bes2~ | bes8 r r4 } { bes2~ | bes8 r bes r | } } 
 }
 
 Template = \relative c'' {
