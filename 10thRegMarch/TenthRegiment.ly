@@ -491,6 +491,124 @@ baritoneSax = \relative c' {
 
 }
 
+trumpetOne = \relative c' {
+  \key g \major
+
+  d4.->\ff e-> | e4.-> fis->~ | fis8 r r fis4.->( | g8) r r r4 r8 |
+  %mark A
+  \repeat volta 2 {
+    g4.\p(^"Soli" fis | e4. d | c4. b | a4.~ a4) r8 |
+    fis'2.~ | fis2. | g2.~ | g4 r8 r4 r8 |
+    g4.( fis | e4. d) | fis2.~ | fis2. |
+    a4\f a8 a4.->~ | a4 r8 a4.-> | a8 r r g4.->( |
+  }
+  \alternative {
+    { fis8) r r r4 r8 | }
+    { fis8\repeatTie r r r4 r8 | }
+  }
+  %mark B
+  \repeat volta 2 {
+    r8 g\ff g r g g | r8 g g r g g | g8 r r g4.->~ | g4 g8 g4 g8 |
+    r8 g g r g g | r8 g g r g g | fis8 r r fis4.->~ | fis4 fis8 fis4 fis8 |
+    r8 fis fis r fis fis | r8 fis fis r fis fis | a8 r r a4.-> | a4 a8 a4 a8 |
+    a8 r r a4.~ | a4 a8 a4 a8 | g8 r r g4.->~ | g4 r8 r4 r8 |
+    r8 g g r g g | r8 g g r g g | g8 r r g4.->~ | g4 g8 g4 g8 |
+    r8 g g r g g | r8 f f r f f | e2.-> | e4 e8 e4 e8 |
+    g2.-> | g2.-> | g8 r r g4.~ | g4 g8 g4 g8 |
+    g2.( | fis2.) | d2.~ |
+  }
+  \alternative {
+    { d4 r8 r4 r8 | }
+    { d4\repeatTie r8 r4 r8 | }
+  }
+  %TRIO
+  \key c \major
+  \repeat volta 2 {
+    r4 e8\p( dis4 e8) | g4.( e) | f4. a4( f8) | e2. |
+    r4 e8( dis4 e8) | g4.( e) | fis2.( | f!4) r8 r4 r8 |
+    r4 e8( dis4 e8) | g4.( e) | f4. a4( f8) | e2. |
+    f4.( a) | g4.( e) | f2.( |
+  }
+  \alternative {
+    { e4) r8 r4 r8 | }
+    { e8 e-.\< e-. e-. e-. e-. | }
+  }
+  %mark D
+  \repeat volta 2 {
+    b'8\ff r r r b b | a8 r r r a a | gis r r r4 r8 | r8 e e e e e |
+    b'8 r r r b b | a8 r r r a a | gis r r r4 r8 | r8 g! g g g g |
+    d'8 r r r d d | c8 r r r c c | b r r r4 r8 | r8 g g g g g |
+    d'8 r r r d d | c8 r r r c c | b r r r4 r8 | R2. |
+    %mark E
+    r8 g\fff g r g g | r8 g g r g g | r8 a a r a a | r8 g g g g g |
+    r8 g g r g g | r8 g g r g g | fis2.( | f!8) f f f f f |
+    r8 g g r g g | r8 g g r g g | r8 a a r a a | r8 g g g g g |
+    f4.-> a-> | g4.-> e-> | d2.( | 
+  }
+  \alternative {
+    { c8) e\f\< e e e e\! | }
+    { c4\repeatTie c16 c c4 r8 | }
+  }
+}
+
+trumpetTwo = \relative c' {
+  \key g \major
+
+  d4.->\ff e-> | e4.-> fis->~ | fis8 r r d4.->~ | d8 r r r4 r8 |
+  %mark A
+  \repeat volta 2 {
+    g4.\p(^"Soli" fis | e4. d | c4. b | a4.~ a4) r8 |
+    d2.~ | d2. | d2.~ | d4 r8 r4 r8 |
+    g4.( fis | e4. d) | fis2.~ | fis2. |
+    a4\f a8 a4.->~ | a4 a8 a4.->~ | a8 r r e4.->( |
+  }
+  \alternative {
+    { d8) r r r4 r8 | }
+    { d8\repeatTie r r r4 r8 | }
+  }
+  %mark B
+  \repeat volta 2 {
+    r8 d\ff d r d d | r8 d d r d d | d8 r r d4.->~ | d4 d8 d4 d8 |
+    r8 d d r d d | r8 d d r d d | d8 r r d4.->~ | d4 d8 d4 d8 |
+    r8 d d r d d | r8 d d r d d | d8 r r d4.->~ | d4 d8 d4 d8 |
+    d8 r r d4.~ | d4 d8 d4 d8 | d8 r r d4.->~ | d4 r8 r4 r8 |
+    r8 d d r d d | r8 d d r d d | d8 r r d4.->~ | d4 d8 d4 d8 |
+    r8 d d r d d | r8 d d r d d | e2.-> | e4 e8 e4 e8 |
+    g2.-> | g2.-> | g8 r r g4.~ | g4 g8 g4 g8 |
+    e2.( | d2.) | d2.~ |
+  }
+  \alternative {
+    { d4 r8 r4 r8 | }
+    { d4\repeatTie r8 r4 r8 | }
+  }
+  %TRIO
+  \key c \major
+  \repeat volta 2 {
+    R2.*6 | d2.~ | d4 r8 r4 r8 |
+    R2.*6 | d2.(
+  }
+  \alternative {
+    { c4) r8 r4 r8 | }
+    { c8\repeatTie e-.\< e-. e-. e-. e-. | }
+  }
+  %mark D
+  \repeat volta 2 {
+    e8\ff r r r e e | e8 r r r e e | e8 r r r4 r8 | r8 e e e e e |
+    e8 r r r e e | e8 r r r e e | e8 r r r4 r8 | r8 g g g g g |
+    g8 r r r g g | g8 r r r g g | g8 r r r4 r8 | r8 g g g g g |
+    g8 r r r g g | g8 r r r g g | g8 r r r4 r8 | R2. |
+    %mark E
+    r8 e\fff e r e e | r8 e e r e e | r8 f f r f f | r8 e e e e e |
+    r8 e e r e e | r8 e e r e e | d2.( | d8) d d d d d |
+    r8 e e r e e | r8 e e r e e | r8 f f r f f | r8 e e e e e |
+    f4.-> a-> | g4.-> e-> | d2.( | 
+  }
+  \alternative {
+    { c8) e\f\< e e e e\! | }
+    { c4\repeatTie c16 c c4 r8 | }
+  }
+}
+
 cornetSolo = \relative c'' {
   \key g \major
   

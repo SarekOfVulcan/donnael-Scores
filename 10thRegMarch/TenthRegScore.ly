@@ -69,10 +69,34 @@
 
     \new Staff  { 
       \set Score.skipBars = ##t
+      \set Staff.instrumentName = "Trumpet 1"
+      \set Staff.shortInstrumentName = "Tr 1"
+
+      \trumpetOne
+    }
+
+    \new Staff  { 
+      \set Score.skipBars = ##t
+      \set Staff.instrumentName = "Trumpet 2"
+      \set Staff.shortInstrumentName = "Tr 2"
+
+      \trumpetTwo
+    }
+
+    \new Staff  { 
+      \set Score.skipBars = ##t
       \set Staff.instrumentName = "Solo Cornet"
       \set Staff.shortInstrumentName = "Solo Cor"
 
       \cornetSolo
+    }
+
+    \new Staff  { 
+      \set Score.skipBars = ##t
+      \set Staff.instrumentName = "Cornet 1"
+      \set Staff.shortInstrumentName = "Cor 1"
+
+      \cornetOne
     }
 
     \new Staff  { 
