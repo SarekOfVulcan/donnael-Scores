@@ -100,7 +100,7 @@ fluteOne = \relative c''' {
   }
   \alternative {
     { bes4 r8 r4 r8 | }
-    { bes8 d\< d d4.:8 | }
+    { bes8-. d-.\< d-. d4.:8-. | }
   }
   %mark D
   \repeat volta 2 {
@@ -166,7 +166,7 @@ fluteTwo = \relative c''' {
   }
   \alternative {
     { bes4 r8 r4 r8 | }
-    { bes8 d\< d d4.:8 | }
+    { bes8 d-.\< d-. d4.:8-. | }
   }
   %mark D
   \repeat volta 2 {
