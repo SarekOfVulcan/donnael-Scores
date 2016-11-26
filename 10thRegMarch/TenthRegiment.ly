@@ -558,7 +558,69 @@ cornetSolo = \relative c'' {
 }
 
 cornetOne = \relative c'' {
-
+  \key g \major
+  
+  g4.->\ff gis-> | a4.-> bes4.->(  |
+  b!8) r r d4->( c8) | b4 r8 \acciaccatura { d16 e } d8\p( cis c) |
+  %mark A
+  \repeat volta 2 {
+    b8[ r b] b[ r b] | \acciaccatura c8 b8( ais b) e4( b8) |
+    a8[ r a]( b[) r b]( | c4.~) c4 r8 |
+    a8[ r a] a[ r a] | \acciaccatura b8 a8( gis a) d4( c8) |
+    b8[ r b]( c[) r c]( | d4.~)( d8 cis c) |
+    b8[ r b] b[ r b] | \acciaccatura c8 b8( ais b) d4( b8) |
+    a8[ r a] a[ r a] | \acciaccatura b8 a8( gis a) fis'4( d8) |
+    cis8-.\f d-. dis-. e4.->~ | e8 eis-. fis-. g4.->~ |
+    g8 r r cis,4.->( |
+  }
+  \alternative {
+    { d8) r r \acciaccatura { d16 e } d8\p( cis c) | }
+    { d8\repeatTie r r r4. | }
+  }
+  %mark B
+  \repeat volta 2 {
+    b4.->\ff b-> | b4-> b8 ais4 b8 | e4 d8 b4.->~ | b8 d, e fis g a |
+    b4.-> b-> | b4-> b8 ais4 b8 | e4 d8 c4.->~ | c4 fis,8 a4 b8 |
+    c4.-> c-> | c4-> c8 b4 c8 | c8 r r c4.->~ | c4 fis,8 a4 c8 |
+    c8 r r c4.->~ | c4 fis,8 a4 c8 | b8 r r b4.->~ | b8 d, e fis g a |
+    %mark C
+    b4.-> b-> | b4-> b8 ais4 b8 | e4 d8 b4.->~ | b8 d, e fis g a |
+    b4.-> b-> | b8 g a b c d | e2.~ | e4 e8 dis4 e8 |
+    bes2.-> | bes2.->| b!8 r r b4.->~ | b4 g8 a4 c8 |
+    b4.->( a) | b4.->~ b4 a8 | g2.( |
+  }
+  \alternative {
+    { g8) d\f\< e fis g a\! | }
+    { g4\repeatTie r8 r4 r8 | }
+  }
+  %TRIO
+  \key c \major
+  \repeat volta 2 {
+    r4 e8\p( dis4 e8) | g4.( e) | f4. a4( f8) | e2. |
+    r4 e8( dis4 e8) | g4.( e) | fis2.( | f!4) r8 r4 r8 |
+    r4 e8( dis4 e8) | g4.( e) | f4. a4( f8) | e2. |
+    f4.( a) | g4.( e) | f2.( |
+  }
+  \alternative {
+    { e4) r8 r4 r8 | }
+    { e8 e'-.\< e-. e-. e-. e-. | }
+  }
+  %mark D
+  \repeat volta 2 {
+    d8\ff r r r d d | c8 r r r c c | b8 r r r4 r8 | r8 e e e e e |
+    d8 r r r d d | c8 r r r c c | b8 r r r4 r8 | r8 g' g g g g |
+    f8 r r r f f | e8 r r r e e | d8 r r r4 r8 | r8 g g g g g |
+    f8 r r r f f | e8 r r r e e | d8 r r r4 r8 | R2. |
+    %mark E
+    r4 g,8\fff( fis4 g8) | e'4.-> c-> | a4.-> c-> | g2.-> |
+    r4 g8( fis4 g8) | e'4.-> c-> | a4.-> e'4( d8) | d4 r8 r4 r8 |
+    r4 g,8( fis4 g8) | e'4.-> c-> | a4.-> c-> | g2.-> |
+    f4.-> a-> | g4.-> e-> | g2.( |
+  }
+  \alternative {
+    { g4) r8 r4 r8 | }
+    { g4\repeatTie g16 g g4 r8 | }
+  }
 }
 
 cornetTwo = \relative c' {
