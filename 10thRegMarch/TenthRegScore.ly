@@ -77,7 +77,7 @@
 
     \new Staff  { 
       \set Score.skipBars = ##t
-      \set Staff.instrumentName = "Cornet Two"
+      \set Staff.instrumentName = "Cornet 2"
       \set Staff.shortInstrumentName = "Cor 2"
       
       \cornetTwo
@@ -85,7 +85,7 @@
     
     \new Staff  { 
       \set Score.skipBars = ##t
-      \set Staff.instrumentName = "Cornet Three"
+      \set Staff.instrumentName = "Cornet 3"
       \set Staff.shortInstrumentName = "Cor 3"
       
       \cornetThree
