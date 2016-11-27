@@ -28,6 +28,15 @@
 
     \new Staff  { 
       \set Score.skipBars = ##t
+      \set Staff.instrumentName = "Oboe"
+      \set Staff.shortInstrumentName = "Oboe"
+      
+      << \rehearsalMarks
+	 \oboeOne >>
+    }
+
+    \new Staff  { 
+      \set Score.skipBars = ##t
       \set Staff.instrumentName = "Eb Clarinet"
       \set Staff.shortInstrumentName = "Eb Cl"
       
@@ -57,6 +66,14 @@
       \set Staff.shortInstrumentName = "Clar 3"
 
       \clarinetThree
+    }
+
+    \new Staff  { 
+      \set Score.skipBars = ##t
+      \set Staff.instrumentName = "Bass Clarinet"
+      \set Staff.shortInstrumentName = "B. Clar"
+
+      \clarinetBass
     }
 
     \new Staff  { 

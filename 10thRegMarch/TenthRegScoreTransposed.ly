@@ -67,6 +67,16 @@
     \new Staff  {
       \time 6/8
       \set Score.skipBars = ##t
+      \set Staff.midiInstrument = "clarinet"
+      \set Staff.instrumentName = "Bass Clarinet"
+      \set Staff.shortInstrumentName = "B. Cl"
+      \tempo 4.=120
+\unfoldRepeats      
+      \transpose c bes,, \clarinetBass
+    }
+    \new Staff  {
+      \time 6/8
+      \set Score.skipBars = ##t
       \set Staff.midiInstrument = "tenor sax"
       \set Staff.instrumentName = "Tenor Sax"
       \set Staff.shortInstrumentName = "Ten Sax"
@@ -84,6 +94,17 @@
       \tempo 4.=120
 \unfoldRepeats      
       \transpose c bes, \cornetSolo
+    }
+    
+    \new Staff  {
+      \time 6/8
+      \set Score.skipBars = ##t
+      \set Staff.midiInstrument = "trumpet"
+      \set Staff.instrumentName = "Cornet 1"
+      \set Staff.shortInstrumentName = "Corn 1"
+      \tempo 4.=120
+\unfoldRepeats      
+      \transpose c bes, \cornetOne
     }
     
     \new Staff  {
