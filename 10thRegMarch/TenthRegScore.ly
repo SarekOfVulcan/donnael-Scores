@@ -37,6 +37,15 @@
 
     \new Staff  { 
       \set Score.skipBars = ##t
+      \set Staff.instrumentName = "Bassoon"
+      \set Staff.shortInstrumentName = "Bass."
+      
+      << \rehearsalMarks
+	 \bassoonOne >>
+    }
+    
+    \new Staff  { 
+      \set Score.skipBars = ##t
       \set Staff.instrumentName = "Eb Clarinet"
       \set Staff.shortInstrumentName = "Eb Cl"
       
@@ -149,9 +158,9 @@
       
       \drumSnareBass
     }
-
+    
   >>
-
+  
   \layout {
     short-indent = 1.5\cm
   }

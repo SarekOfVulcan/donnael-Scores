@@ -258,6 +258,66 @@ oboeOne = \relative c'' {
   }
 }
 
+bassoonOne = \relative c {
+  \key f \major
+  
+  f4.->\ff d-> | g4.-> e-> | a8 r r c,4.->( | f4) r8 r4 r8 |
+  %mark A
+  \repeat volta 2 {
+    \cPII { f\p a c, a' | f a c, a' | g bes d, bes' | g bes d, bes' |
+	    e, g c, g' | e g c, g' | f a c, bes' | } a4 bes8 c,( d e ) |
+    \cPII { f a c, a' | f a c, a' | } \cPI { g g | g g | s } %skip for rest at end
+    g4.->\f~ g4 fis8 | f!4.->~ f4 e8 | d8 r r g,4.->( | 
+  }
+  \alternative {
+    { c8) r r r4 r8 | }
+    { c8\repeatTie r r r4 r8 | }
+  }
+  %mark B
+  \repeat volta 2 {
+    r8 c\ff d e f g | a4 r8 c,4 r8 | r8 c d e f g | a4 r8 c,4 r8 |
+    r8 c d e f g | a4 r8 c,4 r8 | r8 d e f g a | bes4 r8 c,4 r8 |
+    r8 d e f g a | \cPI { bes c, | g' c, | g' c, |
+			  g' c, | g' c, | f c | f c | s }
+    %mark C
+    f8 c d e f g | a4 r8 c,4 r8 | r8 c d e f g | a4 r8 c,4 r8 |
+    r8 c d e f g | a4 r8 c,4 r8 | r8 d e f g a | bes2.-> |
+    \cPI { b, b | b b | c c | c c |
+	   g g | c c | s } f4 d8 c4 a8 |
+  }
+  \alternative {
+    { f4 r8 r4 r8 | }
+    { f4 f8\p( e4 f8) | }
+  }
+  %TRIO
+  \key bes \major
+  \repeat volta 2 {
+    \cPI { bes bes | bes bes | bes bes | s } bes4 f8( e4 f8) |
+    \cPI { bes bes | bes bes | c c | s } f,4 f8( e4 f8) |
+    \cPI { bes bes | bes bes | bes bes | bes bes |
+	   ees, ees | f f | f f | s }
+  }
+  \alternative {
+    { bes4 f8( e4 f8) |  }
+    { bes4 r8 r4 r8  }
+  }
+  %mark D
+  \repeat volta 2 {
+    r8 fis'\ff g a4.->~ | a8 g a bes4.->~ | bes8 a bes c4 bes8 | a4 r8 r4 r8 |
+    r8 fis g a4.->~ | a8 g a bes4.->~ | bes8 a bes c4 bes8 | a4 r8 r4 r8 |
+    r8 a bes c4.->~ | c8 bes c d4.->~ | d8 c d ees4 d8 | c4 r8 r4 r8 |
+    r8 a bes c4.->~ | c8 bes c d4.->~ | d8 c d ees4 d8 | c4 f,8( e4 f8) |
+    %mark E
+    \cPI { bes,\fff bes | bes bes | bes bes | s } bes4 f8( e4 f8) |
+    \cPI { bes bes | bes bes | c c | s } f,4 f8( e4 f8) |
+    \cPI { bes bes | bes bes | bes bes | bes bes | ees, ees | f f | f f | s }
+  }
+  \alternative {
+    { bes4 r8 r4 r8 |  }
+    { bes4 bes16 bes bes4 r8 | }
+  }
+  
+}
 
 % clarinetInEb - dup of flute
 
