@@ -1,8 +1,9 @@
 \version "2.18.2"
 
+#(set-global-staff-size 12)
+
 \paper {
   #(set-paper-size "legal")
-
 }
 
 \include "TenthRegiment.ly"
@@ -47,15 +48,6 @@
 	 \bassoonOne >>
     }
 
-    \new Staff  { 
-      \set Score.skipBars = ##t
-      \set Staff.instrumentName = "Bassoon"
-      \set Staff.shortInstrumentName = "Bass."
-      
-      << \rehearsalMarks
-	 \bassoonOne >>
-    }
-    
     \new Staff  { 
       \set Score.skipBars = ##t
       \set Staff.instrumentName = "Eb Clarinet"
@@ -111,6 +103,14 @@
       \set Staff.shortInstrumentName = "Tenor"
 
       \saxTenor
+    }
+
+    \new Staff  { 
+      \set Score.skipBars = ##t
+      \set Staff.instrumentName = "Baritone Sax"
+      \set Staff.shortInstrumentName = "Bari"
+
+      \saxBaritone
     }
 
     \new Staff  { 
