@@ -611,45 +611,63 @@ clarinetBass = \relative c'' {
 }
 
 saxAlto = \relative c'' {
-  \key g \major
+  \key d \major
   
-
+  d4.->\ff dis | e4.-> eis->( | fis8) r r cis4.( | d4) r8 r4 r8 |
   %mark A
   \repeat volta 2 {
-
+    d4.\p( cis | b4. a | g4. fis | e4.~ e4) r8 |
+    cis'2.~ | cis2. | d2.~ | d4 r8 r4 r8 |
+    d4.( cis | b4. a) | cis2.~ | cis2. |
+    b4\f b8 b4.~ | b4 d8 d4.~ | d8 r r d4.( |
   }
   \alternative {
-    {   }
-    {   }
+    { cis8) r r r4 r8 |  }
+    { cis8\repeatTie a\< b cis d e |  }
   }
   %mark B
   \repeat volta 2 {
-    
+    fis4.->\ff fis-> | fis4-> fis8 eis4 fis8 | b4 a8 fis4.->~ | fis8 a, b cis d e |
+    fis4.-> fis-> | fis4-> fis8 eis4 fis8 | b4 a8 g4.->~ | g4 cis,8 e4 fis8 |
+    g4.-> g-> | g4-> g8 fis4 g8 | g8 r r g4.->~ | g4 cis,8 e4 g8 |
+    g8 r r g4.->~ | g4 cis,8 e4 g8 | b8[ r bes] a4.->~ | a8 a, b cis d e |
     %mark C
-    
+    fis4.-> fis-> | fis4-> fis8 eis4 fis8 | b4 a8 fis4.->~ | fis8 a, b cis d e |
+    fis4.-> fis-> | fis8 d e fis g a | b2.~ | b4 b8 ais4 b8 |
+    eis,2.-> | eis2.-> | fis8 r r fis4.~ | fis4 d8 e4 g8 |
+    fis4.( e) | fis4.~ fis4 e8 | d2.~ |
   }
   \alternative {
-    {   }
-    {   }
+    { d8 a\f\< b cis d e\! |  }
+    { d4 r8 r4 r8 |  }
   }
   %TRIO
-  \key c \major
+  \key g \major
   \repeat volta 2 {
-    
+    r4 b8\p( ais4 b8) | d4.( b) | c4.( e4 c8) | b2. |
+    r4 b8( ais4 b8) | d4.( b) | cis2.( | c!4) r8 r4 r8 |
+    r4 b8( ais4 b8) | d4.( b) | c4.( e4 c8) | b2. |
+    c4.( e) | d4.( b) | c2.( |
   }
   \alternative {
-    {   }
-    {   }
+    { b4) r8 r4 r8 |  }
+    { b4\repeatTie r8 r4 r8  }
   }
   %mark D
   \repeat volta 2 {
-    
+    r8 dis,\ff e fis4.->~ | fis8 e fis g4.~ | g8 fis g a4 g8 | fis4 r8 r4 r8 |
+    r8 dis e fis4.->~ | fis8 e fis g4.~ | g8 fis g a4 g8 | fis4 r8 r4 r8 |
+    r8 fis g a4.->~ | a8 g a b4.->~ | b8 a b c4 b8 | a4 r8 r4 r8 |
+    r8 fis g a4.->~ | a8 g a b4.->~ | b8 a b c4 b8 | a4 r8 r4 r8 |
     %mark E
-    
+    r4 d8\fff( cis4 d8) | b'4.-> g-> | e4.-> g-> | d2.-> |
+    r4 d8( cis4 d8) | b'4.-> g-> | e4.-> b'4->( a8) | a4 r8 r4 r8 |
+    r4 d,8( cis4 d8) | b'4.-> g-> | e4.-> g-> | d2.-> |
+    e4.-> c'-> | b4.-> g-> | a4( e8) fis4( d8) |
   }
   \alternative {
-    {   }
-    {   }
+    { g4 r8 r4 r8 | }
+    { g4 d16 d d4 r8 | }
   }
   
 }

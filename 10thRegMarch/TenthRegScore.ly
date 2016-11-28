@@ -99,8 +99,16 @@
 
     \new Staff  { 
       \set Score.skipBars = ##t
+      \set Staff.instrumentName = "Alto Sax"
+      \set Staff.shortInstrumentName = "Alto"
+
+      \saxAlto
+    }
+
+    \new Staff  { 
+      \set Score.skipBars = ##t
       \set Staff.instrumentName = "Tenor Sax"
-      \set Staff.shortInstrumentName = "T Sax"
+      \set Staff.shortInstrumentName = "Tenor"
 
       \saxTenor
     }
