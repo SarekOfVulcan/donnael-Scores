@@ -138,7 +138,7 @@ fluteTwo = \relative c''' {
     g!8[ r g]( a[) r a]( | bes4.~) bes4 r8 |
     g8[ r g] g[ r g] | \acciaccatura a g8( fis g) a4( g8) |
     f!8[ r f]( g[) r g]( | a4.~) a8 r r |
-    a8[ r a] a[ r a] | \acciaccatura bes a8( gis a) a4.-> |
+    a8[ r a] a[ r a] | \acciaccatura bes a8( gis a) a4. |
     g8[ r g] g[ r g] | \acciaccatura a g8( fis g) e'4( c8) |
     b8-.\f c-. cis-. d4.->~ | d8 dis-. e-. f4.->~ |
     f8 r r b,4.->( |
@@ -315,8 +315,7 @@ bassoonOne = \relative c {
   \alternative {
     { bes4 r8 r4 r8 |  }
     { bes4 bes16 bes bes4 r8 | }
-  }
-  
+  } 
 }
 
 % clarinetInEb - dup of flute

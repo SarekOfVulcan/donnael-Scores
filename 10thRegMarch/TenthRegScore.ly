@@ -17,6 +17,7 @@
       << \rehearsalMarks
 	 \keepWithTag #'fluteOne \fluteOne >>
     }
+
     \new Staff  { 
       \set Score.skipBars = ##t
       \set Staff.instrumentName = "Flute 2"
@@ -33,6 +34,17 @@
       
       << \rehearsalMarks
 	 \oboeOne >>
+    }
+
+    \new Staff  { 
+      \set Score.skipBars = ##t
+      \set Staff.instrumentName = "Bassoon"
+      \set Staff.shortInstrumentName = "Bsn"
+
+      \clef bass
+      
+      << \rehearsalMarks
+	 \bassoonOne >>
     }
 
     \new Staff  { 
