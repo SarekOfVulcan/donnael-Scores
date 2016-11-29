@@ -7,7 +7,7 @@
   title = "Tenth Regiment March"
   composer = "R. B. Hall"
   arranger = \markup { \smaller "edited by G. Fitzgerald" }
-  copyright = "Public domain. Version 2016-11-28"
+  copyright = "Public domain. Version 2016-11-29"
 }
 
 rehearsalMarks = \relative c' {
@@ -54,8 +54,8 @@ rehearsalMarks = \relative c' {
 
 % Define patterns for changePitch/cPI/cPII/cPIII
 patI = { c4 r8 }
-patII = { c4 c8 c4 c8 }
-patIII = { c8[ r8 c8] c8[ r8 c8] }
+patII = { c4 c8 }
+patIII = { c8[ r8 c8] }
 
 fluteOne = \relative c''' {
   \key f \major
@@ -735,8 +735,65 @@ saxTenor = \relative c'' {
   
 }
 
-baritoneSax = \relative c' {
-
+saxBaritone = \relative c' {
+  \key d \major
+  
+  d4.->\ff b'-> | e,4.-> cis'-> | fis,4 r8 a4.->( | d8) r r r4 r8 |
+  %mark A
+  \repeat volta 2 {
+    \cPI { d\p a | d a | e' b | e d | s }
+    cis2.( | a2.) | \cPI { d a | d a | s }
+    \cPI { d a | d a | s } e'2.~ | e2. |
+    e4.~\f e4 ees8 | d4.~ d4 cis8 | b8 r r e,4.( | 
+  }
+  \alternative {
+    { a8) r r r4 r8 | }
+    { a8\repeatTie r r r4 r8 | }
+  }
+  %mark B
+  \repeat volta 2 {
+    d4.->\ff cis-> | b4.-> a-> | d8 r r d4.->~ | d4 d8 d4 d8 |
+    d4.-> cis-> | b4.-> a-> | e'8 r r e4.->~ | e4 e8 e4 e8 |
+    e4.-> d-> | cis4.-> b-> | e8 r r e4.->~ | e4 a,8 a4 a8 |
+    e'8 r r e4.-> | e4 a,8 a4 a8 | d8 r r d4.->~ | d4 a8 a4 a8 |
+    %mark C
+    d4.-> cis-> | b4.-> a-> | d8 r r d4.->~ | d4 d8 d4 d8 |
+    d4.-> cis-> | b4.-> a-> | r8 b cis d e fis | g2.-> |
+    gis,2.-> | gis2.-> | a8 r r a4.->~ | a4 a8 a4 a8 |
+    e'2.( | a,2.) | d4 b8 a4 fis8 |
+  }
+  \alternative {
+    { d4 r8 r4 r8 | }
+    { d4 d'8\p( cis4 d8) | }
+  }
+  %TRIO
+  \key g \major
+  \repeat volta 2 {
+    \cPI { g, g | g g | g g | s } g4 d'8( cis4 d8) |
+    \cPI { g, g | g g | a a | s } d 4 d8( cis4 d8) |
+    \cPI { g, g | g g | g g | g g |
+	   c c | d d | d d | s }
+  }
+  \alternative {
+    { g,4 d'8( cis4 d8) |  }
+    { g,4 r8 r4 r8 |  }
+  }
+  %mark D
+  \repeat volta 2 {
+    r8 dis\ff e fis4.->~ | fis8 e fis g4.->~ | g8 fis g a4 g8 | fis4 r8 r4 r8 |
+    r8 dis e fis4.->~ | fis8 e fis g4.->~ | g8 fis g a4 g8 | fis4 r8 r4 r8 |
+    r8 fis g a4.->~ | a8 g a b4.->~ | b8 a b c4 b8 | a4 r8 r4 r8 |
+    r8 fis g a4.->~ | a8 g a b4.->~ | b8 a b c4 b8 | a4 d8( cis4 d8) |
+    %mark E
+    \cPI { g,\fff g | g g | g g | s } g4 d'8( cis4 d8) |
+    \cPI { g, g | g g | a a | s } d4 d8( cis4 d8) |
+    \cPI { g, g | g g | g g | g g |
+	   c c | d d | s } d2.( |
+  }
+  \alternative {
+    { g,4) r8 r4 r8 | }
+    { g4\repeatTie g16 g g4 r8 | }
+  }
 }
 
 trumpetOne = \relative c' {
@@ -1107,65 +1164,50 @@ cornetThree = \relative c' {
   
 }
 
-saxBaritone = \relative c' {
-  \key d \major
-  
-  d4.->\ff b'-> | e,4.-> cis'-> | fis,4 r8 a4.->( | d8) r r r4 r8 |
+hornOne = \relative c'' {
+  \key c \major
+
+  c4.->\ff cis-> | d4.-> dis->( | e8 r r b4.->( | c8 r r r4 r8 |
   %mark A
   \repeat volta 2 {
-    \cPI { d\p a | d a | e' b | e d | s }
-    cis2.( | a2.) | \cPI { d a | d a | s }
-    \cPI { d a | d a | s } e'2.~ | e2. |
-    e4.~\f e4 ees8 | d4.~ d4 cis8 | b8 r r e,4.( | 
+    c4.\p( b | a4. g | f4. e | d4.~ d4) r8 |
+    \cPII { b' b b b | b b b b | c c c c | c c c c | }
+    c4.( b | a4. g) | \cPII { b b b b | b b b b | }
+    a4\f a8 a4.->~ | a4 b8 c4.->~ | c8 r r c4.->( |
   }
   \alternative {
-    { a8) r r r4 r8 | }
-    { a8\repeatTie r r r4 r8 | }
+    { b8 r r r4 r8 |  }
+    { b8 r r r4 r8 |  }
   }
   %mark B
   \repeat volta 2 {
-    d4.->\ff cis-> | b4.-> a-> | d8 r r d4.->~ | d4 d8 d4 d8 |
-    d4.-> cis-> | b4.-> a-> | e'8 r r e4.->~ | e4 e8 e4 e8 |
-    e4.-> d-> | cis4.-> b-> | e8 r r e4.->~ | e4 a,8 a4 a8 |
-    e'8 r r e4.-> | e4 a,8 a4 a8 | d8 r r d4.->~ | d4 a8 a4 a8 |
+    
     %mark C
-    d4.-> cis-> | b4.-> a-> | d8 r r d4.->~ | d4 d8 d4 d8 |
-    d4.-> cis-> | b4.-> a-> | r8 b cis d e fis | g2.-> |
-    gis,2.-> | gis2.-> | a8 r r a4.->~ | a4 a8 a4 a8 |
-    e'2.( | a,2.) | d4 b8 a4 fis8 |
+    
   }
   \alternative {
-    { d4 r8 r4 r8 | }
-    { d4 d'8\p( cis4 d8) | }
+    {   }
+    {   }
   }
   %TRIO
-  \key g \major
+  \key c \major
   \repeat volta 2 {
-    \cPI { g, g | g g | g g | s } g4 d'8( cis4 d8) |
-    \cPI { g, g | g g | a a | s } d 4 d8( cis4 d8) |
-    \cPI { g, g | g g | g g | g g |
-	   c c | d d | d d | s }
+    
   }
   \alternative {
-    { g,4 d'8( cis4 d8) |  }
-    { g,4 r8 r4 r8 |  }
+    {   }
+    {   }
   }
   %mark D
   \repeat volta 2 {
-    r8 dis\ff e fis4.->~ | fis8 e fis g4.->~ | g8 fis g a4 g8 | fis4 r8 r4 r8 |
-    r8 dis e fis4.->~ | fis8 e fis g4.->~ | g8 fis g a4 g8 | fis4 r8 r4 r8 |
-    r8 fis g a4.->~ | a8 g a b4.->~ | b8 a b c4 b8 | a4 r8 r4 r8 |
-    r8 fis g a4.->~ | a8 g a b4.->~ | b8 a b c4 b8 | a4 d8( cis4 d8) |
+    
     %mark E
-    \cPI { g,\fff g | g g | g g | s } g4 d'8( cis4 d8) |
-    \cPI { g, g | g g | a a | s } d4 d8( cis4 d8) |
-    \cPI { g, g | g g | g g | g g |
-	   c c | d d | s } d2.( |
+    
   }
   \alternative {
-    { g,4) r8 r4 r8 | }
-    { g4\repeatTie g16 g g4 r8 | }
-  }
+    {   }
+    {   }
+  } 
 }
 
 tromboneOneTreble = \relative c'' {
