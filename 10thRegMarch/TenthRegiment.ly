@@ -52,10 +52,11 @@ rehearsalMarks = \relative c' {
   }
 }
 
-% Define patterns for changePitch/cPI/cPII/cPIII
+% Define patterns for changePitch/cPI/cPII/cPIII/cPIV
 patI = { c4 r8 }
 patII = { c4 c8 }
 patIII = { c8[ r8 c8] }
+patIV = { r8 c c }
 
 fluteOne = \relative c''' {
   \key f \major
@@ -1181,32 +1182,47 @@ hornOne = \relative c'' {
   }
   %mark B
   \repeat volta 2 {
-    
+    \cPIV { c\ff c c c | c c c c | c c c c | } r8 c c c c c |
+    \cPIV { c c c c | c c c c | b b b b | } r8 b b b b b |
+    \cPIV { b b b b | b b b b | b b b b | b b b b |
+	    b b b b | b b b b | c c c c | } r8 c c c c c |
     %mark C
-    
+    \cPIV { c c c c | c c c c | c c c c | } r8 c c c c c |
+    \cPIV { c c c c | c c c c | c c c c | c c c c |
+	    c c c c | c c c c | c c c c | } r8 c c c c c |
+    \cPIV { c c c c | b b b b | c c c c | } 
   }
   \alternative {
-    {   }
-    {   }
+    { c4 r8 r4 r8 | }
+    { c4 r8 r4 r8 | }
   }
   %TRIO
-  \key c \major
+  \key f \major
   \repeat volta 2 {
-    
+    \cPII { a\p a a a | c c a a | bes bes bes bes | a a a a |
+	    a a a a | c c a a | b b b b | bes bes bes bes |
+	    a a a a | c c a a | bes bes bes bes | a a a a |
+	    bes bes d d | c c a a | bes bes bes bes | }
   }
   \alternative {
-    {   }
-    {   }
+    { a4 r8 r4 r8 | }
+    { a4 r8 r4 r8 | }
   }
   %mark D
   \repeat volta 2 {
-    
+    r8 cis,\ff d e4.->~ | e8 d e f4.->~ | f8 e f g4 f8 | e4 r8 r4 r8 |
+    r8 cis d e4.->~ | e8 d e f4.->~ | f8 e f g4 f8 | e4 r8 r4 r8 |
+    r8 e f g4.->~ | g4 f g a4.->~ | a8 g a bes4 a8 | g4 r8 r4 r8 |
+    r8 e f g4.->~ | g4 f g a4.->~ | a8 g a bes4 a8 | g4 c,8( b4 c8) |
     %mark E
-    
+    \cPIV { a'\fff a a a | c c a a | bes bes bes bes | } r8 a a a a a |
+    \cPIV { a a a a | c c a a | b b b b | } r8 bes bes bes bes bes |
+    \cPIV { a a a a | c c a a | bes bes bes bes | } r8 a a a a a |
+    \cPIV { bes bes bes bes | a a a a | bes bes bes bes | }
   }
   \alternative {
-    {   }
-    {   }
+    { a4 r8 r4 r8 | }
+    { a4 a16 a a4 r8 | }
   } 
 }
 

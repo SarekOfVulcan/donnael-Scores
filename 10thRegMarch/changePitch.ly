@@ -432,6 +432,9 @@ cPII = #(define-music-function (parser location newnotes) (ly:music?)
 cPIII = #(define-music-function (parser location newnotes) (ly:music?)
 #{ \changePitch \patIII $newnotes #})
 
+cPIV = #(define-music-function (parser location newnotes) (ly:music?)
+#{ \changePitch \patIV $newnotes #})
+
 #(define cP changePitch)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
