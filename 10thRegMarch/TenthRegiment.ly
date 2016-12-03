@@ -56,7 +56,7 @@ rehearsalMarks = \relative c' {
 patI = { c4 r8 }
 patII = { c4 c8 }
 patIII = { c8[ r8 c8] }
-patIV = { r8 c c }
+patIV = { r8 \samePitch { c c } }
 
 fluteOne = \relative c''' {
   \key f \major
@@ -1168,7 +1168,7 @@ cornetThree = \relative c' {
 hornOne = \relative c'' {
   \key c \major
 
-  c4.->\ff cis-> | d4.-> dis->( | e8 r r b4.->( | c8 r r r4 r8 |
+  c4.->\ff cis-> | d4.-> dis->( | e8) r r b4.->( | c8) r r r4 r8 |
   %mark A
   \repeat volta 2 {
     c4.\p( b | a4. g | f4. e | d4.~ d4) r8 |
@@ -1177,20 +1177,18 @@ hornOne = \relative c'' {
     a4\f a8 a4.->~ | a4 b8 c4.->~ | c8 r r c4.->( |
   }
   \alternative {
-    { b8 r r r4 r8 |  }
-    { b8 r r r4 r8 |  }
+    { b8) r r r4 r8 |  }
+    { b8\repeatTie r r r4 r8 |  }
   }
   %mark B
   \repeat volta 2 {
-    \cPIV { c\ff c c c | c c c c | c c c c | } r8 c c c c c |
-    \cPIV { c c c c | c c c c | b b b b | } r8 b b b b b |
-    \cPIV { b b b b | b b b b | b b b b | b b b b |
-	    b b b b | b b b b | c c c c | } r8 c c c c c |
+    \repeat percent 3 { r8 c\ff c r c c | } r8 c c c c c |
+    \cPIV { c c | c c | b b | } r8 b b b b b |
+    \repeat percent 6 { r8 b b r b b | } r8 c c r c c | r8 c c c c c |
     %mark C
-    \cPIV { c c c c | c c c c | c c c c | } r8 c c c c c |
-    \cPIV { c c c c | c c c c | c c c c | c c c c |
-	    c c c c | c c c c | c c c c | } r8 c c c c c |
-    \cPIV { c c c c | b b b b | c c c c | } 
+    \repeat percent 3 { r8 c c r c c | } r8 c c c c c |
+    \repeat percent 7 { r8 c c r c c | } r8 c c c c c |
+    \cPIV { c c | b b | c c | } 
   }
   \alternative {
     { c4 r8 r4 r8 | }
@@ -1200,7 +1198,7 @@ hornOne = \relative c'' {
   \key f \major
   \repeat volta 2 {
     \cPII { a\p a a a | c c a a | bes bes bes bes | a a a a |
-	    a a a a | c c a a | b b b b | bes bes bes bes |
+	    a a a a | c c a a | b b b b | bes! bes bes bes |
 	    a a a a | c c a a | bes bes bes bes | a a a a |
 	    bes bes d d | c c a a | bes bes bes bes | }
   }
@@ -1212,17 +1210,193 @@ hornOne = \relative c'' {
   \repeat volta 2 {
     r8 cis,\ff d e4.->~ | e8 d e f4.->~ | f8 e f g4 f8 | e4 r8 r4 r8 |
     r8 cis d e4.->~ | e8 d e f4.->~ | f8 e f g4 f8 | e4 r8 r4 r8 |
-    r8 e f g4.->~ | g4 f g a4.->~ | a8 g a bes4 a8 | g4 r8 r4 r8 |
-    r8 e f g4.->~ | g4 f g a4.->~ | a8 g a bes4 a8 | g4 c,8( b4 c8) |
+    r8 e f g4.->~ | g8 f g a4.->~ | a8 g a bes4 a8 | g4 r8 r4 r8 |
+    r8 e f g4.->~ | g8 f g a4.->~ | a8 g a bes4 a8 | g4 c,8( b4 c8) |
     %mark E
-    \cPIV { a'\fff a a a | c c a a | bes bes bes bes | } r8 a a a a a |
-    \cPIV { a a a a | c c a a | b b b b | } r8 bes bes bes bes bes |
-    \cPIV { a a a a | c c a a | bes bes bes bes | } r8 a a a a a |
-    \cPIV { bes bes bes bes | a a a a | bes bes bes bes | }
+    \cPIV { a'\fff a | c a | bes bes | } r8 a a a a a |
+    \cPIV { a a | c a | b b | } r8 bes! bes bes bes bes |
+    \cPIV { a a | c a | bes bes | } r8 a a a a a |
+    \cPIV { bes bes | a a | bes bes | }
   }
   \alternative {
     { a4 r8 r4 r8 | }
     { a4 a16 a a4 r8 | }
+  } 
+}
+
+hornTwo = \relative c' {
+  \key c \major
+
+  e4.->\ff g-> | f4.-> a->( | g8) r r f4.->( | e8) r r r4 r8 |
+  %mark A
+  \repeat volta 2 {
+    c'4.\p( b | a4. g | f4. e | d4.~ d4) r8 |
+    \cPII { f f f f | f f f f | e e e e | e e e e | }
+    c'4.( b | a4. g) | \cPII { g g g g | g g g g | }
+    fis4\f fis8 fis4.->~ | fis4 fis8 fis4.->~ | fis8 r r a4.->( |
+  }
+  \alternative {
+    { g8) r r r4 r8 |  }
+    { g8\repeatTie r r r4 r8 |  }
+  }
+  %mark B
+  \repeat volta 2 {
+    \repeat percent 3 { r8 e\ff e r e e | } r8 e e e e e |
+    \cPIV { e e | e e | f f | } r8 f f f f f |
+    \repeat percent 6 { r8 f f r f f | } r8 e e r e e | r8 e e e e e |
+    %mark C
+    \repeat percent 3 { r8 e e r e e | } r8 e e e e e |
+    \cPIV { e e | bes' bes | a a | a a |
+	   dis, dis | dis dis | e e | } r8 e e e e e |
+    \cPIV { fis fis | f! f | e e | } 
+  }
+  \alternative {
+    { e4 r8 r4 r8 | }
+    { e4 r8 r4 r8 | }
+  }
+  %TRIO
+  \key f \major
+  \repeat volta 2 {
+    \repeat percent 7 { f4\p f8 f4 f8 | } e4 e8 e4 e8 | 
+    \repeat percent 6 { f4 f8 f4 f8 | } e4 e8 e4 e8 | 
+  }
+  \alternative {
+    { f4 r8 r4 r8 | }
+    { f4 r8 r4 r8 | }
+  }
+  %mark D
+  \repeat volta 2 {
+    r8 cis\ff d e4.->~ | e8 d e f4.->~ | f8 e f g4 f8 | e4 r8 r4 r8 |
+    r8 cis d e4.->~ | e8 d e f4.->~ | f8 e f g4 f8 | e4 r8 r4 r8 |
+    r8 e f g4.->~ | g8 f g a4.->~ | a8 g a bes4 a8 | g4 r8 r4 r8 |
+    r8 e f g4.->~ | g8 f g a4.->~ | a8 g a bes4 a8 | g4 c,8( b4 c8) |
+    %mark E
+    \repeat percent 3 { r8 f\fff f r f f | } r8 f f f f f |
+    \repeat percent 3 { r8 f f r f f | } r8 e e e e e |
+    \repeat percent 3 { r8 f f r f f | } r8 f f f f f |
+    \cPIV { f f | f f | e e | }
+  }
+  \alternative {
+    { f4 r8 r4 r8 | }
+    { f4 c16 c c4 r8 | }
+  } 
+}
+
+hornThree = \relative c'' {
+  \key c \major
+
+  g4.->\ff a-> | a4.-> b->( | b8) r r g4.->( | g8) r r r4 r8 |
+  %mark A
+  \repeat volta 2 {
+    \cPII { g\p g g g | g g c c | a a a a | a a a a | }
+    \repeat percent 6 { g4 g8 g4 g8 | } \cPII { d d d d | d d d d | }
+    d4\f d8 d4.->~ | d4 d8 d4.->~ | d8 r r d4.->( |
+  }
+  \alternative {
+    { d8) r r r4 r8 |  }
+    { d8\repeatTie r r r4 r8 |  }
+  }
+  %mark B
+  \repeat volta 2 {
+    \repeat percent 3 { r8 g\ff g r g g | } r8 g g g g g |
+    \repeat percent 3 { r8 g g r g g | } r8 g g g g g |
+    \repeat percent 7 { r8 g g r g g | } r8 g g g g g |
+    %mark C
+    \repeat percent 3 { r8 g g r g g | } r8 g g g g g |
+    \cPIV { g g | e e | f f | f f |
+	    fis fis | fis fis | g g | } r8 g g g g g |
+    \cPIV { a a | g g | g g | }
+  }
+  \alternative {
+    { g4 r8 r4 r8 | }
+    { g4 r8 r4 r8 | }
+  }
+  %TRIO
+  \key f \major
+  \repeat volta 2 {
+    \cPII { c,\p c c c | c c c c | d d d d | c c c c |
+	    c c c c | c c c c | d d d d | c c c c |
+	    c c c c | c c c c | d d d d | c c c c |
+	    d d d d | c c c c | c c c c | }
+  }
+  \alternative {
+    { c4 r8 r4 r8 | }
+    { c4 r8 r4 r8 | }
+  }
+  %mark D
+  \repeat volta 2 {
+    r8 cis\ff d e4.->~ | e8 d e f4.->~ | f8 e f g4 f8 | e4 r8 r4 r8 |
+    r8 cis d e4.->~ | e8 d e f4.->~ | f8 e f g4 f8 | e4 r8 r4 r8 |
+    r8 e f g4.->~ | g8 f g a4.->~ | a8 g a bes4 a8 | g4 r8 r4 r8 |
+    r8 e f g4.->~ | g8 f g a4.->~ | a8 g a bes4 a8 | g4 c,8( b4 c8) |
+    %mark E
+    \cPIV { c\fff c | c c | d d | } r8 c c c c c |
+    \cPIV { c c | c c | d d | } r8 c c c c c |
+    \cPIV { c c | c c | d d | } r8 c c c c c |
+    \cPIV { d d | c c | c c | }
+  }
+  \alternative {
+    { c4 r8 r4 r8 | }
+    { c4 f16 f f4 r8 | }
+  } 
+}
+hornFour = \relative c' {
+  \key c \major
+
+  c4.->\ff e-> | d4.-> fis->( | g8) r r d4.->( | c8) r r r4 r8 |
+  %mark A
+  \repeat volta 2 {
+    \cPII { e\p e e e | e e e e | f f f f | f f f f |
+	    d d d d | d d d d | c c c c | c c c c |
+	    e e e e | e e e e | d d d d | d d d d | }
+    d4\f d8 d4.->~ | d4 d8 d4.->~ | d8 r r fis4.->( |
+  }
+  \alternative {
+    { g8) r r r4 r8 |  }
+    { g8\repeatTie r r r4 r8 |  }
+  }
+  %mark B
+  \repeat volta 2 {
+    \repeat percent 3 { r8 c,\ff c r c c | } r8 c c c c c |
+    \cPIV { c c | c c | d d | } r8 d d d d d |
+    \repeat percent 6 { r8 d d r d d | } r8 c c r8 c c | r8 c c c c c
+    %mark C
+    \repeat percent 3 { r8 c c r c c | } r8 c c c c c |
+    \cPIV { c c | e e | f f | f f |
+	    a a | a a | g g | } r8 g g g g g |
+    \cPIV { d d | d d | c c | }
+  }
+  \alternative {
+    { c4 r8 r4 r8 | }
+    { c4 r8 r4 r8 | }
+  }
+  %TRIO
+  \key f \major
+  \repeat volta 2 {
+    \cPII { c\p c c c | c c c c | d d d d | c c c c |
+	    c c c c | c c c c | d d d d | c c c c |
+	    c c c c | c c c c | d d d d | c c c c |
+	    d d d d | c c c c | c c c c | }
+  }
+  \alternative {
+    { c4 r8 r4 r8 | }
+    { c4 r8 r4 r8 | }
+  }
+  %mark D
+  \repeat volta 2 {
+    r8 cis\ff d e4.->~ | e8 d e f4.->~ | f8 e f g4 f8 | e4 r8 r4 r8 |
+    r8 cis d e4.->~ | e8 d e f4.->~ | f8 e f g4 f8 | e4 r8 r4 r8 |
+    r8 e f g4.->~ | g8 f g a4.->~ | a8 g a bes4 a8 | g4 r8 r4 r8 |
+    r8 e f g4.->~ | g8 f g a4.->~ | a8 g a bes4 a8 | g4 c,8( b4 c8) |
+    %mark E
+    \cPIV { c\fff c | c c | d d | } r8 c c c c c |
+    \cPIV { c c | c c | d d | } r8 c c c c c |
+    \cPIV { c c | c c | d d | } r8 c c c c c |
+    \cPIV { d d | c c | c c | }
+  }
+  \alternative {
+    { c4 r8 r4 r8 | }
+    { c4 c16 c c4 r8 | }
   } 
 }
 

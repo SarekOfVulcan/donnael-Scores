@@ -163,6 +163,38 @@
     
     \new Staff  { 
       \set Score.skipBars = ##t
+      \set Staff.instrumentName = "Horn 1"
+      \set Staff.shortInstrumentName = "Hn 1"
+      
+      \hornOne 
+    }
+    
+    \new Staff  { 
+      \set Score.skipBars = ##t
+      \set Staff.instrumentName = "Horn 2"
+      \set Staff.shortInstrumentName = "Hn 2"
+      
+      \hornTwo
+    }
+    
+    \new Staff  { 
+      \set Score.skipBars = ##t
+      \set Staff.instrumentName = "Horn 3"
+      \set Staff.shortInstrumentName = "Hn 3"
+      
+      \hornThree
+    }
+    
+    \new Staff  { 
+      \set Score.skipBars = ##t
+      \set Staff.instrumentName = "Horn 4"
+      \set Staff.shortInstrumentName = "Hn 4"
+      
+      \hornFour
+    }
+    
+    \new Staff  { 
+      \set Score.skipBars = ##t
       \set Staff.instrumentName = "Baritone"
       \set Staff.shortInstrumentName = "Bari"
 
