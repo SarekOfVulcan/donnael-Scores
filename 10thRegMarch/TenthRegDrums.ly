@@ -9,17 +9,11 @@
 
 \header {
   instrument = "Drums"
-  tagline = ##f
 }
 
 \score {
   \new DrumStaff  { 
-    \set Score.skipBars = ##t
-    \set countPercentRepeats = ##t
-
     \set Staff.midiInstrument = "synth drum" 
-    \time 6/8
-    \clef treble
     
     << \rehearsalMarks 
        \drumSnareBass >>
@@ -27,9 +21,6 @@
   
   \layout { }
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 180 4)
-    }
- }
+    \tempo 4. = 120
+  }
 }

@@ -9,15 +9,10 @@
 
 \header {
   instrument = "Baritone Saxophone"
-  tagline = ##f
 }
 
 \score {
   \new Staff  { 
-    \set Score.skipBars = ##t
-    \override MultiMeasureRest.expand-limit = #1
-
-    \time 6/8
     \clef treble
 
     << \rehearsalMarks 
@@ -31,14 +26,13 @@
   \new Staff  { 
     \set Staff.midiInstrument = "baritone sax"
 
-    \time 6/8
     \clef treble
-    \tempo 4.=120
 
     << \rehearsalMarks 
        \transpose ees c,, \saxBaritone >>
   }
   
-  \midi { }
-  
+  \midi {
+    \tempo 4. = 120
+  }  
 }

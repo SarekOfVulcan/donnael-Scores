@@ -8,6 +8,10 @@
 
 \include "TenthRegiment.ly"
 
+\header {
+	dedication = \markup { \italic "Respectfully dedicated to the 10th Regt. Band of Albany, N. Y." }
+}
+
 \score {
   <<
     \new Staff  { 

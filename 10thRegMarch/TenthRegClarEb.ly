@@ -8,26 +8,20 @@
 }
 
 \header {
-  instrument = "Eb Clarinet"
-  tagline = ##f
+  instrument = "E♭ Clarinet"
 }
 
 \score {
   \new Staff  { 
-    \set Score.skipBars = ##t
-    \override MultiMeasureRest.expand-limit = #1
-
     \set Staff.midiInstrument = "clarinet"
 
-    \time 6/8
     \clef treble
-
     << \rehearsalMarks 
        \transpose ees c \keepWithTag #'clarEb \fluteOne >>
   }
   
   \layout { }
   \midi {
-	
+    \tempo 4. = 120
   }
 }

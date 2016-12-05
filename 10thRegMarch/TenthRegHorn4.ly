@@ -9,24 +9,19 @@
 
 \header {
   instrument = "Horn 4"
-  tagline = ##f
 }
 
 \score {
   \new Staff  { 
-    \set Score.skipBars = ##t
-    \override MultiMeasureRest.expand-limit = #1
-
     \set Staff.midiInstrument = "french horn"
 
-    \time 6/8
     \clef treble
-    \set countPercentRepeats = ##t
-    \set repeatCountVisibility = #(every-nth-repeat-count-visible 4)
     << \rehearsalMarks 
        \hornFour >>
   }
   
   \layout { }
-  \midi { }
+  \midi {
+    \tempo 4. = 120
+  }
 }

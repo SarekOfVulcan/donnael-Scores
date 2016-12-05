@@ -9,28 +9,19 @@
 
 \header {
   instrument = "Baritone TC"
-  tagline = ##f
 }
 
 \score {
   \new Staff  { 
-    \set Score.skipBars = ##t
-    \override MultiMeasureRest.expand-limit = #1
-
     \set Staff.midiInstrument = "trombone"
 
-    \time 6/8
     \clef treble
-
     << \rehearsalMarks 
        \baritoneTC >>
   }
   
   \layout { }
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 180 4)
-    }
- }
+    \tempo 4. = 120
+  }
 }

@@ -8,16 +8,17 @@
 }
 
 \header {
-  instrument = "Horn 3"
+  instrument = "Trombone 1"
 }
 
 \score {
   \new Staff  { 
-    \set Staff.midiInstrument = "french horn"
+    \set Staff.midiInstrument = "trombone"
 
-    \clef treble
+    \clef bass
+    
     << \rehearsalMarks 
-       \hornThree >>
+       \tromboneOne >>
   }
   
   \layout { }

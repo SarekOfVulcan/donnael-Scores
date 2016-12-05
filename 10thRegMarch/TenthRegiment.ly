@@ -7,12 +7,17 @@
   title = "Tenth Regiment March"
   composer = "R. B. Hall"
   arranger = \markup { \smaller "edited by G. Fitzgerald" }
-  copyright = "Public domain. Version 2016-11-29"
+  copyright = "Public domain. Version 2016-12-05"
+  tagline = ##f
 }
 
 rehearsalMarks = \relative c' {
   \time 6/8
-
+  \set Score.skipBars = ##t
+  \override MultiMeasureRest.expand-limit = #2
+  \set countPercentRepeats = ##t
+  \set repeatCountVisibility = #(every-nth-repeat-count-visible 4)
+  
   s2.*4
   \mark \markup { \circle "A" }
   \repeat volta 2 {
@@ -1400,18 +1405,126 @@ hornFour = \relative c' {
   } 
 }
 
-tromboneOneTreble = \relative c'' {
+tromboneOne = \relative c' {
+  \key f \major
+  c4.->\ff d-> | d4.-> d->( | c8) r r c4.->( | c8) r r r4 r8 |
 
+  %mark A
+  \repeat volta 2 {
+    \cPIII { c\p c c c | c c c c | d d d d | d d d d | }
+    c2.~ | c2. | c2.~ | c4 r 8 r4 r8 |
+    \cPIII { c c c c | c c c c | } c2.~ | c2. |
+    g4.->~\f  g4 fis8 | f!4.->~ f4 e8 | d8 r r d'4.->( |
+  }
+  \alternative {
+    { c4) r8 r4 r8 | }
+    { c4\repeatTie r8 r4 r8 | }
+  }
+  %mark B
+  \repeat volta 2 {
+    f,4.->\ff e-> | d4.-> c-> | c'8 r r c4.->~ | c4 c8 c4 c8 |
+    f,4.-> e-> | d4.-> c-> | c'8 r r c4.->~ | c4 c8 c4 c8 |
+    g4.-> f-> | e4.-> d-> | c'8 r r c4.->~ | c4 c8 c4 c8 |
+    c8 r r c4.->~ | c4 c8 c4 c8 | c8 r r c4.~ | c4 r8 r4 r8 |
+    %mark C
+    f,4.-> e-> | d4.-> c-> | c'8-. r r c4.->~ | c4 c8 c4 c8 |
+    f,4.-> e-> | d4.-> c-> | r8 d e f g a | bes2.-> |
+    d2.-> | d2.-> | c8 r r c4.~ | c4 c8 c4 c8 |
+    b2.( | bes!2.) | a2.~ |
+  }
+  \alternative {
+    { a4 r8 r4 r8 |  }
+    { a4\repeatTie r8 r4 r8 | }
+  }
+  %TRIO
+  \key bes \major
+  \repeat volta 2 {
+    \cPII { d\p d d d | d d d d | ees ees ees ees | d d d d |
+	    d d d d | d d d d | c c c c | } c4 r8 r4 r8 |
+    \cPII { d d d d | d d d d | ees ees ees ees | d d d d |
+	    ees ees ees ees | d d d d | ees ees ees ees | }
+  }
+  \alternative {
+    { d4 r8 r4 r8 | }
+    { d4 r8 r4 r8 | }
+  }
+  %mark D
+  \repeat volta 2 {
+    r8 fis,\ff g a4.->~ | a8 g a bes4.->~ | bes8 a bes c4 bes8 | a4 r8 r4 r8 |
+    r8 fis g a4.->~ | a8 g a bes4.->~ | bes8 a bes c4 bes8 | a4 r8 r4 r8 |
+    r8 a bes c4.->~ | c8 bes c d4.->~ | d8 c d ees4 d8 | c4 r8 r4 r8 |
+    r8 a bes c4.->~ | c8 bes c d4.->~ | d8 c d ees4 d8 | c4 f,8\fff( e4 f8) |
+    %mark E
+    d'2.-> | f4.-> d-> | ees4.-> bes4-> c8 | d4 f,8( e4 f8) |
+    d'2.-> | f4.-> d-> | c4.-> bes-> | a4 f8( e4 f8) |
+    d'2.-> | f4.-> d-> | ees4.-> bes4-> c8 | d2.-> |
+    g,4.-> ees'-> | d4.-> bes-> | ees2.(
+  }
+  \alternative {
+    { d4) r8 r4 r8 | }
+    { d4\repeatTie d16 d d4 r8 | }
+  } 
 }
 
-tromboneTwoTreble = \relative c' {
+tromboneTwo = \relative c' {
+  \key f \major
+  a4.->\ff a-> | bes4.-> b->( | c8) r r bes!4.->( | a8) r r r4 r8 |
 
+  %mark A
+  \repeat volta 2 {
+    \cPIII { a\p a a a | a a a a | bes bes bes bes | bes bes bes bes | }
+    bes2.~ | bes2. | a2.~ | a4 r 8 r4 r8 |
+    \cPIII { a a a a | a a a a | } g2.~ | g2. |
+    g4.->~\f  g4 fis8 | f!4.->~ f4 e8 | d8 r r g4.->( |
+  }
+  \alternative {
+    { g4) r8 r4 r8 | }
+    { g4\repeatTie r8 r4 r8 | }
+  }
+  %mark B
+  \repeat volta 2 {
+    f4.->\ff e-> | d4.-> c-> | a'8 r r a4.->~ | a4 a8 a4 a8 |
+    f4.-> e-> | d4.-> c-> | g'8 r r g4.->~ | g4 g8 g4 g8 |
+    g4.-> f-> | e4.-> d-> | bes'8 r r bes4.->~ | bes4 bes8 bes4 bes8 |
+    bes8 r r bes4.->~ | bes4 bes8 bes4 bes8 | a8 r r a4.~ | a4 r8 r4 r8 |
+    %mark C
+    f4.-> e-> | d4.-> c-> | a'8-. r r a4.->~ | a4 a8 a4 a8 |
+    f4.-> e-> | d4.-> c-> | r8 d e f g a | bes2.-> |
+    aes2.-> | aes2.-> | a!8 r r a4.~ | a4 a8 a4 a8 |
+    g2.( | g2.) | f2.~ |
+  }
+  \alternative {
+    { f4 r8 r4 r8 |  }
+    { f4\repeatTie r8 r4 r8 | }
+  }
+  %TRIO
+  \key bes \major
+  \repeat volta 2 {
+    \repeat percent 7 { bes4\p bes8 bes4 bes8 | } a4 r8 r4 r8 |
+    \repeat percent 6 { bes4 bes8 bes4 bes8 | } a4 a8 a4 a8 |
+  }
+  \alternative {
+    { bes4 r8 r4 r8 | }
+    { bes4 r8 r4 r8 | }
+  }
+  %mark D
+  \repeat volta 2 {
+    r8 fis\ff g a4.->~ | a8 g a bes4.->~ | bes8 a bes c4 bes8 | a4 r8 r4 r8 |
+    r8 fis g a4.->~ | a8 g a bes4.->~ | bes8 a bes c4 bes8 | a4 r8 r4 r8 |
+    r8 a bes c4.->~ | c8 bes c d4.->~ | d8 c d ees4 d8 | c4 r8 r4 r8 |
+    r8 a bes c4.->~ | c8 bes c d4.->~ | d8 c d ees4 d8 | c4 f,8\fff( e4 f8) |
+    %mark E
+    d'2.-> | f4.-> d-> | ees4.-> bes4-> c8 | d4 f,8( e4 f8) |
+    d'2.-> | f4.-> d-> | c4.-> bes-> | a4 f8( e4 f8) |
+    d'2.-> | f4.-> d-> | ees4.-> bes4-> c8 | d2.-> |
+    g,4.-> ees'-> | d4.-> bes-> | a2.(
+  }
+  \alternative {
+    { bes4) r8 r4 r8 | }
+    { bes4\repeatTie bes16 bes bes4 r8 | }
+  } 
 }
 
-tromboneThree = \relative c, {
-
-}
-		    
 baritoneTC = \relative c'' {
   \key g \major
 

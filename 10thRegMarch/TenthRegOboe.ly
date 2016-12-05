@@ -9,24 +9,19 @@
 
 \header {
   instrument = "Oboe"
-  tagline = ##f
 }
 
 \score {
   \new Staff  { 
-    \set Score.skipBars = ##t
-    \override MultiMeasureRest.expand-limit = #1
-
     \set Staff.midiInstrument = "oboe"
 
-    \time 6/8
     \clef treble
-    \tempo 4.=120
-    
     << \rehearsalMarks 
        \oboeOne >>
   }
   
   \layout { }
-  \midi { }
+  \midi {
+    \tempo 4. = 120
+  }
 }

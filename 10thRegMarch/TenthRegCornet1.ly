@@ -9,26 +9,19 @@
 
 \header {
   instrument = "Cornet 1"
-  tagline = ##f
 }
 
 \score {
   \new Staff  { 
-    \set Score.skipBars = ##t
     \set Staff.midiInstrument = "trumpet"
 
-    \time 6/8
     \clef treble
-
     << \rehearsalMarks 
        \cornetOne >>
   }
   
   \layout { }
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 180 4)
-    }
- }
+    \tempo 4. = 120
+  }
 }
