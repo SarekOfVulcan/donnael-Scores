@@ -1,9 +1,9 @@
 \version "2.18.2"
 
-#(set-global-staff-size 12)
+#(set-global-staff-size 10)
 
 \paper {
-  #(set-paper-size "legal")
+%  #(set-paper-size "legal")
 }
 
 \include "TenthRegiment.ly"

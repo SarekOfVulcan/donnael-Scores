@@ -2,7 +2,6 @@
 \include "TenthRegiment.ly"
 
 \paper {
-  #(set-paper-size "letter")
   ragged-last-bottom = ##f
   ragged-bottom = ##f
 }

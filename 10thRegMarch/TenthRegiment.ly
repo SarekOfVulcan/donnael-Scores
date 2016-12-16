@@ -7,8 +7,13 @@
   title = "Tenth Regiment March"
   composer = "R. B. Hall"
   arranger = \markup { \smaller "edited by G. Fitzgerald" }
-  copyright = "Public domain. Version 2016-12-05"
   tagline = ##f
+  mutopiatitle = "Tenth Regiment March"
+  mutopiacomposer = "HallRB"
+  source = "Carl Fischer, 1895"
+  style = "March"
+  license = "Public domain"
+  maintainer = "Garrett Fitzgerald"
 }
 
 rehearsalMarks = \relative c' {
@@ -1980,47 +1985,3 @@ percBells = \relative c' {
     { bes4 r8 r4 r8 | }
   } 
 }
-
-dummyPart = \relative c'' {
-  \key g \major
-  
-
-  %mark A
-  \repeat volta 2 {
-
-  }
-  \alternative {
-    {   }
-    {   }
-  }
-  %mark B
-  \repeat volta 2 {
-    
-    %mark C
-    
-  }
-  \alternative {
-    {   }
-    {   }
-  }
-  %TRIO
-  \key c \major
-  \repeat volta 2 {
-    
-  }
-  \alternative {
-    {   }
-    {   }
-  }
-  %mark D
-  \repeat volta 2 {
-    
-    %mark E
-    
-  }
-  \alternative {
-    {   }
-    {   }
-  } 
-}
-

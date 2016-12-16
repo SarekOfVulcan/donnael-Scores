@@ -1,16 +1,12 @@
 \version "2.18.2"
 
-\paper {
-  #(set-paper-size "letter")
-}
-
 \include "TenthRegiment.ly"
 
 \score {
   <<
     \new Staff  {
       \time 6/8
-      \unfoldRepeats      
+      \unfoldRepeats
       \rehearsalMarks
     }
     
