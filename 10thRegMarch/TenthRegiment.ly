@@ -1,4 +1,4 @@
-\version "2.18.2"
+\version "2.24.0"
 \include "changePitch.ly"
 
 \pointAndClickOff
@@ -2023,4 +2023,3 @@ dummyPart = \relative c'' {
     {   }
   } 
 }
-
