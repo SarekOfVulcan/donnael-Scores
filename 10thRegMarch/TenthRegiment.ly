@@ -7,7 +7,7 @@
   title = "Tenth Regiment March"
   composer = "R. B. Hall"
   arranger = \markup { \smaller "edited by G. Fitzgerald" }
-  copyright = "Public domain. Version 2016-12-05"
+  copyright = "Public domain. Version 2023-04-10"
   tagline = ##f
 }
 
@@ -36,8 +36,9 @@ rehearsalMarks = \relative c' {
   }
   \alternative {
     {s2. | }
-    {s2. | }
+    {s2. | \bar "||" } 
   }
+  \break
   \mark \markup { \bold "TRIO" }
   \repeat volta 2 {
     s2.*15 |
