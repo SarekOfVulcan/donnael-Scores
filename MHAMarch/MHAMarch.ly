@@ -5,16 +5,16 @@
 
 \header {
   title = "M. H. A. March."
-  subtitle = "Respectfully dedicated to M. H. Andrews"
+%  subtitle = \markup { \italic \smaller "Respectfully dedicated to M. H. Andrews" }
   composer = "R. B. Hall"
   arranger = \markup { \smaller "edited by G. Fitzgerald" }
-  copyright = "Public domain. Version 2023-04-10"
+  copyright = "Public domain. Version 2023-04-18"
   tagline = ##f
 }
 
 rehearsalMarks = \relative c' {
   \set Score.skipBars = ##t
-  \override MultiMeasureRest.expand-limit = #2
+  \override MultiMeasureRest.expand-limit = #1
   \set countPercentRepeats = ##t
   \set repeatCountVisibility = #(every-nth-repeat-count-visible 4)
 
@@ -83,7 +83,55 @@ bassoonOne = \relative c {
 % clarinetInEb - dup of flute
 
 clarinetOne = \relative c''' {
-
+  \key f \major
+  a8[\ff r a] d4.->( | c8) a-. bes-. b-. c-. cis-. | d8 r r e4.->\trill( | f4) r8 r4 r8 |
+  %mark A
+  \repeat volta 2 {
+    a,8[\f r a] gis-. a-. bes-. | a8-.[ r bes-.] b-. c-. cis-. | 
+    d8-. r r e,4.->~ | e8[ r  e] e f fis |
+    g8[ r g] fis g a | g8[ r gis-.] a-. bes-. b-. | 
+    c8 r r c,4.->~ | c8 d e f g gis |
+    a8[ r a] gis-. a-. bes-. | a8[ r bes] b-. c-. d-. |
+    e8 r r e,4.->~ | e8[ r e] e-. f-. fis-. |
+    g4->( fis16 g) c4->( b16 c) | c8-. d-. dis-. e4->( dis16 e) |
+    f4 e8 d-. c-. bes-. | 
+  }
+  \alternative {
+    { c4 r8 r4 r8 | }
+    { c8-. c-.\ff c-. c-. c-. c-. | }
+  }
+  %mark B
+  \repeat volta 2 {
+    a4.-> a-> | a4.-> c,8 f g | a4.-> a-> | bes4.-> c,8 g' a |
+    bes4.-> bes-> | bes4.-> e4( d8) | c8[ r c]( bes[) r bes]( | a8[) r a]( g[) r g]( |
+    a4.->) a-> | a4.-> f8 g a | bes4.-> bes-> | bes8 r r d4.->( |
+    c8) d,-. e-. f-. g-. a-. | bes8-. a-. g-. f-. e-. d-. |
+    \acciaccatura d8( c8)( b c) a'4( g8) |
+  }
+  \alternative {
+    { f8 c'-.\ff c-. c-. c-. c-. | }
+    { f,4 f16 f f4 r8 | }
+  }
+  
+  %mark TRIO
+  \key bes \major
+  f'8-.\ff e-. ees-. d-. c-. bes-. | a8[ r f] d'4->( c8) | bes8[ r f]\p( g4 a8) |
+  %mark C
+  \repeat volta 2 {
+    s2.*15 |
+  }
+  \alternative {
+    {s2. | }
+    {s2. | }
+  }
+  %mark D
+  \repeat volta 2 {
+    s2.*14 | 
+  }
+  \alternative {
+    {s2. | s2. }
+    {s2. | s2. }
+  }
 }
 
 clarinetTwo = \relative c'' {
@@ -167,7 +215,7 @@ cornetSolo = \relative c'' {
   }
   \alternative {
     { bes4) f'16-. f-. f4-. f16-. f-. | f8 f, g a bes c | }
-    { b4\repeatTie f8( g4 a8) | bes4 bes16 bes bes4 r8 | }
+    { bes4\repeatTie f8( g4 a8) | bes4 bes16 bes bes4 r8 | }
   }
 }
 
@@ -224,7 +272,7 @@ basses = \relative c {
     \cPI { ees\f bes' | ees, bes' | f bes | f bes |
       f bes | f bes| ees, bes' | ees, bes' |
       ees, bes' | ees, bes' | d, g | d g |
-      bes bes | bes bes | f f | s }
+      bes\ff bes | bes bes | f f | s }
   }
   \alternative {
     { bes4 r8 r4 r8 | }
@@ -235,7 +283,7 @@ basses = \relative c {
     \cPI { ees,\ff bes' | ees, bes' | ees, bes' | f bes |
            f bes | f bes | f bes | d, bes' | 
            ees, bes' | ees, bes' | aes aes | s } aes8 r r a4.->\ff( | 
-    bes8) r r r4 r8 | r2. | r4 r8 <bes, bes'>4.->( |
+    bes8) r r r4 r8 | R2. | r4 r8 <bes, bes'>4.->( |
   }
   \alternative {
     { ees4) r8 r4 r8 | }
@@ -243,22 +291,30 @@ basses = \relative c {
   }
   
   %mark TRIO
-  s2.*3
+  \key aes \major
+  ees8\ff f g aes bes c | des8 r r ees,4.->( | aes4) r8 r4 r8 |
   %mark C
   \repeat volta 2 {
-    s2.*15 |
+    \cPI { aes\p ees | aes ees | bes' ees, | bes' ees, | 
+           g ees | bes'\cresc ees, | aes <c, c'> | s } <ees ees'>2.->\ff
+    \cPI { aes\p ees | aes ees | g <c, c'> | g' <c, c'> |
+           <bes bes'>\ff <bes bes'> | <bes bes'> <bes bes'> | s }
+    ees8[ r a]( bes[) r g-.] 
   }
   \alternative {
-    {s2. | }
-    {s2. | }
+    { ees4-. r8 r4 r8 | }
+    { ees4-. r8 r4 r8 | }
   }
   %mark D
   \repeat volta 2 {
-    s2.*14 | 
+    \cPI { aes\ff ees | aes aes | des, f | bes-. des-. |
+           ees, bes' | g ees | c' bes | s } aes4 r8 r4 r8 |
+    \cPI { aes ees | aes aes | des, f | bes des | 
+           ees, bes' | g ees | s } 
   }
   \alternative {
-    {s2. | s2. }
-    {s2. | s2. }
+    { aes4 r8 r4 r8 | R2. | }
+    { aes4 r8 r4 r8 | aes4 aes16 aes aes4 r8 | }
   }
 }
 

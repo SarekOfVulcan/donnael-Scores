@@ -9,7 +9,7 @@
 \include "MHAMarch.ly"
 
 \header {
-	dedication = \markup { \italic "Respectfully dedicated to the 10th Regt. Band of Albany, N. Y." }
+	dedication = \markup { \italic "Respectfully dedicated to M. H. Andrews" }
 }
 
 \score {
@@ -21,14 +21,6 @@
       \clef treble
       << \rehearsalMarks
 	 \keepWithTag #'fluteOne \fluteOne >>
-    }
-
-    \new Staff  { 
-      \set Staff.instrumentName = "Flute 2"
-      \set Staff.shortInstrumentName = "Fl 2"
-      
-      \clef treble
-      \fluteTwo
     }
 
     \new Staff  { 
@@ -71,20 +63,13 @@
       \clarinetTwo
     }
 
-    \new Staff  {
-      \set Staff.instrumentName = "Clarinet 3"
-      \set Staff.shortInstrumentName = "Clar 3"
-
-      \clef treble
-      \clarinetThree
-    }
-
     \new Staff  { 
       \set Staff.instrumentName = "Bass Clarinet"
       \set Staff.shortInstrumentName = "B. Clar"
 
       \clef treble
-      \clarinetBass
+      \transpose bes c'' \basses
+
     }
 
     \new Staff  { 

@@ -17,7 +17,7 @@
 
     \clef treble
     << \rehearsalMarks 
-       \clarinetBass >>
+       \transpose bes c'' \basses >>
   }
   
   \layout { }
