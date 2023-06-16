@@ -8,7 +8,7 @@
 %  subtitle = \markup { \italic \smaller "Respectfully dedicated to M. H. Andrews" }
   composer = "R. B. Hall"
   arranger = \markup { \smaller "edited by G. Fitzgerald" }
-  copyright = "Public domain. Version 2023-04-18"
+  copyright = "Public domain. Version 2023-06-16"
   tagline = ##f
 }
 
@@ -252,7 +252,7 @@ cornetSolo = \relative c'' {
     a4.-> a-> | a4.-> c,8 f g | a4.-> a-> | bes4.-> c,8 g' a |
     bes4.-> bes-> | bes4.-> e4( d8) | c8[ r c]( bes[) r bes]( | a8[) r a]( g[) r g]( |
     a4.->) a-> | a4.-> f8 g a | bes4.-> bes-> | bes8 r r d4.->\ff( |
-    c8) d-. e-. f-. g-. a-. | bes8-. a-. g-. f-. e-. d-. | \acciaccatura d8( c8)( b c) a'4( g8) |
+    c8) d-. e-. f-. g-. a-. | bes8-. a-. g-. f-. e-. d-. | \acciaccatura d8( c8)( b c) a'4->( g8) |
   }
   \alternative {
     { f8 c-.\ff c-. c-. c-. c-. | }
@@ -260,7 +260,7 @@ cornetSolo = \relative c'' {
   }
   %TRIO
   \key bes \major
-  f8\ff e ees d c bes | a8[ r f] d'4-> c8 | bes8 r f\p( g4 a8)
+  f8\ff e ees d c bes | a8[ r f] d'4->( c8) | bes8 r f\p( g4 a8)
   %mark C
   \repeat volta 2 {
     f2.~ | f4 f8( g4 a8) | f2.~ | f4 f8( g4 ges8) |
@@ -280,13 +280,63 @@ cornetSolo = \relative c'' {
     c4.( ees8[) r ees]( | d8[) r d]( c[) r c](
   }
   \alternative {
-    { bes4) f'16-. f-. f4-. f16-. f-. | f8 f, g a bes c | }
+    { bes4) f'16-. f-. f4-. f16-. f-. | f8-. f,-. g-. a-. bes-. c-. | }
     { bes4\repeatTie f8( g4 a8) | bes4 bes16 bes bes4 r8 | }
   }
 }
 
 cornetOne = \relative c'' {
-
+  \key f \major
+  
+  a8[\ff r a] d4.->( | c8) a-. bes-. b-. c-. cis-. | d8 r r e4.->\trill( | f4) r8 r4 r8 |
+  %mark A
+  \repeat volta 2 {
+    a,8[\f r a] gis a bes | a[ r bes-.] b-. c-. cis-. | d8-. r r e,4.->~ | e8[ r e] e f fis |
+    g8[ r g] fis g a | g8[ r gis] a bes b | c8 r r c,4.->~ | c8 d e f g gis |
+    a8[ r a] gis a bes | a8[ r bes] b c d | e8 r r e,4.->~ | e8[ r e]\ff e f fis |
+    g4->( fis16 g) c4->( b16 c) | <e c>8-. <f d>-. <fis dis>-. <g e>4->( fis16 g) | 
+    <a f>4( <g e>8) <f d>-. <e c>-. <d bes>-. |
+  }
+  \alternative {
+    { c4 r8 r4 r8 | }
+    { c8-. c-.\ff c-. c-. c-. c-. | }
+  }
+  %mark B
+  \repeat volta 2 {
+    a4.-> a-> | a4.-> c,8 f g | a4.-> a-> | bes4.-> c,8 g' a |
+    bes4.-> bes-> | bes4.-> e4( d8) | c8[ r c]( bes[) r bes]( | a8[) r a]( g[) r g]( |
+    a4.->) a-> | a4.-> f8 g a | bes4.-> bes-> | bes8 r r d4.->\ff( |
+    c8) b-. bes-. a-. g-. f-. | e8-. f-. g-. a-. bes-. b-. | \acciaccatura d8( c8)( b c) c4->( bes8) |
+  }
+  \alternative {
+    { a8 c-.\ff c-. c-. c-. c-. | }
+    { a4 f'16 f f4 r8 | }
+  }
+  %TRIO
+  \key bes \major
+  f8\ff e ees d c bes | a8[ r f] d'4->( c8) | bes8 r f\p( g4 a8)
+  %mark C
+  \repeat volta 2 {
+    f2.~ | f4 f8( g4 a8) | f2.~ | f4 f8( g4 ges8) |
+    f4\cresc( ees'8) fis,4( ees'8) | g,4( ees'8) a,4( ees'8) | d8 bes g f4.->~\ff | f4 f8\p( g4 a8) |
+    f2.~ | f4 f8 f g gis | a2.~ | a4 a8\< a bes b |
+    c2.~\ff | c8 d-. c-. bes-. a-. g-. | f8 r r r4 r8 |
+  }
+  \alternative {
+    { r4 f8\p( g4 a8) | }
+    { r8 f'8-.\ff f-. f-. f-. f-. | }
+  }
+  %mark D
+  \repeat volta 2 {
+    bes,4.-> a-> | g4.-> f-> | ees4.-> d-> | c2.-> |
+    a'4.-> g-> | f4.-> g4 a8 | bes4.-> c-> | d8-. f-. e-. ees-. d-. c-. |
+    bes4.-> a-> | g4.-> f-> | ees4.-> d-> | c2.-> |
+    f4.-> fis-> | g4.-> a->( |
+  }
+  \alternative {
+    { bes4) f'16-. f-. f4-. f16-. f-. | f8-. f-. e-. ees-. d-. c-. | }
+    { bes4\repeatTie f8( g4 a8) | bes4 bes16 bes bes4 r8 | }
+  }
 }
 
 cornetTwo = \relative c' {
@@ -338,26 +388,34 @@ baritoneTC = \relative c'' {
   }
   \alternative {
     {c4 r8 a->\f bes-> b-> | }
-    {c8 c c c c c | }
+    {c8 c\ff c c c c | }
   }
   %mark B
   \repeat volta 2 {
-    s2.*15 |
+    r4 f8 e4 d8 | c2.~ | c4 f8 c4 d8 | e2.~ |
+    e4 e8 d4 des8 | c2. | c4.-> cis-. | d4.-> e-> | 
+    r4 f8 e4 d8 | c2.~ | c4 f8 e4 ees8 | d8 r r f4.->( |
+    c8) b bes a g f | e8 f g a bes b | \acciaccatura d8( c)( b c) c4.~
   }
   \alternative {
-    {s2. | }
-    {s2. | }
+    {c8 c\ff c c c c | }
+    {c4\repeatTie f16 f f4 r8 | }
   }
   
   %mark TRIO
-  s2.*3
+  \key bes \major
+  f,8-.\ff g-. a-. bes-. c-. d-. | ees8 r r c4.( | d4) r8 r4 r8 |
   %mark C
   \repeat volta 2 {
-    s2.*15 |
+    r4 d8\p^\markup {\italic "Solo"} bes4 d8 | f,2. | r8 ees'8 c4 ees | a,2. |
+    \cPII { f\cresc( ees') fis,( ees') | g,( ees') a,( ees') | s}
+    d8 bes g f4.->~\ff | f4 f8\p( g4 a8) |
+    r4 d8 bes4 d8 | f,2. | r4 d'8 a4 d8 | fis,2.\< |
+    c'2.~\ff | c8 d-. c-. bes-. a-. g-. | f8[ r b]( c[) r a] |
   }
   \alternative {
-    {s2. | }
-    {s2. | }
+    {f4 r8 r4 r8 | }
+    {f8 f\ff f f f f | }
   }
   %mark D
   \repeat volta 2 {
@@ -402,7 +460,7 @@ basses = \relative c {
   %mark C
   \repeat volta 2 {
     \cPI { aes\p ees | aes ees | bes' ees, | bes' ees, | 
-           g ees | bes'\cresc ees, | aes <c, c'> | s } <ees ees'>2.->\ff
+           g ees | bes'\cresc ees, | aes <c, c'> | s } <ees ees'>2.->\ff\>
     \cPI { aes\p ees | aes ees | g <c, c'> | g' <c, c'> |
            <bes bes'>\ff <bes bes'> | <bes bes'> <bes bes'> | s }
     ees8[ r a]( bes[) r g-.] 
