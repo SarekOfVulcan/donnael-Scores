@@ -5,10 +5,9 @@
 
 \header {
   title = "M. H. A. March."
-%  subtitle = \markup { \italic \smaller "Respectfully dedicated to M. H. Andrews" }
   composer = "R. B. Hall"
   arranger = \markup { \smaller "edited by G. Fitzgerald" }
-  copyright = "Public domain. Version 2023-06-16"
+  copyright = "Public domain. Version 2023-06-21"
   tagline = ##f
 }
 
@@ -29,6 +28,7 @@ rehearsalMarks = \relative c' {
     {s2. | }
     {s2. | }
   }
+  
   \mark \markup { \circle "B" }
   \repeat volta 2 {
     s2.*15 |
@@ -37,9 +37,12 @@ rehearsalMarks = \relative c' {
     {s2. | }
     {s2. | }
   }
+  
   \bar "||" \break
+  
   \mark \markup { \bold "TRIO" }
   s2.*3
+  
   \mark \markup { \circle "C" }
   \repeat volta 2 {
     s2.*15 |
@@ -48,14 +51,17 @@ rehearsalMarks = \relative c' {
     {s2. | }
     {s2. | }
   }
+  
   \mark \markup { \circle "D" }
   \repeat volta 2 {
     s2.*14 | 
   }
   \alternative {
     {s2. | s2. }
-    {s2. | s2. \bar "|." }
+    {s2. | s2. }
   }
+  
+  \bar "|."
 }
 
 % Define patterns for changePitch/cPI/cPII/cPIII/cPIV
