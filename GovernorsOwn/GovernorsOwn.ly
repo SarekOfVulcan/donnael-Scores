@@ -112,7 +112,7 @@ saxBaritone = \relative c' {
 
 cornetSolo = \relative c'' {
   \key bes \major
-
+  
   bes16\ff d8. f,16 | d'2~ | d8. bes16 d8. f,16 | d'2~ | d8. bes16 d8. f,16 |
   f'8. e16 ees8. d16 | c8 bes a g | f8 r \acciaccatura e'8 f4 | r8 e,16\mf( f) g a bes c |
   \repeat volta 2 {
@@ -193,7 +193,52 @@ hornFour = \relative c' {
 }
 
 tromboneOne = \relative c' {
+  \key aes \major
 
+  r16 r4 |
+  c2~\ff | c2~ | c2~ | c2 |
+  ees,8. f16 g8. aes16 | bes8 c des d | ees8-> r r4 | ees,8-> r r4 |
+  
+  %mark A
+  \repeat volta 2 {
+    c'2~\mf | c2 | des4. c8 | des8 des r des |
+    des2~ | des2 | des8\< des r des | r\> des[ r des] |
+    c2~\! | c2 | bes4. bes8 | bes4. bes16\f bes |
+    bes4. bes16 bes | bes4. bes16 bes | bes8 d r d | 
+  }
+  \alternative {
+    { ees8 r r4 | }
+    { ees8 r r4 | }
+  }
+  %mark B
+  \repeat volta 2 {
+    
+    %mark C
+    
+  }
+  \alternative {
+    {   }
+    {   }
+  }
+  %TRIO
+  \key c \major
+  \repeat volta 2 {
+    
+  }
+  \alternative {
+    {   }
+    {   }
+  }
+  %mark D
+  \repeat volta 2 {
+    
+    %mark E
+    
+  }
+  \alternative {
+    {   }
+    {   }
+  } 
 }
 
 tromboneTwo = \relative c' {
@@ -205,7 +250,52 @@ tromboneThree = \relative c {
 }
 
 baritoneTC = \relative c'' {
+  \key bes \major
+  
+  r16 r4 |
+  bes8.\ff d16 f4~ | f2 | bes,8. d16 f4~ | f2 |
+  f,8. g16 a8. bes16 | c8 d ees e | f8-> r r4 | f,8-> r8 r4 |
 
+  %mark A
+  \repeat volta 2 {
+    f4\mf( bes | d4 f) | f2~ | f2 |
+    f,4( a | c4 f) | f2~\< | f2\> |
+    f,4\!( bes | d4 f) | c4. bes8 | a4. a8\f |
+    g8 fis g c, | f8 e f c | g'8 c c, c' | 
+  }
+  \alternative {
+    { f,8 r r4 | }
+    { f8 r r4 | }
+  }
+  %mark B
+  \repeat volta 2 {
+    
+    %mark C
+    
+  }
+  \alternative {
+    {   }
+    {   }
+  }
+  %TRIO
+  \key c \major
+  \repeat volta 2 {
+    
+  }
+  \alternative {
+    {   }
+    {   }
+  }
+  %mark D
+  \repeat volta 2 {
+    
+    %mark E
+    
+  }
+  \alternative {
+    {   }
+    {   }
+  } 
 }
 
 basses = \relative c, {
@@ -221,7 +311,7 @@ drumSnareBass = \drummode {
 
 
 dummyPart = \relative c'' {
-  \key g \major
+  \key aes \major
   
 
   %mark A
