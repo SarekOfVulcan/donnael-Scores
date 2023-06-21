@@ -1,4 +1,4 @@
-\version "2.18.2"
+\version "2.24.0"
 \include "changePitch.ly"
 
 \pointAndClickOff
@@ -37,9 +37,10 @@ rehearsalMarks = \relative c' {
     {s2 | }
     {s2 | }
   }
-  \bar "||" \break
-  \mark \markup { \bold "TRIO" }
   
+  \bar "||" \break
+  
+  \mark \markup { \bold "TRIO" }
   s2*16 |
   \mark \markup { \circle "C" }
   s2*16 | \bar "||"
@@ -51,6 +52,7 @@ rehearsalMarks = \relative c' {
   s2*16
   \mark \markup { \circle "F" }
   s2*16
+  
   \bar "|." 
 }
 
@@ -205,7 +207,7 @@ tromboneThree = \relative c {
 baritoneTC = \relative c'' {
 
 }
-		    
+
 basses = \relative c, {
 
 }
