@@ -64,7 +64,7 @@ rehearsalMarks = \relative c' {
 }
 
 % Define patterns for changePitch/cPI/cPII/cPIII/cPIV
-patI = { c4 r8 }
+patI = { r4 c4 }
 patII = { c4 c8 }
 patIII = { c8[ r8 c8] }
 patIV = { r8 \samePitch { c c } }
@@ -230,7 +230,58 @@ hornFour = \relative c' {
 }
 
 tromboneOne = \relative c' {
-
+  \key ees \major
+  
+  bes2( b | c4) r r2 | r2 des2->( | d!4) r r2 |
+  %mark A
+  \repeat volta 2 {
+    r4\p\< bes r b | r4\> c r ces | g4-.\! aes-. g-. f-. | ees4-. bes' r bes |
+    r4 bes r bes | r4 d-. d2-> | r4 bes r bes | bes4 r r2 |
+    r4\p\< bes r b | r4\> c r ces | g4-.\! aes-. g-. f-. | ees4-. bes' r bes |
+    bes4 r r2 | r4 r8 d->\ff c4-> bes-> | f4-. r ees'2->( |
+  }
+  \alternative {
+    { d4) r r2 | }
+    { d4\repeatTie r r2 | }
+  }
+  %mark B
+  \key ges \major
+  \repeat volta 2 {
+    r4 bes-.\ff bes2->~ | bes4 bes-. aes-. ges-. | f4-. aes-. a-. bes-. | ces1-> |
+    r4 bes-. bes2->~ | bes4 bes-. aes-. ges-. | f4-. aes-. a-. bes-. | ces1-> |
+    \cPI { bes\p bes | bes bes | bes bes | bes bes | s }
+    ces4 r r2 | ees1->\fff( | d4) r d r |
+  }
+  \alternative {
+    { R1 | }
+    { R1 | }
+  }
+  %mark C
+  \key ees \major
+  
+  r4\p\< bes r b | r4\> c r ces | g4-.\! aes-. g-. f-. | ees4-. bes' r bes |
+  r4 bes r bes | r4 d-. d2-> | r4 bes r bes | bes4 r r2 |
+  r4\p\< bes r b | r4\> c r ces | g4-.\! aes-. g-. f-. | ees4-. bes' r bes |
+  bes4 r r2 | f4->\f g-> aes-> c-> | bes4-. r d2->( | ees4) ees,-. f-. g-. |
+  %TRIO
+  \key aes \major
+  \repeat volta 2 {
+    s1*15 |
+  }
+  \alternative {
+    { s1 | }
+    { s1 | }
+  }
+  %mark D
+  \repeat volta 2 {
+    s1*12 | 
+    %mark E
+    s1*15
+  }
+  \alternative {
+    { s1 | }
+    { s1 | }
+  }
 }
 
 tromboneTwo = \relative c' {
@@ -264,7 +315,7 @@ percBells = \relative c' {
 }
 
 dummyPart = \relative c'' {
-  s1*4
+  s1*4 |
   %mark A
   \repeat volta 2 {
     s1*15 |
@@ -282,8 +333,7 @@ dummyPart = \relative c'' {
     { s1 | }
   }
   %mark C
-  s1*16
-  \bar "||" \break
+  s1*16 |
   %TRIO
   \repeat volta 2 {
     s1*15 |
@@ -295,13 +345,12 @@ dummyPart = \relative c'' {
   %mark D
   \repeat volta 2 {
     s1*12 | 
-    \bar "||"
     %mark E
-    s1*15
+    s1*15 |
   }
   \alternative {
     { s1 | }
-    { s1 \bar "|." }
+    { s1 | }
   }
 }
 
