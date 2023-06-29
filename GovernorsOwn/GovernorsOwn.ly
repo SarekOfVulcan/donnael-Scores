@@ -80,8 +80,58 @@ clarinetInEb = \relative c'' {
 
 }
 
-clarinetOne = \relative c''' {
+clarinetOne = \relative c'' {
+  \key bes \major
 
+  r16 r4 | f2~\ff\startTrillSpan | f2~ | f2~ | f2\stopTrillSpan |
+  f'8. e16 ees8. d16 | c8 bes a g | f8 r \acciaccatura e'8 f4 | r8 e,16\mf( f) g a bes c |
+  \repeat volta 2 {
+    d16( cis d8) r c | c16( b c8) r bes | a16 a a8 a gis | a8 f16( g) a bes c d |
+    ees16( d ees8) r d | c16( b c8) r bes | a8.\< c16 ees8 e8 | ees!8\>( d cis c\!) |
+    d16( cis d8) r c | c16( b c8) r bes | a16 a a8 a bes | c4. c16\ff c |
+    c2~\startTrillSpan | c2~\stopTrillSpan | c8 cis d e |
+  }
+  \alternative {
+    { f8 e,16(\mf f) g a bes c | }
+    { f8 r f,16(\f\< fis) g gis | }
+  }
+  % mark B
+  \repeat volta 2 {
+    a8.\ff gis16 a8. gis16 | a8 bes16( a) g8 f | d'8 d d4~ | d4 bes16 c bes g |
+    bes8 a a4~ | a4 a16 bes a f | g8 ges f4~ | f8 r f g |
+    a8. gis16 a8. gis16 | a8 bes16( a) g8 f | c'8 bes bes4~ | bes4 bes16( a) bes c |
+    des4-> bes16( a) bes c | d!4-> d16( cis) d ees | f8 ees d c |
+  }
+  \alternative {
+    { bes8 r f16(\f\< fis) g gis\! | }
+    { bes8 r r4 | }
+  }
+  
+  % TRIO
+  \key ees \major
+  r8 c16\mf( b c8) c16( ces | bes8) bes r4 | r8 bes16( a bes8) a16( aes | g8) g  bes8.( a16 |
+  bes4) ees\< | f4 ees | ees2\>( | d4\!) r |
+  r8 c16( b c8) c16( ces | bes8) bes r4 | r8 bes16( a bes8) bes16( a | aes!8) aes bes8.( c16 |
+  d4)\< c | bes4 aes | c2\>( | bes4\!) r |
+  % mark C
+  r8 c16\mf( b c8) c16( ces | bes8) bes r4 | r8 bes16( a bes8) a16( aes | g8) g  bes8.( a16 |
+  bes4\<) bes | bes4 bes\! | a2~ | a8[ r16\< e f8. g16] |
+  aes4~\f aes8 g16( ges | f8)[ r16 d ees8. f16] | g4~ g8 ges16( f | ees8)[ r16 bes'16 a8. bes16] |
+  a2 | aes!2 | g2~ | g8 r r4 |
+  % mark D
+  r8 a16\ff( g a8) g | f8 r r4 | r8 g16( fis g8) f | ees8 r r4 |
+  r8 g16( fis g8) f | ees8 r r4 | r8 f16( e f8) ees | d8 r bes4->( |
+  c8) r cis4->( | d8) r ees4( | f8) bes,16 bes bes8 bes16 bes | bes8 r g'8.\f( fis16
+  % mark E
+  g2~ | g4) ees8.( d16 | ees2~ | ees4) bes8.( a16 |
+  bes4) ees\< | f4 ees | ees2\>( | d4\!) f8.( e16 |
+  f2~ | f4) d8.( cis16 | d2~ | d4) bes8. c16 |
+  d4\< c | bes4 a | c2\>( | bes4\!) g'8.( fis16 |
+  % mark F
+  g2~ | g4) ees8.( d16 | ees2~ | ees4) bes8.( a16 |
+  bes4\<) ees | e4 g\! | f2~ | f8[ r16\< e f8. g16] |
+  a4\ff c,~ | c8[ r16 d ees8. f16] | g4 bes,~ | bes8[ r16 g'16 fis8. g16] |
+  c,2 | d2 | ees2~ | ees8 r r4 |
 }
 
 clarinetTwo = \relative c'' {

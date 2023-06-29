@@ -16,8 +16,8 @@
     \set Staff.midiInstrument = "clarinet"
 
     \clef treble
-    << \rehearsalMarks 
-       \clarinetOne >>
+    << \rehearsalMarks
+       \clarinetOne  >>
   }
   
   \layout { }
