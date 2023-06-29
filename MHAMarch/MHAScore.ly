@@ -9,7 +9,7 @@
 \include "MHAMarch.ly"
 
 \header {
-	dedication = \markup { \italic "Respectfully dedicated to M. H. Andrews" }
+  dedication = \markup { \italic "Respectfully dedicated to M. H. Andrews" }
 }
 
 \score {
@@ -20,7 +20,7 @@
       
       \clef treble
       << \rehearsalMarks
-	 \keepWithTag #'fluteOne \fluteOne >>
+         \keepWithTag #'fluteOne \fluteOne >>
     }
 
     \new Staff  { 
@@ -38,206 +38,195 @@
       \clef bass
       \bassoonOne
     }
-
-    \new Staff  { 
-      \set Staff.instrumentName = "Eb Clarinet"
-      \set Staff.shortInstrumentName = "Eb Cl"
+    \new StaffGroup <<
+      \new Staff  { 
+        \set Staff.instrumentName = "Eb Clarinet"
+        \set Staff.shortInstrumentName = "Eb Cl"
       
-      \clef treble
-      \transpose ees c \keepWithTag #'clarEb \fluteOne
-    }
+        \clef treble
+        \transpose ees c \keepWithTag #'clarEb \fluteOne
+      }
     
-    \new Staff  { 
-      \set Staff.instrumentName = "Clarinet 1"
-      \set Staff.shortInstrumentName = "Clar 1"
+      \new Staff  { 
+        \set Staff.instrumentName = "Clarinet 1"
+        \set Staff.shortInstrumentName = "Clar 1"
 
-      \clef treble
-      \clarinetOne
-    }
+        \clef treble
+        \clarinetOne
+      }
 
-    \new Staff  { 
-      \set Staff.instrumentName = "Clarinet 2"
-      \set Staff.shortInstrumentName = "Clar 2"
+      \new Staff  { 
+        \set Staff.instrumentName = "Clarinet 2"
+        \set Staff.shortInstrumentName = "Clar 2"
 
-      \clef treble
-      \clarinetTwo
-    }
+        \clef treble
+        \clarinetTwo
+      }
 
-    \new Staff  { 
-      \set Staff.instrumentName = "Bass Clarinet"
-      \set Staff.shortInstrumentName = "B. Clar"
+      \new Staff  { 
+        \set Staff.instrumentName = "Bass Clarinet"
+        \set Staff.shortInstrumentName = "B. Clar"
 
-      \clef treble
-      \transpose bes c'' \basses
+        \clef treble
+        \transpose bes c'' \basses
 
-    }
+      }
+    >>
+    \new StaffGroup <<
+      \new Staff  { 
+        \set Staff.instrumentName = "Alto Sax"
+        \set Staff.shortInstrumentName = "Alto"
 
-    \new Staff  { 
-      \set Staff.instrumentName = "Alto Sax"
-      \set Staff.shortInstrumentName = "Alto"
+        \clef treble
+        \saxAlto
+      }
 
-      \clef treble
-      \saxAlto
-    }
+      \new Staff  { 
+        \set Staff.instrumentName = "Tenor Sax"
+        \set Staff.shortInstrumentName = "Tenor"
 
-    \new Staff  { 
-      \set Staff.instrumentName = "Tenor Sax"
-      \set Staff.shortInstrumentName = "Tenor"
+        \clef treble
+        \saxTenor
+      }
 
-      \clef treble
-      \saxTenor
-    }
+      \new Staff  { 
+        \set Staff.instrumentName = "Baritone Sax"
+        \set Staff.shortInstrumentName = "Bari"
 
-    \new Staff  { 
-      \set Staff.instrumentName = "Baritone Sax"
-      \set Staff.shortInstrumentName = "Bari"
+        \clef treble
+        \saxBaritone
+      }
+    >>
+    \new StaffGroup <<
+      \new Staff  { 
+        \set Staff.instrumentName = "Solo Cornet"
+        \set Staff.shortInstrumentName = "Solo Cor"
 
-      \clef treble
-      \saxBaritone
-    }
+        \clef treble
+        \cornetSolo
+      }
 
-    \new Staff  { 
-      \set Staff.instrumentName = "Trumpet 1"
-      \set Staff.shortInstrumentName = "Tr 1"
+      \new Staff  { 
+        \set Staff.instrumentName = "Cornet 1"
+        \set Staff.shortInstrumentName = "Cor 1"
 
-      \clef treble
-      \trumpetOne
-    }
+        \clef treble
+        \cornetOne
+      }
 
-    \new Staff  { 
-      \set Staff.instrumentName = "Trumpet 2"
-      \set Staff.shortInstrumentName = "Tr 2"
+      \new Staff  { 
+        \set Staff.instrumentName = "Cornet 2"
+        \set Staff.shortInstrumentName = "Cor 2"
 
-      \clef treble
-      \trumpetTwo
-    }
-
-    \new Staff  { 
-      \set Staff.instrumentName = "Solo Cornet"
-      \set Staff.shortInstrumentName = "Solo Cor"
-
-      \clef treble
-      \cornetSolo
-    }
-
-    \new Staff  { 
-      \set Staff.instrumentName = "Cornet 1"
-      \set Staff.shortInstrumentName = "Cor 1"
-
-      \clef treble
-      \cornetOne
-    }
-
-    \new Staff  { 
-      \set Staff.instrumentName = "Cornet 2"
-      \set Staff.shortInstrumentName = "Cor 2"
-
-      \clef treble
-      \cornetTwo
-    }
+        \clef treble
+        \cornetTwo
+      }
     
-    \new Staff  { 
-      \set Staff.instrumentName = "Cornet 3"
-      \set Staff.shortInstrumentName = "Cor 3"
+      \new Staff  { 
+        \set Staff.instrumentName = "Cornet 3"
+        \set Staff.shortInstrumentName = "Cor 3"
 
-      \clef treble
-      \cornetThree
-    }
+        \clef treble
+        \cornetThree
+      }
+    >>
+    \new StaffGroup <<
+      \new Staff  { 
+        \set Staff.instrumentName = "Horn 1"
+        \set Staff.shortInstrumentName = "Hn 1"
+
+        \clef treble
+        \hornOne 
+      }
     
-    \new Staff  { 
-      \set Staff.instrumentName = "Horn 1"
-      \set Staff.shortInstrumentName = "Hn 1"
+      \new Staff  { 
+        \set Staff.instrumentName = "Horn 2"
+        \set Staff.shortInstrumentName = "Hn 2"
 
-      \clef treble
-      \hornOne 
-    }
+        \clef treble
+        \hornTwo
+      }
     
-    \new Staff  { 
-      \set Staff.instrumentName = "Horn 2"
-      \set Staff.shortInstrumentName = "Hn 2"
+      \new Staff  { 
+        \set Staff.instrumentName = "Horn 3"
+        \set Staff.shortInstrumentName = "Hn 3"
 
-      \clef treble
-      \hornTwo
-    }
+        \clef treble
+        \hornThree
+      }
     
-    \new Staff  { 
-      \set Staff.instrumentName = "Horn 3"
-      \set Staff.shortInstrumentName = "Hn 3"
+      \new Staff  { 
+        \set Staff.instrumentName = "Horn 4"
+        \set Staff.shortInstrumentName = "Hn 4"
 
-      \clef treble
-      \hornThree
-    }
+        \clef treble
+        \hornFour
+      }
+    >>
+    \new StaffGroup <<
+      \new Staff  { 
+        \set Staff.instrumentName = "Trombone 1"
+        \set Staff.shortInstrumentName = "Tb 1"
+
+        \clef bass
+        \tromboneOne
+      }
     
-    \new Staff  { 
-      \set Staff.instrumentName = "Horn 4"
-      \set Staff.shortInstrumentName = "Hn 4"
+      \new Staff  { 
+        \set Staff.instrumentName = "Trombone 2"
+        \set Staff.shortInstrumentName = "Tb 2"
 
-      \clef treble
-      \hornFour
-    }
-    
-    \new Staff  { 
-      \set Staff.instrumentName = "Trombone 1"
-      \set Staff.shortInstrumentName = "Tb 1"
+        \clef bass
+        \tromboneTwo
+      }
 
-      \clef bass
-      \tromboneOne
-    }
-    
-    \new Staff  { 
-      \set Staff.instrumentName = "Trombone 2"
-      \set Staff.shortInstrumentName = "Tb 2"
+      \new Staff  { 
+        \set Staff.instrumentName = "Trombone 3"
+        \set Staff.shortInstrumentName = "Tb 3"
 
-      \clef bass
-      \tromboneTwo
-    }
-
-    \new Staff  { 
-      \set Staff.instrumentName = "Trombone 3"
-      \set Staff.shortInstrumentName = "Tb 3"
-
-      \clef bass
-      \tromboneThree
-    }
-    
+        \clef bass
+        \tromboneThree
+      }
+    >>
     \new Staff  { 
       \set Staff.instrumentName = "Euphonium"
       \set Staff.shortInstrumentName = "Euph"
 
       \clef bass
-       \transpose c bes,, \baritoneTC
+      \transpose c bes,, \baritoneTC
     }
 
-     \new Staff  { 
+    \new Staff  { 
       \set Staff.instrumentName = "Basses"
       \set Staff.shortInstrumentName = "Bass"
 
       \clef bass
       \basses
     }
-    
-   \new DrumStaff  { 
-      \set Staff.instrumentName = "Drums"
-      \set Staff.shortInstrumentName = "Drums"
+    \new StaffGroup <<
+      \new DrumStaff  { 
+        \set Staff.instrumentName = "Drums"
+        \set Staff.shortInstrumentName = "Drums"
       
-      \drumSnareBass
-    }
+        \drumSnareBass
+      }
     
-     \new Staff  { 
-      \set Staff.instrumentName = "Bells"
-      \set Staff.shortInstrumentName = "Bells"
+      \new Staff  { 
+        \set Staff.instrumentName = "Bells"
+        \set Staff.shortInstrumentName = "Bells"
 
-      \clef treble
-      \percBells
-    }
+        \clef treble
+        \percBells
+      }
     
-     \new Staff  { 
-      \set Staff.instrumentName = "Timpani"
-      \set Staff.shortInstrumentName = "Timp"
+      \new Staff  { 
+        \set Staff.instrumentName = "Timpani"
+        \set Staff.shortInstrumentName = "Timp"
 
-      \clef bass
-      \percTimp
+        \clef bass
+        \percTimp
     }
+      >>
   >>
   
   \layout {

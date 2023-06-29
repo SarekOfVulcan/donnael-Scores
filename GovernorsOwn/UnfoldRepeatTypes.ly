@@ -1,4 +1,4 @@
-\version "2.19.51"
+\version "2.24.0"
 #(define-public (unfold-repeat-types types music)
   "Replace repeats of the types given by @var{types} with unfolded repeats."
   (for-each

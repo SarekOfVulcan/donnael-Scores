@@ -24,14 +24,6 @@
     }
 
     \new Staff  { 
-      \set Staff.instrumentName = "Flute 2"
-      \set Staff.shortInstrumentName = "Fl 2"
-      
-      \clef treble
-      \fluteTwo
-    }
-
-    \new Staff  { 
       \set Staff.instrumentName = "Oboe"
       \set Staff.shortInstrumentName = "Oboe"
 
@@ -79,13 +71,6 @@
       \clarinetThree
     }
 
-    \new Staff  { 
-      \set Staff.instrumentName = "Bass Clarinet"
-      \set Staff.shortInstrumentName = "B. Clar"
-
-      \clef treble
-      \clarinetBass
-    }
 
     \new Staff  { 
       \set Staff.instrumentName = "Alto Sax"
@@ -109,22 +94,6 @@
 
       \clef treble
       \saxBaritone
-    }
-
-    \new Staff  { 
-      \set Staff.instrumentName = "Trumpet 1"
-      \set Staff.shortInstrumentName = "Tr 1"
-
-      \clef treble
-      \trumpetOne
-    }
-
-    \new Staff  { 
-      \set Staff.instrumentName = "Trumpet 2"
-      \set Staff.shortInstrumentName = "Tr 2"
-
-      \clef treble
-      \trumpetTwo
     }
 
     \new Staff  { 
@@ -238,21 +207,6 @@
       \drumSnareBass
     }
     
-     \new Staff  { 
-      \set Staff.instrumentName = "Bells"
-      \set Staff.shortInstrumentName = "Bells"
-
-      \clef treble
-      \percBells
-    }
-    
-     \new Staff  { 
-      \set Staff.instrumentName = "Timpani"
-      \set Staff.shortInstrumentName = "Timp"
-
-      \clef bass
-      \percTimp
-    }
   >>
   
   \layout {
