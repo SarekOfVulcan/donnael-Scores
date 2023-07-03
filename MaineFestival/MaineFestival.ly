@@ -262,25 +262,35 @@ tromboneOne = \relative c' {
   r4\p\< bes r b | r4\> c r ces | g4-.\! aes-. g-. f-. | ees4-. bes' r bes |
   r4 bes r bes | r4 d-. d2-> | r4 bes r bes | bes4 r r2 |
   r4\p\< bes r b | r4\> c r ces | g4-.\! aes-. g-. f-. | ees4-. bes' r bes |
-  bes4 r r2 | f4->\f g-> aes-> c-> | bes4-. r d2->( | ees4) ees,-. f-. g-. |
+  bes4 r r2 | f4->\f g-> aes-> c-> | bes4-. r d2->( | ees4) ees,-.\p f-. g-. |
+  
   %TRIO
   \key aes \major
+  
   \repeat volta 2 {
-    s1*15 |
+    aes4 c\< c c | r4 c c c\f | bes2-> c-> | des2->~ des8 r r4 |
+    r4 c r c | c4 c-. bes-. aes-. | d1( | des4) ees,-.\p f-. g-. |
+    aes4 c\< c c | r4 c c c | c4 r c2->\f( | des4) r bes2->\ff( |
+    c4) ees,-. f-. g-. | aes4-. bes-. c-. des-. | ees4-. r des2->(
   }
   \alternative {
-    { s1 | }
-    { s1 | }
+    { c4) ees,\p f g | }
+    { c4\repeatTie g-.\ff aes-. bes-. | }
   }
   %mark D
   \repeat volta 2 {
-    s1*12 | 
+    c4-. r bes2->( | aes4) r g-. f-. | e4-. r r2 | r2 r4 g8-. aes-. |
+    bes4-. r aes2->( | g4) r f-. ees-. | d4-. r r2 | R1 |
+    ees2.-> f4 | g2.-> aes4 | bes4-. c-. des-. d-. | ees4-. ees,-.\fff f g |
     %mark E
-    s1*15
+    aes4-. ees'-. d-. des-. | c4-. bes-. aes-. ees-. | bes'2-> c-> | des2->~ des8 r r4 |
+    r4 ees-. des-. c-. | aes4-. c-. bes-. aes-. | d1( | des!4) ees,-. f-. g-. |
+    aes4-. ees'-. d-. des-. | c4-. bes-. aes-. ees-. | c'4-. r c2->( | des4) r b2->( |
+    c4) ees,-. f-. g-. | aes4-. bes-. c-. des-. | ees4-. r des2->( |
   }
   \alternative {
-    { s1 | }
-    { s1 | }
+    { c4) g aes bes | }
+    { c4\repeatTie r c r | }
   }
 }
 
