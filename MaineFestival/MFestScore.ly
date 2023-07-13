@@ -21,7 +21,8 @@
       \clef treble
       <<
         \rehearsalMarks
-        \keepWithTag #'fluteOne \piccOne
+        \transpose c des 
+        \piccOne
       >>
     }
 
@@ -46,7 +47,7 @@
         \set Staff.shortInstrumentName = "Eb Cl"
 
         \clef treble
-       %\transpose ees c \keepWithTag #'clarEb \cla%%
+        %\transpose ees c \keepWithTag #'clarEb \cla%%
       }
 
       \new Staff  {

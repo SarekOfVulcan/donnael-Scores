@@ -5,19 +5,22 @@
   #(set-paper-size "letter")
   ragged-last-bottom = ##f
   ragged-bottom = ##f
+  indent = #4
 }
 
 \header {
-  instrument = "1st B♭ Clarinet"
+  instrument = "Flute"
 }
 
 \score {
   \new Staff  { 
-    \set Staff.midiInstrument = "clarinet"
+    \set Staff.midiInstrument = "flute"
 
     \clef treble
-    << \rehearsalMarks
-       \clarinetOne >>
+    
+    << \rehearsalMarks 
+       \transpose c des 
+       \piccOne >>
   }
   
   \layout { }

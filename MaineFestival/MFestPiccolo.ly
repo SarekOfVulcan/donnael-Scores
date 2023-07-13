@@ -8,16 +8,18 @@
 }
 
 \header {
-  instrument = "1st B♭ Clarinet"
+  instrument = \markup { "Piccolo in D" \flat }
 }
 
 \score {
   \new Staff  { 
-    \set Staff.midiInstrument = "clarinet"
+    \set Staff.midiInstrument = "flute"
 
     \clef treble
-    << \rehearsalMarks
-       \clarinetOne >>
+    
+    << \rehearsalMarks 
+       %\transpose c des 
+       \piccOne >>
   }
   
   \layout { }
