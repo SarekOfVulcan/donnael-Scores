@@ -7,7 +7,7 @@
   title = "The Maine Festival March"
   composer = "R. B. Hall"
   arranger = \markup { \smaller "edited by G. Fitzgerald" }
-  copyright = "Public domain. Version 2023-06-28"
+  copyright = "Public domain. Version 2023-08-05"
   tagline = ##f
 }
 
@@ -248,7 +248,7 @@ clarinetTwo = \relative c'' {
     c,2\p\<( cis | d2\> des) | c4\! c'-. c-. c-. | c4-. r r2 |
     bes'4-. bes-. bes-. bes-. | e,2 r | bes'4-. bes-. bes-. bes-. | f4 r r2 |
     c,2\p\<( cis | d2\> des) | c4\! c'-. c-. c-. | c4-. r \acciaccatura d8 c( b c d) |
-    e4-. r8 c-> b4-> a-> | g4 r r2 | r2 f'2->( |
+    e4-. r8 c->\f b4-> a-> | g4 r r2 | r2 f'2->( |
     
   }
   \alternative {
@@ -260,13 +260,20 @@ clarinetTwo = \relative c'' {
   \repeat volta 2 {
     aes'!4\ff g f2->~ | f4 aes-. g-. f-. | ees!4-. ees-. ees-. ees-. | ees1-> |
     aes4 g f2->~ | f4 aes-. g-. f-. | ees4-. ees-. ees-. ees-. | ees1-> |
+    r4 e,\p( f fis) | g1 | r4 c,( d e) | f1~ |
+    f4 r r2 | b1->(\ff | c4) r c r |
   }
   \alternative {
-    { s1 | }
-    { s1 | }
+    { r4 c c c| }
+    { R1 | }
   }
   %mark C
-  s1*16 |
+  \key f \major
+  
+  c,2\p\<( cis | d2\> des) | c4\! c'-. c-. c-. | c4-. r r2 |
+  bes'4-. bes-. bes-. bes-. | e,2 r | bes'4-. bes-. bes-. bes-. | f4 r r2 |
+  c,2\p\<( cis | d2\> des) | c4\! c'-. c-. c-. | c4-. r \acciaccatura d8 c( b c d) |
+  e4-. r8 d->\f c4-> b-> | bes!4-> a-> g-> d'-> | c4 r e2->( | f4) r r2 |
   %TRIO
   \repeat volta 2 {
     s1*15 |
