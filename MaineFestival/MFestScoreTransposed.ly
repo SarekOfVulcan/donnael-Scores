@@ -20,7 +20,7 @@
       \set Staff.shortInstrumentName = "Fl 1"
       \tempo 2=120
 \unfoldRepeats      
-      \keepWithTag #'fluteOne \piccOne
+      \keepWithTag #'fluteOne \transpose c des \piccOne
     }
     \new Staff  {
       \set Score.skipBars = ##t
