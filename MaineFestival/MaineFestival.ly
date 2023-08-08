@@ -534,13 +534,13 @@ tromboneOne = \relative c' {
   r4\p\< bes r b | r4\> c r ces | g4-.\! aes-. g-. f-. | ees4-. bes' r bes |
   r4 bes r bes | r4 d-. d2-> | r4 bes r bes | bes4 r r2 |
   r4\p\< bes r b | r4\> c r ces | g4-.\! aes-. g-. f-. | ees4-. bes' r bes |
-  bes4 r r2 | f4->\f g-> aes-> c-> | bes4-> r d2->( | ees4) ees,-.\p f-. g-. |
+  bes4 r r2 | f4->\f g-> aes-> c-> | bes4-> r d2->( | ees4) ees,-. f-. g-. |
   
   %TRIO
   \key aes \major
   
   \repeat volta 2 {
-    aes4 c\< c c | r4 c c c | bes2->\f c-> | des2->~ des8 r r4 |
+    aes4 c\p\< c c | r4 c c c | bes2->\f c-> | des2->~ des8 r r4 |
     r4 c r c | c4 c-. bes-. aes-. | d1( | des4) ees,-.\p f-. g-. |
     aes4 c\< c c | r4 c c c | c4\f r c2->( | des4) r bes2->\ff( |
     c4) ees,-. f-. g-. | aes4-. bes-. c-. des-. | ees4-. r des2->(
@@ -575,6 +575,67 @@ tromboneThree = \relative c {
 }
 
 baritoneTC = \relative c'' {
+  \key f \major
+  c2\ff( e | f4) r r2 | r2 c2->( | c,4) r r2 |
+  
+  %mark A
+  \repeat volta 2 {
+    c'2\p\<( cis | d2\> des | c4\!) bes-. a-. g-. | f4-. r \acciaccatura d'8 c( b c d) |
+    e4-. e-. d-. d-. | bes4-. g( bes c) | e4-. e-. d-. d-. | a4-. r r2 |
+    c2\p\<( cis | d2\> des | c4\!) bes-. a-. g-. | f4-. r \acciaccatura d'8 c( b c d) |
+    e4-. r r2 | r4 r8 e-> d4-> c-> | g4 r g2->( | 
+  }
+  \alternative {
+    { c,4) r r2 | }
+    { c4\repeatTie r r2 | }
+  }
+  
+  %mark B
+  \key aes \major
+  
+  \repeat volta 2 {
+    aes''!4-.\ff g-. f2->~ | f4 aes-. g-. f-. | ees!4 r r2 | r4 g,4( bes ees) |
+    aes4-. g-. f2->~ | f4 aes-. g-. f-. | ees4 r r2 | r4 g,4( bes ees) |
+    r4 e\p( f fis) | g1 | r4 c,( d e) | f1~ | 
+    f4 r r2 | aes2.->(\fff g8 f) | <c c'>4 r <c c'> r |
+  }
+  \alternative {
+    { R1 | }
+    { R1 | }
+  }
+  
+  %mark C
+  \key f \major
+  
+  c2\p\<( cis | d2\> des | c4\!) bes-. a-. g-. | f4-. r \acciaccatura d'8 c( b c d) |
+  e4-. e-. d-. d-. | bes4-. g( bes c) | e4-. e-. d-. d-. | a4-. r r2 |
+  c2\p\<( cis | d2\> des | c4\!) bes-. a-. g-. | f4-. r \acciaccatura d'8 c( b c d) |
+  e4-. r r2 | g,4-> a-> bes-> b-> | c4-. r c2->( | f,4) f-. g-. a-. |
+  
+  %TRIO
+  \key bes \major
+  \repeat volta 2 {
+    bes4-. f-.\p\< g-. a-. | bes-. c-. d-. ees-. | f2->\f f2-> | f2->~ f8 ees-. d-. c-. |
+    bes4-. d-. c-. bes-. | f4-. <d d'>-. <c c'>-. <bes bes'>-. | e'1( | ees!4) f,-. g-. a-. |
+    bes4-. f-.\p\< g-. a-. | bes-. c-. d-. ees-. | f4 r f4.->( fis8 | g4) r e2->(\ff | 
+    f4) f,-. g-. a-. | bes4-. c-. d-. ees-. | f4-. r f,2( |
+  }
+  \alternative {
+    { <bes, bes'>4) f'-. g-. a-. | }
+    { bes4-. a-. bes-. c-. | }
+  }
+  
+  %mark D
+  \repeat volta 2 {
+    s1*12 | 
+  
+    %mark E
+    s1*15 |
+  }
+  \alternative {
+    { s1 | }
+    { s1 | }
+  }
 
 }
 
@@ -598,6 +659,7 @@ percBells = \relative c' {
 
 dummyPart = \relative c'' {
   s1*4 |
+  
   %mark A
   \repeat volta 2 {
     s1*15 |
@@ -606,6 +668,7 @@ dummyPart = \relative c'' {
     { s1 | }
     { s1 | }
   }
+  
   %mark B
   \repeat volta 2 {
     s1*15 |
@@ -614,8 +677,10 @@ dummyPart = \relative c'' {
     { s1 | }
     { s1 | }
   }
+  
   %mark C
   s1*16 |
+  
   %TRIO
   \repeat volta 2 {
     s1*15 |
@@ -624,9 +689,11 @@ dummyPart = \relative c'' {
     { s1 | }
     { s1 | }
   }
+  
   %mark D
   \repeat volta 2 {
     s1*12 | 
+  
     %mark E
     s1*15 |
   }
