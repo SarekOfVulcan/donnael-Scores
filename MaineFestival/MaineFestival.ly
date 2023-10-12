@@ -7,7 +7,7 @@
   title = "The Maine Festival March"
   composer = "R. B. Hall"
   arranger = \markup { \smaller "edited by G. Fitzgerald" }
-  copyright = "Public domain. Version 2023-08-07"
+  copyright = "Public domain. Version 2023-10-11"
   tagline = ##f
 }
 
