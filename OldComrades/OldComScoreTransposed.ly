@@ -1,10 +1,10 @@
-\version "2.24.1"
+\version "2.24.3"
 
 \paper {
   #(set-paper-size "letter")
 }
 
-\include "MaineFestival.ly"
+\include "OldComrades.ly"
 
 \score {
   <<
@@ -115,9 +115,17 @@
 \unfoldRepeats            
       \tromboneOne
     }
+    \new Staff  { 
+      \set Score.skipBars = ##t
+      \set Staff.midiInstrument = "trombone"
+      \set Staff.instrumentName = "Trombone 2"
+      \set Staff.shortInstrumentName = "Trom 2"
+\unfoldRepeats            
+      \tromboneTwo
+    }
   >>
   \layout { }
   \midi {
-    \tempo 2 = 120
+    \tempo 2 = 100
   }
 }

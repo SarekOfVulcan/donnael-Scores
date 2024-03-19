@@ -1,5 +1,5 @@
-\version "2.24.1"
-\include "MaineFestival.ly"
+\version "2.24.3"
+\include "OldComrades.ly"
 
 \paper {
   #(set-paper-size "letter")
@@ -23,6 +23,6 @@
   
   \layout { }
   \midi {
-    \tempo 2 = 120
+    \tempo 2 = 100
   }
 }

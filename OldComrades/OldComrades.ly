@@ -7,7 +7,7 @@
   title = "Old Comrades"
   composer = "C. Teike"
   arranger = \markup { \smaller "arr. by L. P. Laurendeau" }
-  copyright = "Public domain. Version 2024-02-25"
+  copyright = "Public domain. Version 2024-03-18"
   tagline = ##f
 }
 
@@ -90,9 +90,82 @@ clarinetEb = \relative c''' {
 
 }
 
-clarinetOne = \relative c''' {
+clarinetOne = \relative c'' {
   \key f \major
+  f4->\ff r c8 b c f | a4-> r f8 e f a | c4-> c8 c c4 c | c4 r r2 |
   
+  %mark A
+  a4\p r a r | a4 r a8 gis a bes | a4 r a r | a4 r c,8 b c e |
+  f4\< r e r | d4\! r8 a'8 a4 r8 a | bes1~\> | bes4\! r r2 |
+  g4 r g r | g4 r g8 fis g a | bes4 r bes r | bes4 r bes8a bes e, |
+  c'4\< r bes r | bes4\! r8 g8 fis4 r8 g | a1~\> | a4\! r r2 |
+ 
+  %mark B
+  a4\mf r a r | a4 r a8 gis a bes | a4 r a r | a4 r c,8 b c e |
+  f4\< r e r | d4\! r8 c'8 a4 r8 f | g1~\> | g4\! r r2 |
+  \acciaccatura { g16 b d } b!4-^\fz r g8\p fis g b | d4 r b r |
+  \acciaccatura { g16 c e } c4-^\fz r g8\p fis g c | e4 r c r |
+  g8\f fis g gis a gis a ais | b4 r b r | c1~ | c4 r r2 |
+  
+  %mark C
+  \repeat volta 2 {
+    r4 bes\ff r bes | r4 bes r bes | r4 bes8 bes bes4 bes | bes4 bes bes bes |
+    r4 a r a | r4 a r a | r4 a8 a a4 a | a4 a a a |
+    r4 c,8( b c) e-. g-. d'-. | c4 r r2 | r4 c,8( b c) f-. a-. d-. | c4 r r2 |
+    c,8( b) c-. d-. e( d) e-. f-. | g8( fis) g-. a-. bes( a) bes-. b-. | c4 r r2 | \afterGrace e,1\trill( { d16 e) } |
+    %mark D
+    \acciaccatura g8( f-.\p) e-. f-. r \acciaccatura g8( f-.) e-. f-. r | 
+    \acciaccatura g8( f-.) e-. f-. r \acciaccatura g8( f-.) e-. f-. g-. |
+    f4 e8 e e4 e | e2 r |
+    \acciaccatura e8( d-.) cis-. d-. r \acciaccatura e8( d-.) cis-. d-. r |
+    \acciaccatura e8( d-.) cis-. d-. r \acciaccatura e8( d-.) cis-. d-. e-. |
+    d4 c8 c c4 c | c4 b8 c cis d dis e |
+    \acciaccatura g8( f-.\p) e-. f-. r \acciaccatura g8( f-.) e-. f-. r | 
+    \acciaccatura g8( f-.) e-. f-. r \acciaccatura g8( f-.) e-. f-. fis-. |
+    g4\< d'8 d d4 d | d2\! r |
+    \acciaccatura e,8( d-.\f) cis-. d-. r d-. e-. f-. g-. | a8-. c,-. f-. a-. c2-> |
+    \acciaccatura c8( bes-.) a-. bes-. r \acciaccatura f8( e-.) d-. e-. r |
+    
+
+  }
+  \alternative {
+    { f4 r r2 | }
+    { f4 r f8\< fis g a | }
+  } 
+  
+  %Trio
+  \key bes \major
+  
+  bes4->\fz r r2 | r2 f,4.\pp f8 |
+  \repeat volta 2 {
+    %mark E
+    f2\< g | a2 bes | d1\!~ | d4 r c4. c8 |
+    bes4 d,( cis d) | g2( f) | a,1~\> | a2\! f'4. f8 |
+    f2\< g | a2 bes | c1\!~ | c4 r bes4. bes8 |
+    a4 c,( b c) | g'2( f) | d1~\> | d4\! r f'4.\ff f8 |
+    
+    %mark F
+    f2-> g-> | a2-> bes-> | d1~ | d4 r d4. d8 |
+    d4 bes( a bes) | c2 bes | g1~ | g4 r g,4.\p fis8 |
+    f!1~ | f4 a( c g') | f1~ | f4 d( bes g') |
+    \acciaccatura g8( f4\mf)( e f a) | d2 c | bes1~ |
+    
+  }
+  \alternative {
+    { bes4 r f,4.\p f8 | }
+    { bes'4\repeatTie r r2 | }
+  }
+  %mark G
+  \repeat volta 2 {
+    ees4\ff r ees r | ees4 r ees r | ees2.( a,4 | c2.) r4 |
+    d4 r d r | d4 r d r | d2.( f,4 | bes2.) r4 |
+  }
+  \alternative {
+    { a,4 r c r | ees4 r bes' r | a4 r8 a a4 r8 a | a2. r4 |
+      f4 r bes r | d4 r d r | d4 r8 d d4 r8 d | d2. r4 |}
+    { g,4 r c r | ees4 r ees r | d4 r8 d d4 r8 d | d4 \tuplet 3/2 { bes8( c bes) } a4 g |
+      f4 r fis r | g4 r a r | bes4 bes8 bes bes4 bes | bes4 r r2 |}
+  }  
 
 }
 
@@ -186,14 +259,14 @@ cornetSolo = \relative c' {
     R1*2 | f8 r f r f r f r | c'4 r8 f, f4 r |
     R1*2 | f8 r f r f r f r | bes4 r f4.\ff f8 |
 
-  %mark F
+    %mark F
     f2-> g-> | a2-> bes-> | d1~ | d4 r d4. d8 |
     d4( bes a bes) | c2 bes | g1~ | g4 r g4.\p fis8 |
     f!1~ | f4 a( c g') | f1~ | f4 d( bes g) |
     \acciaccatura g8\mf f4( e f a) | d2 c | bes1~
     
     
-   }
+  }
   \alternative {
     { bes4 r r2 | }
     { bes4\repeatTie f8\ff f f4 f | }
@@ -205,9 +278,9 @@ cornetSolo = \relative c' {
   }
   \alternative {
     { a4 r c r | ees4 r bes' r | a4 r8 a a4 r8 a | a2. r4 |
-    f,4 r bes r | d4 r g r | f4 r8 f f4 r8 f | f2. r4 | }
+      f,4 r bes r | d4 r g r | f4 r8 f f4 r8 f | f2. r4 | }
     { a,4 r c r | ees4 r g r | f4 r8 d d4 r8 d | d4 \tuplet 3/2 { bes8( c bes) } a4 g |
-    f4 r fis r | g4 r a r | bes4 bes8 bes bes4 bes | bes4 r r2 |}
+      f4 r fis r | g4 r a r | bes4 bes8 bes bes4 bes | bes4 r r2 |}
   }
 }
 
@@ -242,11 +315,137 @@ hornFour = \relative c' {
 tromboneOne = \relative c' {
   \key ees \major
   
-
+  bes4->\ff r r2 | ees4-> r r2 | d4-> d8 d d4 d | d4\> aes g f |
+  
+  %mark A
+  bes4\p r bes r | bes4 bes8 bes bes4 bes | bes4 r bes r | bes4 bes8 bes bes4 bes |
+  bes1~\< | bes1~ | bes4\! r8 bes, a4 r8 bes\> | d4 r8 bes d4\! r8 f |
+  bes4\p r bes r | bes4 bes8 bes bes4 bes | bes4 r bes r | bes4 bes8 bes bes4 bes |
+  bes1~\< | bes1~ | bes4\! r8 bes a4 r8 bes\> | c4 r8 bes g4\! r8 bes |
+ 
+  %mark B
+  bes4\mf r bes r | bes4 bes8 bes bes4 bes | bes4 r bes r | bes4 bes8 bes bes4 bes |
+  bes1~\< | bes1( | c4)\! r8 f, e4 r8 f | g4 r8 f d4\! r8 c |
+  a'1~\fp | a2.( ees'4) | d1~->\fp | d1 |
+  ees1~\f | ees1 | d1~ | d4 r bes,4.\ff bes8 |
+  
+  %mark C
+  \repeat volta 2 {
+    bes2-> aes'-> | g2-> f-> | e4 r8 f g4 r8 f | bes,4 r bes4. bes8 |
+    bes2-> g'-> | f2-> ees-> | d4 r8 ees f4 r8 ees | bes4 r bes4. bes8 |
+    f'4 r bes,2->~ | bes4 r bes4. bes8 | g'4 r bes,2->~ | bes4 r bes4. bes8 |
+    bes'4-> r8 a aes4-> r8 g | f4-> r8 ees d4-> r8 c | bes4 bes'8 c d4 c | bes4-> aes g f |
+    %mark D
+    bes4\p r bes r | bes4 r bes r | bes1~ | bes4 bes,8 c d ees f g |
+    aes4 r c r | c4 r c r | bes1~ | bes4 r bes2-> |
+    bes4 r bes r | bes4\< r bes r | c1~ | c4\! aes8 bes c d ees e | 
+    f4\f r c2-> | ees2 r | r4 bes r bes |
+  }
+  \alternative {
+    { bes4 r bes,4.\ff bes8 | }
+    { bes'4 r des2-> | }
+  }
+  
+  %Trio
+  \key aes \major 
+  
+  c4->\fz c\p r c | r4 c r c |
+  \repeat volta 2 {
+    %mark E
+    r4 c\< r c | r4 c r c\! | r4 c8 c c4 c | c4 c c c |
+    r4 c r c | r4 c r c | r4 des8 des des4 des | des4 des des des |
+    r4 des\< r des | r4 des r4 des\! | r4 des8 des des4 des | des4 des des des |
+    r4 des r des | r4 des r des | r4 c8\> c c4 c | c4 c ees,4.\ff ees8 |
+    
+    %mark F
+    ees2 f | g2 aes | c4 r8 ees, f4 r8 g | aes2 c4. c8 |
+    c1~ | c1 ( | bes4) r8 a bes4 r8 des | f2 r |
+    r4 des\p r des | r4 des r des | r4 c r c | r4 c r c |
+    r4 des\mf r des | r4 des r des | c4 c8 c c4 c |
+  }
+  \alternative {
+    { c4 r r2 | }
+    { c4 r r2 | }
+  }
+  %mark G
+  \repeat volta 2 {
+    des4\ff r ees,4. f8 | g4. aes8 bes4. c8 | des1~ | des4 r des r |
+    c4 r ees,4. f8 | g4. aes8 bes4. b8 | c1~ | c4 c8 c c4 c |
+  }
+  \alternative {
+    { ees,4. f8 g4. aes8 | bes4. c8 des4. d8 | ees2. ees4 | des4 bes g f |
+      ees4. g8 aes4. bes8 | c4. g8 aes4. f'8 | ees2. d4 | ees4 c( aes f) | }
+    { f4. a8 bes4. c8 | des4. a8 bes4. f'8 | ees2. ees,4 | ees'4 c ees aes, |
+      ees2 e | f2 g | aes4 c8 c c4 c | c4 r r2 |}
+  }
 }
 
 tromboneTwo = \relative c' {
-
+  \key ees \major
+  
+  g4->\ff r r2 | g4-> r r2 | f4-> bes8 bes bes4 bes | bes4\> aes g f |
+  
+  %mark A
+  g4\p r g r | g4 g8 g g4 g | g4 r g r | g4 g8 g g4 g |
+  g1~\< | g1( | aes4)\! r8 bes, a4 r8 bes\> | d4 r8 bes d4\! r8 f |
+  aes4\p r aes r | aes4 aes8 aes aes4 aes | aes4 r aes r | aes4 aes8 aes aes4 aes |
+  aes1~\< | aes1( | g4\!) r8 bes a4 r8 bes\> | c4 r8 bes g4\! r8 bes |
+ 
+  %mark B
+  g4\mf r g r | g4 g8 g g4 g | g4 r g r | g4 g8 g g4 g |
+  g1~\< | g1( | f4)\! r8 f e4 r8 f | g4 r8 f d4\! r8 c |
+  f1~\fp | f1 | bes1~->\fp | bes1 |
+  a1~\f | a1 | f1~ | f4 r bes,4.\ff bes8 |
+  
+  %mark C
+  \repeat volta 2 {
+    bes2-> aes'-> | g2-> f-> | e4 r8 f g4 r8 f | bes,4 r bes4. bes8 |
+    bes2-> g'-> | f2-> ees-> | d4 r8 ees f4 r8 ees | bes4 r bes4. bes8 |
+    f'4 r bes,2->~ | bes4 r bes4. bes8 | g'4 r bes,2->~ | bes4 r bes4. bes8 |
+    bes'4-> r8 a aes4-> r8 g | f4-> r8 ees d4-> r8 c | bes4 bes'8 c d4 c | bes4-> aes g f |
+    %mark D
+    g4\p r g r | g4 r g r | aes1~ | aes4 bes,8 c d ees f g |
+    aes4 r f r | f4 r f r | g1~ | g4 r aes2-> |
+    g4 r g r | g4\< r g r | aes1~ | aes4\! aes8 bes c d ees e | 
+    f4\f r f,2-> | g2 r | r4 aes r aes |
+  }
+  \alternative {
+    { g4 r bes,4.\ff bes8 | }
+    { g'4 r g2-> | }
+  }
+  
+  %Trio
+  \key aes \major 
+  
+  ees4->\fz ees\p r ees | r4 ees r ees |
+  \repeat volta 2 {
+    %mark E
+    r4 ees\< r ees | r4 ees r ees\! | r4 ees8 ees ees4 ees | ees4 ees ees ees |
+    r4 ees r ees | r4 ees r ees | r4 ees8 ees ees4 ees | ees4 ees ees ees |
+    r4 g\< r g | r4 g r4 g\! | r4 g8 g g4 g | g4 g g g |
+    r4 g r g | r4 g r g | r4 aes8\> aes aes4 aes | aes4 aes ees4.\ff ees8 |
+    
+    %mark F
+    ees2 f | g2 aes | c4 r8 ees, f4 r8 g | aes2 aes4. aes8 |
+    aes1~ | aes1 ( | f4) r8 a bes4 r8 des | f2 r |
+    r4 g,\p r g | r4 g r g | r4 aes r aes | r4 aes r aes |
+    r4 g\mf r g | r4 g r g | ees4 ees8 ees ees4 ees |
+  }
+  \alternative {
+    { ees4 r r2 | }
+    { ees4 r r2 | }
+  }
+  %mark G
+  \repeat volta 2 {
+    g4\ff r ees4. f8 | g4. aes8 bes4. c8 | des1~ | des4 r ees, r |
+    ees4 r ees4. f8 | g4. aes8 bes4. b8 | c1~ | c4 aes8 aes aes4 aes |
+  }
+  \alternative {
+    { ees4. f8 g4. aes8 | bes4. c8 des4. d8 | ees2. ees4 | des4 bes g f |
+      ees4. g8 aes4. bes8 | c4. g8 aes4. f'8 | ees2. d4 | ees4 c( aes f) | }
+    { f4. a8 bes4. c8 | des4. a8 bes4. f'8 | ees2. ees,4 | ees'4 c ees aes, |
+      ees2 e | f2 g | aes4 ees8 ees ees4 ees | ees4 r r2 |}
+  }
 }
 
 tromboneThree = \relative c {
