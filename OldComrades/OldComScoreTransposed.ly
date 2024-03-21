@@ -18,8 +18,8 @@
       \set Staff.midiInstrument = "flute"
       \set Staff.instrumentName = "Flute 1"
       \set Staff.shortInstrumentName = "Fl 1"
-      \tempo 2=120
-\unfoldRepeats      
+      \tempo 2=100
+      \unfoldRepeats      
       \keepWithTag #'fluteOne \transpose c des \piccOne
     }
     \new Staff  {
@@ -27,7 +27,7 @@
       \set Staff.midiInstrument = "clarinet"
       \set Staff.instrumentName = "Clarinet 1"
       \set Staff.shortInstrumentName = "Clar 1"
-\unfoldRepeats      
+      \unfoldRepeats      
       \transpose c bes, \clarinetOne
     }
     \new Staff  {
@@ -35,7 +35,7 @@
       \set Staff.midiInstrument = "clarinet"
       \set Staff.instrumentName = "Clarinet 2"
       \set Staff.shortInstrumentName = "Clar 2"
-\unfoldRepeats      
+      \unfoldRepeats      
       \transpose c bes, \clarinetTwo
     }
     \new Staff  {
@@ -43,7 +43,7 @@
       \set Staff.midiInstrument = "clarinet"
       \set Staff.instrumentName = "Clarinet 3"
       \set Staff.shortInstrumentName = "Clar 3"
-\unfoldRepeats      
+      \unfoldRepeats      
       \transpose c bes, \clarinetThree
     }
     \new Staff  {
@@ -51,7 +51,7 @@
       \set Staff.midiInstrument = "clarinet"
       \set Staff.instrumentName = "Bass Clarinet"
       \set Staff.shortInstrumentName = "B. Cl"
-\unfoldRepeats      
+      \unfoldRepeats      
       \transpose c bes,, \clarinetBass
     }
     \new Staff  {
@@ -59,7 +59,7 @@
       \set Staff.midiInstrument = "tenor sax"
       \set Staff.instrumentName = "Tenor Sax"
       \set Staff.shortInstrumentName = "Ten Sax"
-\unfoldRepeats      
+      \unfoldRepeats      
       \transpose c bes,, \saxTenor
     }
     
@@ -68,7 +68,7 @@
       \set Staff.midiInstrument = "trumpet"
       \set Staff.instrumentName = "Solo Cornet"
       \set Staff.shortInstrumentName = "Corn Solo"
-\unfoldRepeats      
+      \unfoldRepeats      
       \transpose c bes, \cornetSolo
     }
     
@@ -77,7 +77,7 @@
       \set Staff.midiInstrument = "trumpet"
       \set Staff.instrumentName = "Cornet 1"
       \set Staff.shortInstrumentName = "Corn 1"
-\unfoldRepeats      
+      \unfoldRepeats      
       \transpose c bes, \cornetOne
     }
     
@@ -86,16 +86,16 @@
       \set Staff.midiInstrument = "trumpet"
       \set Staff.instrumentName = "Cornet 2"
       \set Staff.shortInstrumentName = "Corn 2"
-\unfoldRepeats      
+      \unfoldRepeats      
       \transpose c bes, \cornetTwo
     }
     
     \new Staff  {
-     \set Score.skipBars = ##t
+      \set Score.skipBars = ##t
       \set Staff.midiInstrument = "trumpet"
       \set Staff.instrumentName = "Cornet 3"
       \set Staff.shortInstrumentName = "Corn 3"
-\unfoldRepeats      
+      \unfoldRepeats      
       \transpose c bes, \cornetThree
     }
     
@@ -104,7 +104,7 @@
       \set Staff.midiInstrument = "trombone"
       \set Staff.instrumentName = "Baritone TC"
       \set Staff.shortInstrumentName = "Bari TC"
-\unfoldRepeats            
+      \unfoldRepeats            
       \transpose c bes,, \baritoneTC
     }
     \new Staff  { 
@@ -112,7 +112,7 @@
       \set Staff.midiInstrument = "trombone"
       \set Staff.instrumentName = "Trombone 1"
       \set Staff.shortInstrumentName = "Trom 1"
-\unfoldRepeats            
+      \unfoldRepeats            
       \tromboneOne
     }
     \new Staff  { 
@@ -120,7 +120,7 @@
       \set Staff.midiInstrument = "trombone"
       \set Staff.instrumentName = "Trombone 2"
       \set Staff.shortInstrumentName = "Trom 2"
-\unfoldRepeats            
+      \unfoldRepeats            
       \tromboneTwo
     }
   >>
