@@ -187,7 +187,71 @@ clarinetBass = \relative c'' {
 }
 
 saxAlto = \relative c'' {
-
+  \key c \major
+  c4->\ff r g8 fis g c | e4-> r c8 b c e | g4 b,8 b b4 b | b4 r r2 |
+  
+  %mark A
+  c4\p r c r | c4 r c8 b c d | e4 r e r | e4\< e,( g c) | 
+  e,2.\!( g4) | c4 e,( g e') | f1~\> | f4\! r r2 |
+  b,4 r b r | b4 r b8 ais b c | d4 r d r | d4\< d,( g b) | 
+  d2.\! g,4 | fis4( g a b) | c1~\> | c4\! r r2 |
+ 
+  %mark B
+  c4\p r c r | c4 r c8 b c d | e4 r e r | e4\< e,( g c) | 
+  e,2.\!( g4) | e'4 r8 e\< e4 r8 c | a1~\! | a4 r r2 |
+  d,4\fz( fis\p a b | c2.) r4 | d,4\fz( fis\p g b | d2.) r4 |
+  c1~\f | c1 | b1~ | b4 r g4.\ff g8 |
+  
+  %mark C
+  \repeat volta 2 {
+    g2-> f'-> | e2-> d-> | cis4 r8 d e4 r8 d | g,4 r g4. g8 |
+    g2-> e'-> | d2-> c-> | b4 r8 c d4 r8 c | g4 r g4. g8 |
+    d'4 r g,2->~ | g4 r g4. g8 | e'4 r g,2~ | g4 r g4. g8 |
+    f'2. f8 f | f2. f8 f | f4 r r2 | f1->\> |
+    
+    %mark D
+    e8\p e e r e e e r | e8 e e r e2:8 | f4 f8 f f4 f | f2 r |
+    f8 f f r f f f r | f8 f f r f2:8 | e4 e8 e e4 e | e4 r f2-> |
+    e8 e e r e e e r | e8 e e r e2:8 | d4 f8 f f4 f | f4 f,8\< g a b c cis |
+    d4\f r a2-> | c2-> r | f8 f f r f f f r |
+  }
+  \alternative {
+    { e4 r g,4.\ff g8 | }
+    { e'4 r c2-> | }
+  }
+  
+  %Trio
+  \key f \major
+  
+  c4->\fz r r2 | r2 c4.\p c8 |
+  \repeat volta 2 {
+    %mark E
+    c2\< d | e2 f\! | a1~ | a4 r g4. g8 |
+    f4 a,( gis a) | d2( c) | e,1~\> | e4\! r c'4. c8 |
+    c2\< d | e2 f\! | g1~ | g4 r f4. f8 |
+    e4 g,( fis g) | d'2( c) | a1~\> | a4\! r c4.\ff c8 | 
+    
+    %mark F
+    c2-> d-> | e2-> f-> | a1~ | a4 r a4. a8 |
+    a4 f( e f) | g2 f | d1~ | d4 r d4.\p cis8 | 
+    c!1~ | c4 c( e bes') | a1~ | a4 a( f d) |
+    c4\mf( b c e) | c2 bes | a1~ |
+  }
+  \alternative {
+    { a4 r c4.\p c8 | }
+    { a4\repeatTie r r2 | }
+  }
+  %mark G
+  \repeat volta 2 {
+    e'4\ff r e r | e4 r e r | e2.( c4 | e2.) r4 |
+    f4 r f r | f4 r f r | f2.( c4) | a2. r4 |
+  }
+  \alternative {
+    { c4 r e r | g4 r f r | e4 r8 g g4 r8 g | g2 r |
+      c,4 r f r | a4 r a r | a4 r8 a a4 r8 a | a2. r4 |}
+    { bes,4 r bes r | d4 r bes' r | a4 r8 f f4 r8 f | f4 \tuplet 3/2 { f8( g f) } e4 d |
+      c2 cis | d2 c! | c4 c8 c c4 c | c4 r r2 | }
+  }
 }
 
 saxTenor = \relative c'' {
@@ -320,7 +384,7 @@ tromboneOne = \relative c' {
   %mark A
   bes4\p r bes r | bes4 bes8 bes bes4 bes | bes4 r bes r | bes4 bes8 bes bes4 bes |
   bes1~\< | bes1~ | bes4\! r8 bes, a4 r8 bes\> | d4 r8 bes d4\! r8 f |
-  bes4\p r bes r | bes4 bes8 bes bes4 bes | bes4 r bes r | bes4 bes8 bes bes4 bes |
+  bes4 r bes r | bes4 bes8 bes bes4 bes | bes4 r bes r | bes4 bes8 bes bes4 bes |
   bes1~\< | bes1~ | bes4\! r8 bes a4 r8 bes\> | c4 r8 bes g4\! r8 bes |
  
   %mark B
@@ -388,7 +452,7 @@ tromboneTwo = \relative c' {
   %mark A
   g4\p r g r | g4 g8 g g4 g | g4 r g r | g4 g8 g g4 g |
   g1~\< | g1( | aes4)\! r8 bes, a4 r8 bes\> | d4 r8 bes d4\! r8 f |
-  aes4\p r aes r | aes4 aes8 aes aes4 aes | aes4 r aes r | aes4 aes8 aes aes4 aes |
+  aes4 r aes r | aes4 aes8 aes aes4 aes | aes4 r aes r | aes4 aes8 aes aes4 aes |
   aes1~\< | aes1( | g4\!) r8 bes a4 r8 bes\> | c4 r8 bes g4\! r8 bes |
  
   %mark B
@@ -459,12 +523,12 @@ baritoneTC = \relative c' {
   
   %mark A
   a2.\p( g4 | f4) d'( c a) | f2. c4 | f4( a c f) |
-  a,2.\<( c4) | f4( a, c a\!) | c,4 r8 c\> b4 r8 b | e4 r8 c e4 r8 g\! |
+  a,2.\<( c4) | f4( a, c a\!) | c,4 r8 c b4 r8 b\> | e4 r8 c e4 r8 g\! |
   bes2.( g4 | e4) c'( bes g) | e2. c4 | e4( g c e) |
   g2.\< c,4( | b4 c d e\!) | f4 r8 c\> b4 r8 c | d4 r8 c a4 r8 g\! |
  
   %mark B
-  a2.\p( g4 | f4) d'( c a) | f2. c4 | f4( a c f) |
+  a2.\mf( g4 | f4) d'( c a) | f2. c4 | f4( a c f) |
   a,2.\<( c4) | f4 f,( a c\!) | bes4 r8 g fis4 r8 g | a4 r8 g e4 r8 d |
   g4->\fp( b d e | f2.) r4 | g,4->\fp( b c e | g2.) r4 |
   g,4\f b d g | g, b d g | c,4 r g8 fis g e | c4 r c4.\ff c8 |
