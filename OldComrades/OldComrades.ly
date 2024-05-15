@@ -7,7 +7,7 @@
   title = "Old Comrades"
   composer = "C. Teike"
   arranger = \markup { \smaller "arr. by L. P. Laurendeau" }
-  copyright = "Public domain. Version 2024-03-18"
+  copyright = "Public domain. Version 2024-05-14"
   tagline = ##f
 }
 
@@ -112,7 +112,7 @@ clarinetOne = \relative c'' {
     r4 bes\ff r bes | r4 bes r bes | r4 bes8 bes bes4 bes | bes4 bes bes bes |
     r4 a r a | r4 a r a | r4 a8 a a4 a | a4 a a a |
     r4 c,8( b c) e-. g-. d'-. | c4 r r2 | r4 c,8( b c) f-. a-. d-. | c4 r r2 |
-    c,8( b) c-. d-. e( d) e-. f-. | g8( fis) g-. a-. bes( a) bes-. b-. | c4 r r2 | \afterGrace e,1\trill( { d16 e) } |
+    c,8( b) c-. d-. e( d) e-. f-. | g8( fis) g-. a-. bes( a) bes-. b-. | c4 r r2 | \afterGrace e,1\trill\>( { d16 e) } |
     %mark D
     \acciaccatura g8( f-.\p) e-. f-. r \acciaccatura g8( f-.) e-. f-. r | 
     \acciaccatura g8( f-.) e-. f-. r \acciaccatura g8( f-.) e-. f-. g-. |
@@ -141,7 +141,7 @@ clarinetOne = \relative c'' {
     %mark E
     f2\< g | a2 bes\! | d1~ | d4 r c4. c8 |
     bes4 d,( cis d) | g2( f) | a,1~\> | a2\! f'4. f8 |
-    f2\< g | a2 bes | c1\!~ | c4 r bes4. bes8 |
+    f2\< g | a2 bes\! | c1~ | c4 r bes4. bes8 |
     a4 c,( b c) | g'2( f) | d1~\> | d4\! r f'4.\ff f8 |
     
     %mark F
@@ -212,7 +212,7 @@ saxAlto = \relative c'' {
     %mark D
     e8\p e e r e e e r | e8 e e r e2:8 | f4 f8 f f4 f | f2 r |
     f8 f f r f f f r | f8 f f r f2:8 | e4 e8 e e4 e | e4 r f2-> |
-    e8 e e r e e e r | e8 e e r e2:8 | d4 f8 f f4 f | f4 f,8\< g a b c cis |
+    e8 e e r e e e r | e8 e e r e2:8 | d4\< f8 f f4 f | f4\! f,8 g a b c cis |
     d4\f r a2-> | c2-> r | f8 f f r f f f r |
   }
   \alternative {
@@ -255,7 +255,70 @@ saxAlto = \relative c'' {
 }
 
 saxTenor = \relative c'' {
-
+  \key f \major
+  
+  a4->\ff r r2 | c4-> r r2 | e4-> c8 c c4 c | c4 bes\> a g |
+  
+  %mark A
+  a2.(\p g4 | f4) d'( c a) | f2. a4 | f4( a c f) |
+  a,2.(\< c4) | f4\! a,( c f) | c1~\> | c4\! r r2 |
+  bes2.( g4 | e4) c'( bes g) | e2. g4 | e4(\< g c e) |
+  g2.\! c,4( | b4 c d e) | c1~\> | c4\! r r2 |
+  %mark B
+  a2.\mf( g4 | f4) d'( c a) | f2. a4 | f4 a( c f) |
+  a,2.(\< c4\!) | f4 f,( a c) | bes1~ | bes4 r r2 |
+  g4\fp( b d e | f2.) r4 | g,4\fp( b c e | g2.) r4 |
+  g,4\f b d g | g,4 b d g | c,1~ | c4 r c4.\ff c8 |
+  
+  %mark C
+  \repeat volta 2 {
+    c2-> bes'-> | a2-> g-> | fis4 r8 g a4 r8 g | c,4 r c4. c8 |
+    c2-> a'-> | g2-> f-> | e4 r8 f g4 r8 f | c4 r c4. c8 |
+    g'4 r c,2->~ | c4 r c4. c8 | a'4 r c,2->~ | c4 c c4. c8 |
+    e2. e8 e | e2. e8 e | e4 r r2 | c1\> | 
+    %mark D
+    c8\p c c r c c c r | c8 c c r c2:8 | c4 c8 c c4 c | c4 c,8 d e f g a |
+    bes2. r4 | bes4 r bes r | a4 d c a | f4 r c'2-> |
+    c8 c c r c c c r | c8 c c r c2:8 | bes4\< d8 d d4 d | d4\! bes8 c d e f fis |
+    g4 r d2->\ff | c2-> r | c8 c c r c c c r |
+  }
+  \alternative {
+    { c4 r c4.\ff c8 | }
+    { c4 r ees2-> | }
+  }
+  
+  %Trio
+  \key bes \major
+  
+  d4->\fz r r2 | r2 f,4.\p f8 |
+  \repeat volta 2 {
+    %mark E
+    f2\< g | a2 bes\! | d1~ | d4 r c4. c8 | 
+    bes4 d( cis d) | g2( f) | a,1~\> | a4\! r f4. f8 |
+    f2\< g | a2 bes\! | c1~ | c4 r bes4. bes8 | 
+    a4 c( b c) | g'2( f) | d1~\> | d4\! r f,4.\ff f8 |
+    
+    %mark F
+    f2 g | a2 bes | d4 r8 f, g4 r8 a | bes2 d4. d8 |
+    d4 bes( a bes) | c2 bes | g4 r8 b c4 r8 ees | g2 r |
+    f,4\p( a c g') | f1~ | f4 d( bes g) | f1 |
+    f4\mf( e f a) | d2 c | bes1~ |
+  }
+  \alternative {
+    { bes4 r f4.\p f8 | }
+    { bes4\repeatTie r r2 | }
+  }
+  %mark G
+  \repeat volta 2 {
+    f4\ff r f4. g8 | a4. bes8 c4. d8 | ees1~ | ees4 r f, r | 
+    bes4 r f4. g8 | a4. bes8 c4. cis8 | d1~ | d4 r r2 |
+  }
+  \alternative {
+    { f,4. g8 a4. bes8 | c4. d8 ees4. e8 | f2. f4 | ees4 c a g |
+      f4. a8 bes4. c8 | d4. a8 bes4. g'8 | f2. e4 | f4 d( bes g) | }
+    { g4. b8 c4. d8 | ees4. b8 c4. g'8 | f2. f,4 | f'4 d f bes, |
+      f2 fis | g2 ees' | d4 d8 d d4 d | d4 r r2 | }
+  }
 }
 
 saxBaritone = \relative c' {
