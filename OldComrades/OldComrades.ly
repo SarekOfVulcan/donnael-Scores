@@ -424,7 +424,54 @@ cornetThree = \relative c' {
 }
 
 hornOne = \relative c'' {
-
+  \key bes \major
+  
+  bes4->\ff r r2 | bes4-> r r2 | a4 a8 a a4 a | a4 r r2 |
+  
+  %mark A
+  r4 bes\p r bes | r4 bes8 bes bes4 bes | r4 bes r bes | r4 bes8\< bes bes4 bes\! |
+  r4 bes r bes | r4 bes r bes | r4 a\> r a | r4\! a r a |
+  r4 a r a | r4 a8 a a4 a | r4 a r a | r4 a8\< a a4 a\! |
+  r4 a r a | r4 a r a | r4 bes8\> bes bes4 bes | bes4\! bes bes bes |
+ 
+  %mark B
+  r4 bes\mf r bes | r4 bes8 bes bes4 bes | r4 bes r bes | r4 bes8\< bes bes4 bes\! |
+  r4 bes r bes | r4 bes r bes | r4 g8 g g4 g | g4 g g g |
+  bes4-^\f bes\p r bes | r4 bes8 bes bes4 bes | a4-^\f a\p r a | r4 a8 a a4 a |
+  r4 bes4\f r bes | r4 bes r bes | r4 a8 a a4 a | a4 r r2 |
+  
+  %mark C
+  \repeat volta 2 {
+    s1*16 |
+    %mark D
+    s1*15 |
+  }
+  \alternative {
+    { s1 | }
+    { s1 | }
+  }
+  
+  %Trio
+  s1*2 |
+  \repeat volta 2 {
+    %mark E
+    s1*16
+    
+    %mark F
+    s1*15
+  }
+  \alternative {
+    { s1 | }
+    { s1 | }
+  }
+  %mark G
+  \repeat volta 2 {
+    s1*8 | 
+  }
+  \alternative {
+    { s1*8 | }
+    { s1*8 | }
+  }
 }
 
 hornTwo = \relative c' {
