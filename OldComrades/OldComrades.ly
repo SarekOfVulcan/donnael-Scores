@@ -7,7 +7,7 @@
   title = "Old Comrades"
   composer = "C. Teike"
   arranger = \markup { \smaller "arr. by L. P. Laurendeau" }
-  copyright = "Public domain. Version 2024-05-14"
+  copyright = "Public domain. Version 2024-05-26"
   tagline = ##f
 }
 
@@ -442,40 +442,119 @@ hornOne = \relative c'' {
   
   %mark C
   \repeat volta 2 {
-    s1*16 |
+    r4 ees'\ff r ees | r4 ees r ees | r4 ees8 ees ees4 ees | ees4 ees ees ees |
+    r4 d r d | r4 d r d | r4 d8 d d4 d | d4 d d d |
+    r4 ees8 ees ees4 ees | ees1-> | r4 d8 d d4 d | d1-> |
+    ees2. ees8 ees | ees2. ees8 ees | ees4 r r2 | a,1\> |
     %mark D
-    s1*15 |
+    r4 bes\p r bes | r4 bes r bes | r4 a8 a a4 a | r4 a a a |
+    r4 g r g | r4 g r g | r4 bes8 bes bes4 bes | bes4 r c2-> |
+    r4 bes r bes | r4 bes r bes | r4 g8\< g g4 g | r4\! g4 g g |
+    g4\f r r2-> | bes4 bes8 bes bes4 bes | r4 c r c |
   }
   \alternative {
-    { s1 | }
-    { s1 | }
+    { bes4 r r2 | }
+    { bes4 r bes2->\< | }
   }
   
   %Trio
-  s1*2 |
+  \key ees \major
+  bes4->\fz bes\p r bes | r4 bes r bes |
   \repeat volta 2 {
     %mark E
-    s1*16
+    r4 bes\p\< r bes | r4 bes r bes\! | r4 bes8 bes bes4 bes | bes4 bes bes bes |
+    r4 bes r bes | r4 bes r bes | r4 bes8\> bes bes4 bes | bes4 bes bes bes \! |
+    r4 bes\< r bes | r4 bes r bes\! | r4 bes8 bes bes4 bes | bes4 bes bes bes |
+    r4 bes r bes | r4 bes r bes | r4 bes8\> bes bes4 bes | bes4 bes bes bes\! |
     
     %mark F
-    s1*15
+    r4 bes\ff r bes | r4 bes r bes | r4 bes8 bes bes4 bes | bes4 bes bes bes |
+    r4 bes r bes | r4 bes r bes | r4 c8 c c4 c | c4 c c aes |
+    r4 bes r bes | r4 bes r bes | r4 bes r bes | r4 bes r bes |
+    r4 aes\mf r aes | r4 aes r aes | g4 bes8 bes bes4 bes |
   }
   \alternative {
-    { s1 | }
-    { s1 | }
+    { bes4 r r2 | }
+    { bes4 bes8\ff bes bes4 bes | }
   }
   %mark G
   \repeat volta 2 {
-    s1*8 | 
+    r4 bes r bes | r4 bes r bes | r4 bes r bes | r4 bes8 bes bes4 bes |
+    r4 bes r bes | r4 bes r bes | r4 bes r bes | r4 bes8 bes bes4 bes |
   }
   \alternative {
-    { s1*8 | }
-    { s1*8 | }
+    { r4 bes r bes | r4 bes r bes | r4 bes r bes | r4 bes8 bes bes4 bes | 
+      r4 bes r bes | r4 bes r bes | r4 bes r bes | r4 bes8 bes bes4 bes | }
+    { r4 c r c | r4 c r c | r4 bes r bes | r4 bes8 bes bes4 bes |
+      r4 bes r b | r4 c r bes! | bes4 bes8 bes bes4 bes | bes4 r r2 | }
   }
 }
 
 hornTwo = \relative c' {
-
+  \key bes \major
+  
+  d4->\ff r r2 | d4-> r r2 | c4 c8 c c4 c | c4 r r2 |
+  
+  %mark A
+  r4 d\p r d | r4 d8 d d4 d | r4 d r d | r4 d8\< d d4 d\! |
+  r4 d r d | r4 d r d | r4 ees\> r ees | r4\! ees r ees |
+  r4 ees r ees | r4 ees8 ees ees4 ees | r4 ees r ees | r4 ees8\< ees ees4 ees\! |
+  r4 ees r ees | r4 ees r ees | r4 d8\> d d4 d | d4\! d d d |
+ 
+  %mark B
+  r4 d\mf r d | r4 d8 d d4 d | r4 d r d | r4 d8\< d d4 d\! |
+  r4 d r d | r4 d r d | r4 c8 c c4 c | c4 c c c |
+  c4-^\f c\p r c | r4 c8 c c4 c | c4-^\f c\p r c | r4 c8 c c4 c |
+  r4 c4\f r c | r4 c r c | r4 c8 c c4 c | c4 r r2 |
+  
+  %mark C
+  \repeat volta 2 {
+    r4 f\ff r f | r4 f r f | r4 f8 f f4 f | f4 f f f |
+    r4 f r f | r4 f r f | r4 f8 f f4 f | f4 f f f |
+    r4 f8 f f4 f | f1-> | r4 f8 f f4 f | f1-> |
+    f2. f8 f | f2. f8 f | f4 r r2 | ees1\> |
+    %mark D
+    r4 d\p r d | r4 d r d | r4 ees8 ees ees4 ees | r4 ees ees ees |
+    r4 ees r ees | r4 ees r ees | r4 d8 d d4 d | d4 r ees2-> |
+    r4 d r d | r4 d r d | r4 c8\< c c4 c | r4\! c4 c c |
+    c4\f r c2-> | d4 d8 d d4 d | r4 ees r ees |
+  }
+  \alternative {
+    { d4 r r2 | }
+    { d4 r aes'2->\< | }
+  }
+  
+  %Trio
+  \key ees \major
+  g4->\fz bes\p r bes | r4 bes r bes |
+  \repeat volta 2 {
+    %mark E
+    r4 bes\p\< r bes | r4 bes r bes\! | r4 bes8 bes bes4 bes | bes4 bes bes bes |
+    r4 bes r bes | r4 bes r bes | r4 bes8\> bes bes4 bes | bes4 bes bes bes \! |
+    r4 bes\< r bes | r4 bes r bes\! | r4 bes8 bes bes4 bes | bes4 bes bes bes |
+    r4 bes r bes | r4 bes r bes | r4 bes8\> bes bes4 bes | bes4 bes bes bes\! |
+    
+    %mark F
+    r4 bes\ff r bes | r4 bes r bes | r4 bes8 bes bes4 bes | bes4 bes bes bes |
+    r4 bes r bes | r4 bes r bes | r4 c8 c c4 c | c4 c c aes |
+    r4 bes r bes | r4 bes r bes | r4 bes r bes | r4 bes r bes |
+    r4 aes\mf r aes | r4 aes r aes | g4 bes8 bes bes4 bes |
+  }
+  \alternative {
+    { bes4 r r2 | }
+    { bes4 bes8\ff bes bes4 bes | }
+  }
+  %mark G
+  \repeat volta 2 {
+    r4 bes r bes | r4 bes r bes | r4 bes r bes | r4 bes8 bes bes4 bes |
+    r4 bes r bes | r4 bes r bes | r4 bes r bes | r4 bes8 bes bes4 bes |
+  }
+  \alternative {
+    { r4 bes r bes | r4 bes r bes | r4 bes r bes | r4 bes8 bes bes4 bes | 
+      r4 bes r bes | r4 bes r bes | r4 bes r bes | r4 bes8 bes bes4 bes | }
+    { r4 c r c | r4 c r c | r4 bes r bes | r4 bes8 bes bes4 bes |
+      r4 bes r b | r4 c r bes! | bes4 bes8 bes bes4 bes | bes4 r r2 | }
+  }
 }
 
 hornThree = \relative c'' {
