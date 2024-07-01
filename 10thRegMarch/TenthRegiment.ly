@@ -7,7 +7,7 @@
   title = "Tenth Regiment March"
   composer = "R. B. Hall"
   arranger = \markup { \smaller "edited by G. Fitzgerald" }
-  copyright = "Public domain. Version 2023-04-10"
+  copyright = "Public domain. Version 2024-07-01"
   tagline = ##f
 }
 
