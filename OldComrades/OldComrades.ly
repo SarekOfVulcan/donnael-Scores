@@ -625,7 +625,70 @@ hornThree = \relative c' {
 }
 
 hornFour = \relative c' {
-
+  \key bes \major
+  
+  d4->\ff r r2 | d4-> r r2 | c4 c8 c c4 c | c4 r r2 |
+  
+  %mark A
+  r4 d\p r d | r4 d8 d d4 d | r4 d r d | r4 d8\< d d4 d\! |
+  r4 d r d | r4 d r d | r4 c\> r c | r4\! c r c |
+  r4 c r c | r4 c8 c c4 c | r4 c r c | r4 c8\< c c4 c\! |
+  r4 c r c | r4 c r c | r4 d8\> d d4 d | d4\! d d d |
+ 
+  %mark B
+  r4 d\mf r d | r4 d8 d d4 d | r4 d r d | r4 d8\< d d4 d\! |
+  r4 d r d | r4 d r d | r4 c8 c c4 c | c4 c c c |
+  c4-^\f c\p r c | r4 c8 c c4 c | c4-^\f c\p r c | r4 c8 c c4 c |
+  r4 c4\f r c | r4 c r c | r4 c8 c c4 c | c4 r r2 |
+  
+  %mark C
+  \repeat volta 2 {
+    r4 f\ff r f | r4 f r f | r4 f8 f f4 f | f4 f f f |
+    r4 f r f | r4 f r f | r4 f8 f f4 f | f4 f f f |
+    r4 f8 f f4 f | f1-> | r4 f8 f f4 f | f1-> |
+    f2. f8 f | f2. f8 f | f4 r r2 | c1\> |
+    %mark D
+    r4 d\p r d | r4 d r d | r4 c8 c c4 c | r4 c c c |
+    r4 c r c | r4 c r c | r4 d8 d d4 d | d4 r ees2-> |
+    r4 d r d | r4 d r d | r4 c8\< c c4 c | r4\! c4 c c |
+    c4\f r c2-> | d4 d8 d d4 d | r4 ees r ees |
+  }
+  \alternative {
+    { d4 r r2 | }
+    { d4 r d2->\< | }
+  }
+  
+  %Trio
+  \key ees \major
+  ees4->\fz ees\p r ees | r4 ees r ees |
+  \repeat volta 2 {
+    %mark E
+    r4 ees\p\< r ees | r4 ees r ees\! | r4 ees8 ees ees4 ees | ees4 ees ees ees |
+    r4 ees r ees | r4 ees r ees | r4 d8\> d d4 d | d4 d d d \! |
+    r4 d\< r d | r4 d r d\! | r4 d8 d d4 d | d4 d d d |
+    r4 d r d | r4 d r d | r4 ees8\> ees ees4 ees | ees4 ees ees ees\! |
+    
+    %mark F
+    r4 ees\ff r ees | r4 ees r ees | r4 ees8 ees ees4 ees | ees4 ees ees ees |
+    r4 ees r ees | r4 ees r g | r4 f8 f f4 f | f4 f f f |
+    r4 d r d | r4 d r d | r4 ees r ees | r4 ees r ees |
+    r4 d\mf r d | r4 bes r bes | bes4 bes8 bes bes4 bes |
+  }
+  \alternative {
+    { bes4 r r2 | }
+    { bes4 bes'8\ff bes bes4 bes | }
+  }
+  %mark G
+  \repeat volta 2 {
+    r4 d, r d | r4 d r d | r4 d r d | r4 d8 d d4 d |
+    r4 ees r ees | r4 ees r ees | r4 ees r ees | r4 ees8 ees ees4 ees |
+  }
+  \alternative {
+    { r4 d r d | r4 d r ees | r4 d r d | r4 d8 d d4 d | 
+      r4 ees r ees | r4 ees r ees | r4 ees r ees | r4 ees8 ees ees4 ees | }
+    { r4 c r c | r4 c r c | r4 ees r ees | r4 ees8 ees ees4 ees |
+      r4 d r d | r4 ees r f | g4 ees8 ees ees4 ees | ees4 r r2 | }
+  }
 }
 
 tromboneOne = \relative c' {

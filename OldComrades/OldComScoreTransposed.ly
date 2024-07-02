@@ -92,11 +92,38 @@
     
     \new Staff  {
       \set Score.skipBars = ##t
-      \set Staff.midiInstrument = "trumpet"
-      \set Staff.instrumentName = "Cornet 3"
-      \set Staff.shortInstrumentName = "Corn 3"
+      \set Staff.midiInstrument = "french horn"
+      \set Staff.instrumentName = "Horn 1"
+      \set Staff.shortInstrumentName = "Horn 1"
       \unfoldRepeats      
-      \transpose c bes, \cornetThree
+      \transpose c f, \hornOne
+    }
+    
+    \new Staff  {
+      \set Score.skipBars = ##t
+      \set Staff.midiInstrument = "french horn"
+      \set Staff.instrumentName = "Horn 2"
+      \set Staff.shortInstrumentName = "Horn 2"
+      \unfoldRepeats      
+      \transpose c f, \hornTwo
+    }
+    
+    \new Staff  {
+      \set Score.skipBars = ##t
+      \set Staff.midiInstrument = "french horn"
+      \set Staff.instrumentName = "Horn 3"
+      \set Staff.shortInstrumentName = "Horn 3"
+      \unfoldRepeats      
+      \transpose c f, \hornThree
+    }
+    
+    \new Staff  {
+      \set Score.skipBars = ##t
+      \set Staff.midiInstrument = "french horn"
+      \set Staff.instrumentName = "Horn 4"
+      \set Staff.shortInstrumentName = "Horn 4"
+      \unfoldRepeats      
+      \transpose c f, \hornFour
     }
     
     \new Staff  { 
