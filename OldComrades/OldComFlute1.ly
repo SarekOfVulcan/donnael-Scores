@@ -1,5 +1,5 @@
-\version "2.24.1"
-\include "MHAMarch.ly"
+\version "2.24.3"
+\include "OldComrades.ly"
 
 \paper {
   #(set-paper-size "letter")
@@ -17,11 +17,11 @@
 
     \clef treble
     << \rehearsalMarks 
-       \keepWithTag #'fluteOne \fluteOne >>
+        \fluteOne >>
   }
   
   \layout { }
   \midi {
-    \tempo 4. = 120
+    \tempo 2 = 100
   }
 }

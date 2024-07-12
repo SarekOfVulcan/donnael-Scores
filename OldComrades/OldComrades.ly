@@ -70,8 +70,55 @@ fz = #(make-dynamic-script "fz")
 
 
 
-piccOne = \relative c'' {
-
+fluteOne = \relative c''' {
+  \key ees \major
+  
+  \ottava #1 ees4->\ff r bes8 a bes ees | g4-> r ees8 d ees g | bes4-> \ottava #0 bes,8 bes bes4 bes | bes4 r r2 |
+  
+  %mark A
+  g4\p r g r | g4 r g8 fis g aes | bes4 r bes r | bes4 r bes8\< a bes d\! |
+  ees4 r d r | c4 r8 bes a4 r8 bes | d1~\> | d4\! r r2 |
+  f,4 r f r | f4 r f8 e f g | aes4 r aes r | aes4 r aes8\< g aes bes\! | 
+  d4 r c r | bes4 r8 f e4 r8 f | g1~\> | g4\! r r2 |
+ 
+  %mark B
+  g4\mf r g r | g4 r g8 fis g a | bes4 r bes r | bes4 r bes8\< a bes d\! |
+  ees4 r d r | c4 r8 bes g4 r8 ees | f1~ | f4 r r2 |
+  \acciaccatura { f16 a c } f4\fz r f,8\p e f a | c4 r a r |
+  \acciaccatura { f16 bes d } f4\fz r  f,8\p e f bes | d4 r 
+  
+  %mark C
+  \repeat volta 2 {
+    s1*16 |
+    %mark D
+    s1*15 |
+  }
+  \alternative {
+    { s1 | }
+    { s1 | }
+  }
+  
+  %Trio
+  s1*2 |
+  \repeat volta 2 {
+    %mark E
+    s1*16
+    
+    %mark F
+    s1*15
+  }
+  \alternative {
+    { s1 | }
+    { s1 | }
+  }
+  %mark G
+  \repeat volta 2 {
+    s1*8 | 
+  }
+  \alternative {
+    { s1*8 | }
+    { s1*8 | }
+  }
 }
 
 oboeOne = \relative c'' {
