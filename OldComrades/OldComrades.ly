@@ -7,7 +7,7 @@
   title = "Old Comrades"
   composer = "C. Teike"
   arranger = \markup { \smaller "arr. by L. P. Laurendeau" }
-  copyright = "Public domain. Version 2024-05-26"
+  copyright = "Public domain. Version 2024-07-18"
   tagline = ##f
 }
 
@@ -85,39 +85,143 @@ fluteOne = \relative c''' {
   g4\mf r g r | g4 r g8 fis g a | bes4 r bes r | bes4 r bes8\< a bes d\! |
   ees4 r d r | c4 r8 bes g4 r8 ees | f1~ | f4 r r2 |
   \acciaccatura { f16 a c } f4\fz r f,8\p e f a | c4 r a r |
-  \acciaccatura { f16 bes d } f4\fz r  f,8\p e f bes | d4 r 
+  \acciaccatura { f16 bes d } f4\fz r  f,8\p e f bes | d4 r bes r |
+  f8\f e f fis g fis g gis | a4 r f' r | bes,1~ | bes4 r r2 |
   
   %mark C
   \repeat volta 2 {
-    s1*16 |
+    r4 bes\ff r bes | r4 bes r bes | r4 bes8 bes bes4 bes | bes4 bes bes bes |
+    r4 bes r bes | r4 bes r bes | r4 bes8 bes bes4 bes | bes4 bes bes bes |
+    r4 bes8( a bes) d,-. f-. c'-. | bes4 r r2 | r4 bes8( a bes) ees,-. g-. c-. | bes4 r r2 |
+    bes,8( a) bes-. c-. d( c) d-. ees-. | f8( e) f-. g-. aes( g) aes-. a-. | 
+    b4 r r2 | \afterGrace d1\trill\>( { c16 d\!)}  
     %mark D
-    s1*15 |
+    \acciaccatura f8( ees-.\p) d-. ees-. r \acciaccatura f8( ees-.) d-. ees-. r |
+    \acciaccatura f8( ees-.) d-. ees-. r \acciaccatura f8( ees-.) d-. ees-. f-. |
+    ees4 d8 d d4 d | d2 r2 |
+    \acciaccatura d8( c-.) b-. c-. r \acciaccatura d8( c-.) b-. c-. r |
+    \acciaccatura d8( c-.) b-. c-. r \acciaccatura d8( c-.) b-. c-. d-. |
+    c4 bes8 bes bes4 bes | bes4 a8 bes b c cis d |
+    \acciaccatura f8( ees-.) d-. ees-. r \acciaccatura f8( ees-.) d-. ees-. r |
+    \acciaccatura f8( ees-.) d-. ees-. r \acciaccatura f8( ees-.) d-. ees-. e-. |
+    f4\< c8 c c4 c | c2\! r |
+    \acciaccatura d8( c-.\f) b-. c-. r c-. d-. ees-. f-. | g8-. bes,-. ees-. g-. <bes bes,>2->|
+    \ottava #1 \acciaccatura bes8( aes-.) g-. aes-. r \ottava #0 \acciaccatura ees( d-.) c-. d-. r |
   }
   \alternative {
-    { s1 | }
-    { s1 | }
+    { ees4 r r2 | }
+    { ees4 r ees8\< e f g\! | }
   }
   
   %Trio
-  s1*2 |
+  \key aes \major
+  
+  \ottava #1 aes4\fz \ottava #0 r r2 | R1 |
   \repeat volta 2 {
     %mark E
-    s1*16
+    R1*2 | ees,8\p r ees r ees r ees r | aes4 r8 ees ees4 r | 
+    R1*2 | ees8 r ees r ees r ees r | g4 r8 ees ees4 r |
+    R1*2 | ees8 r ees r ees r ees r | bes'4 r8 ees, ees4 r |
+    R1*2 | ees8 r ees r ees r ees r | aes4 r ees4.\ff ees8 |
     
     %mark F
-    s1*15
+    ees2-> f-> | g2-> aes-> | c1~-> | c4 r c4. c8 |
+    c4 aes( g aes) | bes2 aes | f1~ | f4 r r2 |
+    ees8\p r ees r ees r ees r | ees8 r g r bes r r4 |
+    ees,8 r ees r ees r ees r | ees8 r g r c r r4 |
+    \acciaccatura f,8( ees4\f)( d ees g) | c2 bes | aes1~ |
   }
   \alternative {
-    { s1 | }
-    { s1 | }
+    { aes4 r r2 | }
+    { aes4\repeatTie r r2 | }
   }
   %mark G
   \repeat volta 2 {
-    s1*8 | 
+    des4\ff r des r | des4 r des r | des2.( g,4 | bes2.) r4 |
+    c4 r c r | c4 r c r | c2.( ees,4 | aes2.) r4 |
   }
   \alternative {
-    { s1*8 | }
-    { s1*8 | }
+    { g4-. r bes-. r | d4-. r aes'-. r | g4 r8 g g4 r8 g | g2. r4 | 
+      ees,4 r aes r | c4 r f r | ees4 r8 ees ees4 r8 ees | ees2. r4 | }
+    { f,4 r bes r | des4 r f r | ees4 r8 c c4 r8 c | c4 \times 2/3 { aes8( bes aes) } g4 f | 
+      ees4 r e r | f4 r g r | aes4 aes8 aes aes4 aes | aes4 r r2 }
+  }
+}
+
+fluteTwo = \relative c''' {
+  \key ees \major
+  
+  g4->\ff r bes8 a bes ees, | g4-> r ees8 d ees g | bes4-> bes8 bes bes4 bes | bes4 r r2 |
+  
+  %mark A
+  ees,4\p r ees r | ees4 r ees8 d ees f | g4 r g r | g4 r bes8\< a bes g\! |
+  g4 r g r | g4 r8 g g4 r8 g | aes1~\> | aes4\! r r2 |
+  d,4 r d r | d4 r d8 cis d ees | f4 r f r | f4 r aes8\< g aes f\! | 
+  aes4 r aes r | aes4 r8 d, d4 r8 d | ees1~\> | ees4\! r r2 |
+ 
+  %mark B
+  ees4\mf r ees r | ees4 r ees8 d ees f | g4 r g r | g4 r bes8\< a bes g\! |
+  g4 r g r | g4 r8 g ees4 r8 ees | c1~ | c4 r r2 |
+  a'4-^\fz r f8\p e f f | a4 r f r |
+  d'4-^\fz r  f,8\p e f d | bes'4 r d, r |
+  f8\f e f fis g fis g gis | a4 r f r | d1~ | d4 r r2 |
+  
+  %mark C
+  \repeat volta 2 {
+    r4 aes'\ff r aes | r4 aes r aes | r4 aes8 aes aes4 aes | aes4 aes aes aes |
+    r4 g r g | r4 g r g | r4 g8 g g4 g | g4 g g g |
+    r4 bes,8( a bes) d-. f-. d-. | aes'4 r r2 | r4 bes,8( a bes) ees-. g-. ees-. | g4 r r2 |
+    bes,8( a) bes-. c-. d( c) d-. ees-. | f8( e) f-. g-. aes( g) aes-. a-. | 
+    b4 r r2 | aes1\>  
+    %mark D
+    g8-.\p g-. g-. r g-. g-. g-. r | g8-. g-. g-. r g-. g-. g-. g-. |
+    aes4 aes8 aes aes4 aes | aes2 r2 |
+    \acciaccatura d8( c-.) b-. c-. r \acciaccatura d8( c-.) b-. c-. r |
+    \acciaccatura d8( c-.) b-. c-. r \acciaccatura d8( c-.) b-. c-. d-. |
+    c4 bes8 bes bes4 bes | bes4 a8 bes b c cis d |
+    \acciaccatura f8( ees-.) d-. ees-. r \acciaccatura f8( ees-.) d-. ees-. r |
+    \acciaccatura f8( ees-.) d-. ees-. r \acciaccatura f8( ees-.) d-. ees-. e-. |
+    f4\< c8 c c4 c | c2\! r |
+    \acciaccatura d8( c-.\f) b-. c-. r c-. d-. ees-. f-. | g8-. bes,-. ees-. g-. <bes bes,>2->|
+    \ottava #1 \acciaccatura bes8( aes-.) g-. aes-. r \ottava #0 \acciaccatura ees( d-.) c-. d-. r |
+  }
+  \alternative {
+    { ees4 r r2 | }
+    { ees4 r ees8\< e f g\! | }
+  }
+  
+  %Trio
+  \key aes \major
+  
+  \ottava #1 aes4\fz \ottava #0 r r2 | R1 |
+  \repeat volta 2 {
+    %mark E
+    R1*2 | ees,8\p r ees r ees r ees r | aes4 r8 ees ees4 r | 
+    R1*2 | ees8 r ees r ees r ees r | g4 r8 ees ees4 r |
+    R1*2 | ees8 r ees r ees r ees r | bes'4 r8 ees, ees4 r |
+    R1*2 | ees8 r ees r ees r ees r | aes4 r ees4.\ff ees8 |
+    
+    %mark F
+    ees2-> f-> | g2-> aes-> | c1~-> | c4 r c4. c8 |
+    c4 aes( g aes) | bes2 aes | f1~ | f4 r r2 |
+    ees8\p r ees r ees r ees r | ees8 r g r bes r r4 |
+    ees,8 r ees r ees r ees r | ees8 r g r c r r4 |
+    \acciaccatura f,8( ees4\f)( d ees g) | c2 bes | aes1~ |
+  }
+  \alternative {
+    { aes4 r r2 | }
+    { aes4\repeatTie r r2 | }
+  }
+  %mark G
+  \repeat volta 2 {
+    des4\ff r des r | des4 r des r | des2.( g,4 | bes2.) r4 |
+    c4 r c r | c4 r c r | c2.( ees,4 | aes2.) r4 |
+  }
+  \alternative {
+    { g4-. r bes-. r | d4-. r aes'-. r | g4 r8 g g4 r8 g | g2. r4 | 
+      ees,4 r aes r | c4 r f r | ees4 r8 ees ees4 r8 ees | ees2. r4 | }
+    { f,4 r bes r | des4 r f r | ees4 r8 c c4 r8 c | c4 \times 2/3 { aes8( bes aes) } g4 f | 
+      ees4 r e r | f4 r g r | aes4 aes8 aes aes4 aes | aes4 r r2 }
   }
 }
 

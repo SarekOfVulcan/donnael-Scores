@@ -21,8 +21,18 @@
       \clef treble
       <<
         \rehearsalMarks
-        \transpose c des 
-        \piccOne
+        \fluteOne
+      >>
+    }
+
+    \new Staff  {
+      \set Staff.instrumentName = "Flute 2"
+      \set Staff.shortInstrumentName = "Fl 2"
+
+      \clef treble
+      <<
+        \rehearsalMarks
+        \fluteTwo
       >>
     }
 
