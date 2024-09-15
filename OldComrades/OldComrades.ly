@@ -427,7 +427,7 @@ clarinetThree = \relative c'' {
 }
 
 clarinetBass = \relative c'' {
-\key f \major
+  \key f \major
 
   \grace { s8.:16 } % bug 34
 
@@ -436,7 +436,7 @@ clarinetBass = \relative c'' {
 saxAlto = \relative c'' {
   \key c \major
   
-    \grace { s8.:16 } % bug 34
+  \grace { s8.:16 } % bug 34
   c4->\ff r g8 fis g c | e4-> r c8 b c e | g4 b,8 b b4 b | b4 r r2 |
   
   %mark A
@@ -506,8 +506,8 @@ saxAlto = \relative c'' {
 saxTenor = \relative c'' {
   \key f \major
   
-    \grace { s8.:16 } % bug 34
-a4->\ff r r2 | c4-> r r2 | e4-> c8 c c4 c | c4 bes\> a g |
+  \grace { s8.:16 } % bug 34
+  a4->\ff r r2 | c4-> r r2 | e4-> c8 c c4 c | c4 bes\> a g |
   
   %mark A
   a2.(\p g4 | f4) d'( c a) | f2. a4 | f4( a c f) |
@@ -1105,7 +1105,7 @@ tromboneTwo = \relative c' {
 tromboneThree = \relative c {
   \key ees \major
   
-\grace { s8.:16 } % bug 34
+  \grace { s8.:16 } % bug 34
 
 }
 
@@ -1193,7 +1193,7 @@ drumSnareBass = \drummode {
   << \grace { sn16 sn sn } sn4->\ff
      \\
      bd
-  >> |
+  >> r r2 | s1*3 |
   
   %mark A
   s1*16 |
@@ -1244,6 +1244,7 @@ percBells = \relative c' {
 }
 
 dummyPart = \relative c'' {
+  \grace { s8.:16 } % bug 34
   s1*4 |
   
   %mark A

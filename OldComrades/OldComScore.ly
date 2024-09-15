@@ -1,13 +1,31 @@
 \version "2.24.3"
+\include "OldComrades.ly"
 
 #(set-global-staff-size 12)
 
 \paper {
   #(set-paper-size "legal")
   first-page-number = 1
+  evenHeaderMarkup =  \markup {
+      \fill-line {
+        \if \should-print-page-number
+        \fromproperty #'page:page-number-string
+        \if \should-print-page-number
+        \fromproperty #'header:title
+        \null
+      }
+    }
+  oddHeaderMarkup =  \markup {
+      \fill-line {
+        \null
+        \if \should-print-page-number
+        \fromproperty #'header:title
+        \if \should-print-page-number
+                \fromproperty #'page:page-number-string
+      }
+    }
 }
 
-\include "OldComrades.ly"
 
 \header {
 
