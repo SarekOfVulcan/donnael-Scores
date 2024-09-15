@@ -18,9 +18,15 @@
       \set Staff.midiInstrument = "flute"
       \set Staff.instrumentName = "Flute 1"
       \set Staff.shortInstrumentName = "Fl 1"
-      \tempo 2=100
+      \fluteOne
+    }
+    \new Staff  {
+      \set Score.skipBars = ##t
+      \set Staff.midiInstrument = "flute"
+      \set Staff.instrumentName = "Flute 2"
+      \set Staff.shortInstrumentName = "Fl 2"
       \unfoldRepeats      
-      \keepWithTag #'fluteOne \transpose c des \piccOne
+      \fluteTwo
     }
     \new Staff  {
       \set Score.skipBars = ##t
@@ -32,27 +38,11 @@
     }
     \new Staff  {
       \set Score.skipBars = ##t
-      \set Staff.midiInstrument = "clarinet"
-      \set Staff.instrumentName = "Clarinet 2"
-      \set Staff.shortInstrumentName = "Clar 2"
+      \set Staff.midiInstrument = "alto sax"
+      \set Staff.instrumentName = "Alto Sax"
+      \set Staff.shortInstrumentName = "Alt Sax"
       \unfoldRepeats      
-      \transpose c bes, \clarinetTwo
-    }
-    \new Staff  {
-      \set Score.skipBars = ##t
-      \set Staff.midiInstrument = "clarinet"
-      \set Staff.instrumentName = "Clarinet 3"
-      \set Staff.shortInstrumentName = "Clar 3"
-      \unfoldRepeats      
-      \transpose c bes, \clarinetThree
-    }
-    \new Staff  {
-      \set Score.skipBars = ##t
-      \set Staff.midiInstrument = "clarinet"
-      \set Staff.instrumentName = "Bass Clarinet"
-      \set Staff.shortInstrumentName = "B. Cl"
-      \unfoldRepeats      
-      \transpose c bes,, \clarinetBass
+      \transpose c ees, \saxAlto
     }
     \new Staff  {
       \set Score.skipBars = ##t
@@ -72,23 +62,6 @@
       \transpose c bes, \cornetSolo
     }
     
-    \new Staff  {
-      \set Score.skipBars = ##t
-      \set Staff.midiInstrument = "trumpet"
-      \set Staff.instrumentName = "Cornet 1"
-      \set Staff.shortInstrumentName = "Corn 1"
-      \unfoldRepeats      
-      \transpose c bes, \cornetOne
-    }
-    
-    \new Staff  {
-      \set Score.skipBars = ##t
-      \set Staff.midiInstrument = "trumpet"
-      \set Staff.instrumentName = "Cornet 2"
-      \set Staff.shortInstrumentName = "Corn 2"
-      \unfoldRepeats      
-      \transpose c bes, \cornetTwo
-    }
     
     \new Staff  {
       \set Score.skipBars = ##t

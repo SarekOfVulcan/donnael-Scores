@@ -4,11 +4,31 @@
 \pointAndClickOff
 
 \header {
-  title = "Old Comrades"
+  title = "“Old Comrades”"
+  subtitle = "March."
   composer = "C. Teike"
-  arranger = \markup { \smaller "arr. by L. P. Laurendeau" }
-  copyright = "Public domain. Version 2024-07-18"
+  arranger = \markup { \smaller \italic "arr. by L. P. Laurendeau" }
+  copyright = "Public domain. Version 2024-09-15"
   tagline = ##f
+}
+\paper {
+  bookTitleMarkup = ##f
+  first-page-number = 2
+  
+  scoreTitleMarkup = \markup \center-column {
+    \fill-line {
+      \bold \fontsize #3 \fromproperty #'header:title
+    }
+    \fill-line {
+      \bold \fromproperty #'header:instrument
+      \fromproperty #'header:subtitle
+      \fromproperty #'header:composer
+    }
+    \fill-line {
+      \null
+      \fromproperty #'header:arranger
+    }
+  }
 }
 
 rehearsalMarks = \relative c' {
@@ -82,7 +102,7 @@ fluteOne = \relative c''' {
   d4 r c r | bes4 r8 f e4 r8 f | g1~\> | g4\! r r2 |
  
   %mark B
-  g4\mf r g r | g4 r g8 fis g a | bes4 r bes r | bes4 r bes8\< a bes d\! |
+  g4\mf r g r | g4 r g8 fis g aes | bes4 r bes r | bes4 r bes8\< a bes d\! |
   ees4 r d r | c4 r8 bes g4 r8 ees | f1~ | f4 r r2 |
   \acciaccatura { f16 a c } f4\fz r f,8\p e f a | c4 r a r |
   \acciaccatura { f16 bes d } f4\fz r  f,8\p e f bes | d4 r bes r |
@@ -94,7 +114,7 @@ fluteOne = \relative c''' {
     r4 bes r bes | r4 bes r bes | r4 bes8 bes bes4 bes | bes4 bes bes bes |
     r4 bes8( a bes) d,-. f-. c'-. | bes4 r r2 | r4 bes8( a bes) ees,-. g-. c-. | bes4 r r2 |
     bes,8( a) bes-. c-. d( c) d-. ees-. | f8( e) f-. g-. aes( g) aes-. a-. | 
-    b4 r r2 | \afterGrace d1\trill\>( { c16 d\!)}  
+    bes4 r r2 | \afterGrace d1\trill\>( { c16 d\!)}  
     %mark D
     \acciaccatura f8( ees-.\p) d-. ees-. r \acciaccatura f8( ees-.) d-. ees-. r |
     \acciaccatura f8( ees-.) d-. ees-. r \acciaccatura f8( ees-.) d-. ees-. f-. |
@@ -128,7 +148,7 @@ fluteOne = \relative c''' {
     ees2-> f-> | g2-> aes-> | c1~-> | c4 r c4. c8 |
     c4 aes( g aes) | bes2 aes | f1~ | f4 r r2 |
     ees8\p r ees r ees r ees r | ees8 r g r bes r r4 |
-    ees,8 r ees r ees r ees r | ees8 r g r c r r4 |
+    ees,8 r ees r ees r ees r | ees8 r aes r c r r4 |
     \acciaccatura f,8( ees4\f)( d ees g) | c2 bes | aes1~ |
   }
   \alternative {
@@ -141,7 +161,7 @@ fluteOne = \relative c''' {
     c4 r c r | c4 r c r | c2.( ees,4 | aes2.) r4 |
   }
   \alternative {
-    { g4-. r bes-. r | d4-. r aes'-. r | g4 r8 g g4 r8 g | g2. r4 | 
+    { g4-. r bes-. r | des4-. r aes'-. r | g4 r8 g g4 r8 g | g2. r4 | 
       ees,4 r aes r | c4 r f r | ees4 r8 ees ees4 r8 ees | ees2. r4 | }
     { f,4 r bes r | des4 r f r | ees4 r8 c c4 r8 c | c4 \times 2/3 { aes8( bes aes) } g4 f | 
       ees4 r e r | f4 r g r | aes4 aes8 aes aes4 aes | aes4 r r2 }
@@ -172,60 +192,125 @@ fluteTwo = \relative c''' {
     r4 g r g | r4 g r g | r4 g8 g g4 g | g4 g g g |
     r4 bes,8( a bes) d-. f-. d-. | aes'4 r r2 | r4 bes,8( a bes) ees-. g-. ees-. | g4 r r2 |
     bes,8( a) bes-. c-. d( c) d-. ees-. | f8( e) f-. g-. aes( g) aes-. a-. | 
-    b4 r r2 | aes1\>  
+    bes4 r r2 | aes1\>  
     %mark D
     g8-.\p g-. g-. r g-. g-. g-. r | g8-. g-. g-. r g-. g-. g-. g-. |
     aes4 aes8 aes aes4 aes | aes2 r2 |
-    \acciaccatura d8( c-.) b-. c-. r \acciaccatura d8( c-.) b-. c-. r |
-    \acciaccatura d8( c-.) b-. c-. r \acciaccatura d8( c-.) b-. c-. d-. |
-    c4 bes8 bes bes4 bes | bes4 a8 bes b c cis d |
-    \acciaccatura f8( ees-.) d-. ees-. r \acciaccatura f8( ees-.) d-. ees-. r |
-    \acciaccatura f8( ees-.) d-. ees-. r \acciaccatura f8( ees-.) d-. ees-. e-. |
-    f4\< c8 c c4 c | c2\! r |
-    \acciaccatura d8( c-.\f) b-. c-. r c-. d-. ees-. f-. | g8-. bes,-. ees-. g-. <bes bes,>2->|
-    \ottava #1 \acciaccatura bes8( aes-.) g-. aes-. r \ottava #0 \acciaccatura ees( d-.) c-. d-. r |
+    aes8-. aes-. aes-. r aes-. aes-. aes-. r | aes8-. aes-. aes-. r aes-. aes-. aes-. aes-. |
+    g4 g8 g g4 g | g4 r aes2 |
+    g8-. g-. g-. r g-. g-. g-. r | g8-. g-. g-. r g-. g-. g-. g-. |
+    aes4\< aes8 aes aes4 aes\! | aes2 r |
+    aes8-.\f aes-. aes-. r aes-. aes-. aes-. aes-. | bes8-. g-. ees-. g-. bes2 |
+    \acciaccatura bes8( aes) g aes r aes aes aes r |
   }
   \alternative {
-    { ees4 r r2 | }
-    { ees4 r ees8\< e f g\! | }
+    { g4 r r2 | }
+    { g4 r ees8\< e f g\! | }
   }
   
   %Trio
   \key aes \major
   
-  \ottava #1 aes4\fz \ottava #0 r r2 | R1 |
+  aes4->\fz r r2 | R1 |
   \repeat volta 2 {
     %mark E
-    R1*2 | ees,8\p r ees r ees r ees r | aes4 r8 ees ees4 r | 
+    R1*2 | c,8\p r c r c r c r | c4 r8 c c4 r | 
+    R1*2 | des8 r des r des r des r | des4 r8 des des4 r |
+    R1*2 | des8 r des r des r des r | g4 r8 des des4 r |
+    R1*2 | c8\> r c r c r c\! r | c4 r ees4.\ff ees8 |
+    
+    %mark F
+    c2-> c-> | c2-> c-> | ees1~-> | es4 r ees4. ees8 |
+    es4 c c c | c2 c | des1~ | des4 r r2 |
+    des8\p r des r des r des r | des8 r des r des r r4 |
+    c8 r c r c r c r | c8 r c r ees r r4 |
+    ees4\mf( d ees2) | ees2 des! | c1~ |
+  }
+  \alternative {
+    { c4 r r2 | }
+    { c4\repeatTie r r2 | }
+  }
+  %mark G
+  \repeat volta 2 {
+    g'4\ff r g r | g4 r g r | g2.( ees4 | g2.) r4 |
+    aes4 r aes r | aes4 r aes r | aes2.( ees4 | c2.) r4 |
+  }
+  \alternative {
+    { ees4-. r g-. r | bes4-. r des-. r | des4 r8 des des4 r8 des | des2. r4 | 
+      c,4 r ees r | aes4 r c r | c4 r8 c c4 r8 c | c2. r4 | }
+    { des,4 r f r | bes4 r des r | c4 r8 ees, ees4 r8 ees | ees4 \times 2/3 { aes8( bes aes) } g4 f | 
+      des4 r des r | f4 r ees r | c4 c8 c c4 c | c4 r r2 }
+  }
+}
+
+oboeOne = \relative c'' {
+  \key ees \major
+  
+  ees4->\ff r bes8 a bes ees | g4-> r ees8 d ees g | bes4-> d,8 d d4 d | d4 r r2 |
+  
+  %mark A
+  g4\p r g r | g4 r g8 fis g aes | g4 r g r | g4 r bes,8\< a bes d\! |
+  ees4 r d r | c4 r8 bes a4 r8 bes | d1~\> | d4\! r r2 |
+  f4 r f r | f4 r f8 e f g | aes4 r aes r | aes4 r aes,8\< g aes bes\! | 
+  d4 r c r | bes4 r8 bes bes4 r8 bes | bes1~\> | bes4\! r r2 |
+ 
+  %mark B
+  g'4\mf r g r | g4 r g8 fis g aes | g4 r g r | g4 r bes,8\< a bes d\! |
+  ees4 r d r | c4 r8 bes' g4 r8 ees | f1~ | f4 r r2 |
+  f4\fz r f8\p e f a | c4 r a r |
+  bes4\fz r  f8\p e f bes | f4 r f r |
+  f8\f e f fis g fis g gis | a4 r ees r | d1~ | d4 r r2 |
+  
+  %mark C
+  \repeat volta 2 {
+    r4 aes'\ff r aes | r4 aes r aes | r4 aes8 aes aes4 aes | aes4 aes aes aes |
+    r4 g r g | r4 g r g | r4 g8 g g4 g | g4 g g g |
+    r4 bes, bes bes | bes1-> | r4 bes bes bes | bes1-> |
+    bes2. bes8 bes | bes2. bes8 bes | bes4 r r2 | \afterGrace d1\trill\> { c16( d\!)}  
+    %mark D
+    ees1~\p | ees1 | ees4 d8 d d4 d | d2 r2 |
+    c1~ | c1 | c4 bes8 bes bes4 bes | bes4 r d2-> |
+    ees1~ | ees2 ees8\< d ees e | f4\! f8 f f4 f | f2 r |
+    c8\f b c r c d ees f | g8 bes, ees g bes2-> | aes8 g aes r aes aes aes r |
+  }
+  \alternative {
+    { g4 r r2 | }
+    { g4 r ees8\< e f g\! | }
+  }
+  
+  %Trio
+  \key aes \major
+  
+   aes4\fz  r r2 | R1 |
+  \repeat volta 2 {
+    %mark E
+    R1*2 | ees8\p r ees r ees r ees r | aes4 r8 ees ees4 r | 
     R1*2 | ees8 r ees r ees r ees r | g4 r8 ees ees4 r |
     R1*2 | ees8 r ees r ees r ees r | bes'4 r8 ees, ees4 r |
     R1*2 | ees8 r ees r ees r ees r | aes4 r ees4.\ff ees8 |
     
     %mark F
-    ees2-> f-> | g2-> aes-> | c1~-> | c4 r c4. c8 |
+    ees2-> f-> | g2-> aes-> | aes1~-> | aes4 r c4. c8 |
     c4 aes( g aes) | bes2 aes | f1~ | f4 r r2 |
     ees8\p r ees r ees r ees r | ees8 r g r bes r r4 |
-    ees,8 r ees r ees r ees r | ees8 r g r c r r4 |
-    \acciaccatura f,8( ees4\f)( d ees g) | c2 bes | aes1~ |
+    ees,8 r ees r ees r ees r | ees8 r aes r c r r4 |
+    \acciaccatura f,8( ees4\mf)( d ees g) | ees2 des | c1~ |
   }
   \alternative {
-    { aes4 r r2 | }
-    { aes4\repeatTie r r2 | }
+    { c4 r r2 | }
+    { c4\repeatTie r r2 | }
   }
   %mark G
   \repeat volta 2 {
-    des4\ff r des r | des4 r des r | des2.( g,4 | bes2.) r4 |
-    c4 r c r | c4 r c r | c2.( ees,4 | aes2.) r4 |
+    ees4\ff r ees r | ees4 r ees r | ees1~ | ees2. r4 |
+    ees4 r ees r | ees4 r ees r | ees1~ | ees2. r4 |
   }
   \alternative {
-    { g4-. r bes-. r | d4-. r aes'-. r | g4 r8 g g4 r8 g | g2. r4 | 
-      ees,4 r aes r | c4 r f r | ees4 r8 ees ees4 r8 ees | ees2. r4 | }
-    { f,4 r bes r | des4 r f r | ees4 r8 c c4 r8 c | c4 \times 2/3 { aes8( bes aes) } g4 f | 
+    { g,4-. r bes-. r | des4-. r aes'-. r | g4 r8 g g4 r8 g | g2. r4 | 
+      c,4 r c r | c4 r f r | ees4 r8 ees ees4 r8 ees | ees2. r4 | }
+    { des4 r des r | des4 r f r | ees4 r8 ees ees4 r8 ees | ees4 aes( g f) | 
       ees4 r e r | f4 r g r | aes4 aes8 aes aes4 aes | aes4 r r2 }
   }
-}
-
-oboeOne = \relative c'' {
 
 }
 

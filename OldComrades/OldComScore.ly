@@ -4,6 +4,7 @@
 
 \paper {
   #(set-paper-size "legal")
+  first-page-number = 1
 }
 
 \include "OldComrades.ly"
@@ -14,28 +15,29 @@
 
 \score {
   <<
-    \new Staff  {
-      \set Staff.instrumentName = "Flute 1 (Picc)"
-      \set Staff.shortInstrumentName = "Fl 1"
+    \new StaffGroup <<
+      \new Staff  {
+        \set Staff.instrumentName = "Flute 1 (Picc)"
+        \set Staff.shortInstrumentName = "Fl 1"
 
-      \clef treble
-      <<
-        \rehearsalMarks
-        \fluteOne
-      >>
-    }
+        \clef treble
+        <<
+          \rehearsalMarks
+          \fluteOne
+        >>
+      }
 
-    \new Staff  {
-      \set Staff.instrumentName = "Flute 2"
-      \set Staff.shortInstrumentName = "Fl 2"
+      \new Staff  {
+        \set Staff.instrumentName = "Flute 2"
+        \set Staff.shortInstrumentName = "Fl 2"
 
-      \clef treble
-      <<
-        \rehearsalMarks
-        \fluteTwo
-      >>
-    }
-
+        \clef treble
+        <<
+          \rehearsalMarks
+          \fluteTwo
+        >>
+      }
+    >>
     \new Staff  {
       \set Staff.instrumentName = "Oboe"
       \set Staff.shortInstrumentName = "Oboe"
