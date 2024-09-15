@@ -39,6 +39,7 @@ rehearsalMarks = \relative c' {
 
   \time 2/2
 
+  \grace { s8.:16 } % bug 34
   s1*4 |
   \bar "||"
   \mark \markup { \circle "A" }
@@ -92,7 +93,8 @@ fz = #(make-dynamic-script "fz")
 
 fluteOne = \relative c''' {
   \key ees \major
-  
+
+  \grace { s8.:16 } % bug 34
   \ottava #1 ees4->\ff r bes8 a bes ees | g4-> r ees8 d ees g | bes4-> \ottava #0 bes,8 bes bes4 bes | bes4 r r2 |
   
   %mark A
@@ -171,6 +173,7 @@ fluteOne = \relative c''' {
 fluteTwo = \relative c''' {
   \key ees \major
   
+  \grace { s8.:16 } % bug 34
   g4->\ff r bes8 a bes ees, | g4-> r ees8 d ees g | bes4-> bes8 bes bes4 bes | bes4 r r2 |
   
   %mark A
@@ -246,6 +249,7 @@ fluteTwo = \relative c''' {
 oboeOne = \relative c'' {
   \key ees \major
   
+  \grace { s8.:16 } % bug 34
   ees4->\ff r bes8 a bes ees | g4-> r ees8 d ees g | bes4-> d,8 d d4 d | d4 r r2 |
   
   %mark A
@@ -281,7 +285,7 @@ oboeOne = \relative c'' {
   %Trio
   \key aes \major
   
-   aes4\fz  r r2 | R1 |
+  aes4\fz  r r2 | R1 |
   \repeat volta 2 {
     %mark E
     R1*2 | ees8\p r ees r ees r ees r | aes4 r8 ees ees4 r | 
@@ -314,20 +318,22 @@ oboeOne = \relative c'' {
 
 }
 
-oboeTwo = \relative c'' {
-
-}
-
 bassoonOne = \relative c {
+  \key ees \major
+  
+  \grace { s8.:16 } % bug 34
 
 }
 
 clarinetEb = \relative c''' {
+  \grace { s8.:16 } % bug 34
 
 }
 
 clarinetOne = \relative c'' {
   \key f \major
+  
+  \grace { s8.:16 } % bug 34
   f4->\ff r c8 b c f | a4-> r f8 e f a | c4-> c8 c c4 c | c4 r r2 |
   
   %mark A
@@ -408,22 +414,29 @@ clarinetOne = \relative c'' {
 clarinetTwo = \relative c'' {
   \key f \major
   
+  \grace { s8.:16 } % bug 34
 
 }
 
 clarinetThree = \relative c'' {
   \key f \major
   
+  \grace { s8.:16 } % bug 34
 
 
 }
 
 clarinetBass = \relative c'' {
+\key f \major
+
+  \grace { s8.:16 } % bug 34
 
 }
 
 saxAlto = \relative c'' {
   \key c \major
+  
+    \grace { s8.:16 } % bug 34
   c4->\ff r g8 fis g c | e4-> r c8 b c e | g4 b,8 b b4 b | b4 r r2 |
   
   %mark A
@@ -493,7 +506,8 @@ saxAlto = \relative c'' {
 saxTenor = \relative c'' {
   \key f \major
   
-  a4->\ff r r2 | c4-> r r2 | e4-> c8 c c4 c | c4 bes\> a g |
+    \grace { s8.:16 } % bug 34
+a4->\ff r r2 | c4-> r r2 | e4-> c8 c c4 c | c4 bes\> a g |
   
   %mark A
   a2.(\p g4 | f4) d'( c a) | f2. a4 | f4( a c f) |
@@ -558,20 +572,30 @@ saxTenor = \relative c'' {
 }
 
 saxBaritone = \relative c' {
+  \key c \major
+  
+  \grace { s8.:16 } % bug 34
 
 }
 
 trumpetOne = \relative c' {
+  \key f \major
+  
+  \grace { s8.:16 } % bug 34
 
 }
 
 trumpetTwo = \relative c' {
+  \key f \major
+  
+  \grace { s8.:16 } % bug 34
 
 }
 
 cornetSolo = \relative c' {
   \key f \major
   
+  \grace { s8.:16 } % bug 34
   f4->\ff r c8 b c f | a4-> r f8 e f a | c4-> c8 c c4 c4 | c4 r r2 |
 
   %mark A
@@ -648,20 +672,30 @@ cornetSolo = \relative c' {
 }
 
 cornetOne = \relative c'' {
+  \key f \major
+  
+  \grace { s8.:16 } % bug 34
 
 }
 
 cornetTwo = \relative c' {
+  \key f \major
+  
+  \grace { s8.:16 } % bug 34
 
 }
 
 cornetThree = \relative c' {
+  \key f \major
+  
+  \grace { s8.:16 } % bug 34
 
 }
 
 hornOne = \relative c'' {
   \key bes \major
   
+  \grace { s8.:16 } % bug 34
   bes4->\ff r r2 | bes4-> r r2 | a4 a8 a a4 a | a4 r r2 |
   
   %mark A
@@ -729,6 +763,7 @@ hornOne = \relative c'' {
 hornTwo = \relative c' {
   \key bes \major
   
+  \grace { s8.:16 } % bug 34
   d4->\ff r r2 | d4-> r r2 | c4 c8 c c4 c | c4 r r2 |
   
   %mark A
@@ -796,6 +831,7 @@ hornTwo = \relative c' {
 hornThree = \relative c' {
   \key bes \major
   
+  \grace { s8.:16 } % bug 34
   f4->\ff r r2 | f4-> r r2 | f4 f8 f f4 f | f4 r r2 |
   
   %mark A
@@ -863,6 +899,7 @@ hornThree = \relative c' {
 hornFour = \relative c' {
   \key bes \major
   
+  \grace { s8.:16 } % bug 34
   d4->\ff r r2 | d4-> r r2 | c4 c8 c c4 c | c4 r r2 |
   
   %mark A
@@ -930,6 +967,7 @@ hornFour = \relative c' {
 tromboneOne = \relative c' {
   \key ees \major
   
+  \grace { s8.:16 } % bug 34
   bes4->\ff r r2 | ees4-> r r2 | d4-> d8 d d4 d | d4\> aes g f |
   
   %mark A
@@ -998,6 +1036,7 @@ tromboneOne = \relative c' {
 tromboneTwo = \relative c' {
   \key ees \major
   
+  \grace { s8.:16 } % bug 34
   g4->\ff r r2 | g4-> r r2 | f4-> bes8 bes bes4 bes | bes4\> aes g f |
   
   %mark A
@@ -1064,12 +1103,16 @@ tromboneTwo = \relative c' {
 }
 
 tromboneThree = \relative c {
+  \key ees \major
+  
+\grace { s8.:16 } % bug 34
 
 }
 
 baritoneTC = \relative c' {
   \key f \major
   
+  \grace { s8.:16 } % bug 34
   f4->\ff r r2 | f4-> r r2 | c4-> c' g e | c4 bes'\> a g |
   
   %mark A
@@ -1138,13 +1181,58 @@ baritoneTC = \relative c' {
 }
 
 basses = \relative c {
+  \key ees \major
+  
+  \grace { s8.:16 } % bug 34
 
 }
 
 drumSnareBass = \drummode {
   \clef percussion
 
-
+  << \grace { sn16 sn sn } sn4->\ff
+     \\
+     bd
+  >> |
+  
+  %mark A
+  s1*16 |
+ 
+  %mark B
+  s1*16 |
+  
+  %mark C
+  \repeat volta 2 {
+    s1*16 |
+    %mark D
+    s1*15 |
+  }
+  \alternative {
+    { s1 | }
+    { s1 | }
+  }
+  
+  %Trio
+  s1*2 |
+  \repeat volta 2 {
+    %mark E
+    s1*16
+    
+    %mark F
+    s1*15
+  }
+  \alternative {
+    { s1 | }
+    { s1 | }
+  }
+  %mark G
+  \repeat volta 2 {
+    s1*8 | 
+  }
+  \alternative {
+    { s1*8 | }
+    { s1*8 | }
+  }
 }
 
 percTimp = \relative c {

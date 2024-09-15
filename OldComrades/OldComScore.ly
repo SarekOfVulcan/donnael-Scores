@@ -59,7 +59,7 @@
         \set Staff.shortInstrumentName = "Eb Cl"
 
         \clef treble
-        %\transpose ees c \keepWithTag #'clarEb \cla%%
+        \clarinetEb
       }
 
       \new Staff  {
@@ -91,8 +91,7 @@
         \set Staff.shortInstrumentName = "B. Clar"
 
         \clef treble
-        \transpose bes c'' \basses
-
+        \clarinetBass
       }
     >>
 
