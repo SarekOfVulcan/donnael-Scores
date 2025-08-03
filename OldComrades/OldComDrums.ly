@@ -11,6 +11,7 @@
   instrument = "Drums"
 }
 
+
 \score {
   \new DrumStaff  { 
     \set Staff.midiInstrument = "synth drum" 

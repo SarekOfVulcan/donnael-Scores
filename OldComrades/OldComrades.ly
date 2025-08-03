@@ -337,8 +337,8 @@ clarinetOne = \relative c'' {
   f4->\ff r c8 b c f | a4-> r f8 e f a | c4-> c8 c c4 c | c4 r r2 |
   
   %mark A
-  a4\p r a r | a4 r a8 gis a bes | a4 r a r | a4 r c,8 b c e |
-  f4\< r e r | d4\! r8 a'8 a4 r8 a | bes1~\> | bes4\! r r2 |
+  a4\p r a r | a4 r a8 gis a bes | a4 r a r | a4 r c,8\< b c e |
+  f4\! r e r | d4 r8 a'8 a4 r8 a | bes1~\> | bes4\! r r2 |
   g4 r g r | g4 r g8 fis g a | bes4 r bes r | bes4 r bes8a bes e, |
   c'4\< r bes r | bes4\! r8 g8 fis4 r8 g | a1~\> | a4\! r r2 |
  
@@ -415,7 +415,52 @@ clarinetTwo = \relative c'' {
   \key f \major
   
   \grace { s8.:16 } % bug 34
-
+  c4->\ff r c8 b c f | f4-> r f8 e g a | c4-> g8 g g4 g | g4 r r2 |
+  
+  %mark A
+  f4\p r f r | f4 r f8 e f g | f4 r f r | f4 r c8\< b c e |
+  f4\! r e r | d4 r8 c b4 r8 c | e1~\> | e4\! r r2 |
+  e4 r e r | e4 r e8 dis e f | g4 r g r | g4 r bes,8\< a bes c |
+  e4 r d r | c4\! r8 e e4 r8 e | f1~\> | f4\! r r2 |
+ 
+  %mark B
+  f4\mf r f r | f4 r f8 e f g | f4 r f r | f4 r c8\< b c e |
+  f4\! r e r | d4 r8 a'8 a4 r8 f | g1~\> | g4\! r r2 |
+  g4-^\fz r b,8\p ais b d | f4 r g r | g4\fz r e8 dis e f | g4 r e r |
+  g8\f fis g gis a gis a g | g4 r g r | g1~ | g4 r r2 |
+  
+  %mark C
+  \repeat volta 2 {
+    s1*16 |
+    %mark D
+    s1*15 |
+  }
+  \alternative {
+    { s1 | }
+    { s1 | }
+  }
+  
+  %Trio
+  s1*2 |
+  \repeat volta 2 {
+    %mark E
+    s1*16
+    
+    %mark F
+    s1*15
+  }
+  \alternative {
+    { s1 | }
+    { s1 | }
+  }
+  %mark G
+  \repeat volta 2 {
+    s1*8 | 
+  }
+  \alternative {
+    { s1*8 | }
+    { s1*8 | }
+  }
 }
 
 clarinetThree = \relative c'' {
@@ -1187,16 +1232,27 @@ basses = \relative c {
 
 }
 
+oneTwoOneTwo = \drummode { bd4 r bd r | bd4 r bd r }
+
 drumSnareBass = \drummode {
   \clef percussion
 
   << \grace { sn16 sn sn } sn4->\ff
      \\
      bd
-  >> r r2 | s1*3 |
+  >> r r2 | << \grace { sn16 sn sn } sn4->\ff
+     \\
+     bd
+  >> r r2 | << { sn4 sn4:32 sn4 sn | sn4 }
+               \\
+               { bd4 r bd r | bd4 }
+  >> r r2 |
   
   %mark A
-  s1*16 |
+  << { r4 \slashedGrace sn8 sn4 r \slashedGrace sn8 sn4 | r4 sn4:32 sn4 sn }
+     \\
+     \oneTwoOneTwo >>
+  s1*14 |
  
   %mark B
   s1*16 |
